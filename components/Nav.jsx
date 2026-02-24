@@ -312,11 +312,11 @@ function MobileDrawer({ open, onClose, pathname }) {
           {/* Logo */}
           <Link href="/" onClick={onClose} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
             <Image
-              src="/images/cor pathways logo bg removed.png"
+              src="/images/cor pathway logo trans.png"
               alt="COR Pathways"
               width={140}
               height={38}
-              style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
+              style={{ objectFit: 'contain' }}
             />
           </Link>
 
@@ -662,11 +662,11 @@ export default function Nav() {
           {/* ── LEFT: Logo ── */}
           <Link href="/" style={{ textDecoration: 'none', flexShrink: 0, display: 'flex', alignItems: 'center' }}>
             <Image
-              src="/images/cor pathways logo bg removed.png"
+              src="/images/cor pathway logo trans.png"
               alt="COR Pathways"
               width={160}
               height={44}
-              style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
+              style={{ objectFit: 'contain' }}
               priority
             />
           </Link>
