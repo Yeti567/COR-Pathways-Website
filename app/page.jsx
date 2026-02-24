@@ -117,7 +117,9 @@ export default function HomePage() {
             <div style={{ background: '#163258', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' }}>
               <div style={{ height: '3px', background: 'linear-gradient(90deg, #34D399, #4A90C4)' }} />
               <div style={{ padding: '1.5rem' }}>
-                <ImagePlaceholder height={200} dark label="[IMAGE: COR Pathways app dashboard screenshot]" />
+                <div style={{ width: '100%', height: '200px', borderRadius: '8px', overflow: 'hidden', position: 'relative' }}>
+                  <Image src="/images/Certification management.webp" alt="COR Pathways certification management dashboard" fill style={{ objectFit: 'cover' }} />
+                </div>
                 <div style={{ marginTop: '16px' }}>
                   <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7BB8E0', marginBottom: '6px' }}>Ontario — COR Certification</p>
                   <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '18px', fontWeight: 700, color: '#ffffff', marginBottom: '8px', lineHeight: 1.3 }}>All 14 COR Elements. One Platform.</p>
@@ -267,7 +269,9 @@ export default function HomePage() {
           <div style={{ background: '#163258', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 24px 64px rgba(0,0,0,0.4)' }}>
             <div style={{ height: '3px', background: 'linear-gradient(90deg, #34D399, #4A90C4)' }} />
             <div style={{ padding: '1.5rem' }}>
-              <ImagePlaceholder height={220} dark label="[IMAGE: Platform screenshot — audit dashboard or certification tracker]" />
+              <div style={{ width: '100%', height: '220px', borderRadius: '8px', overflow: 'hidden', position: 'relative' }}>
+                <Image src="/images/Safety Audit Review Panel.webp" alt="COR audit readiness dashboard" fill style={{ objectFit: 'cover' }} />
+              </div>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7BB8E0', margin: '16px 0 12px' }}>COR Audit Readiness — Sample Company</p>
 
               {/* Progress bars */}
@@ -305,7 +309,9 @@ export default function HomePage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {/* Top full-width card */}
             <div style={{ background: '#0D1F3C', borderRadius: '14px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)' }}>
-              <ImagePlaceholder height={160} dark label="[IMAGE: Construction site in Alberta or BC — wide landscape shot]" />
+              <div style={{ width: '100%', height: '160px', position: 'relative' }}>
+                <Image src="/images/Western Canada Construction Site.webp" alt="Western Canada construction site" fill style={{ objectFit: 'cover' }} />
+              </div>
               <div style={{ padding: '1.25rem' }}>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7BB8E0', marginBottom: '4px' }}>Western Canada</p>
                 <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '17px', fontWeight: 700, color: '#ffffff', marginBottom: '4px', lineHeight: 1.3 }}>Health &amp; Safety Program Management</p>
