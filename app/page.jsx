@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'COR Pathways — COR Certification & Health and Safety Management',
+  title: 'COR Pathways: COR Certification & Health and Safety Management',
   description: 'COR Pathways helps Ontario construction companies get COR certified before the 2027 deadline and manages complete Health & Safety programs across Alberta, BC, and Saskatchewan.',
 }
 
@@ -91,7 +91,7 @@ export default function HomePage() {
 
             {/* Subheading */}
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '36px', maxWidth: '520px' }}>
-              COR Pathways helps Ontario construction companies get COR certified before the 2027 deadline — and manages complete Health &amp; Safety programs for companies across Alberta, BC, and Saskatchewan. Expert consulting, purpose-built software, all in one place.
+              COR Pathways helps Ontario construction companies get COR certified before the 2027 deadline, and manages complete Health &amp; Safety programs for companies across Alberta, BC, and Saskatchewan. Expert consulting, purpose-built software, all in one place.
             </p>
 
             {/* Buttons */}
@@ -121,7 +121,7 @@ export default function HomePage() {
                 <div style={{ marginTop: '16px' }}>
                   <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7BB8E0', marginBottom: '6px' }}>Ontario — COR Certification</p>
                   <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '18px', fontWeight: 700, color: '#ffffff', marginBottom: '8px', lineHeight: 1.3 }}>All 14 COR Elements. One Platform.</p>
-                  <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.55)', lineHeight: 1.6, marginBottom: '12px' }}>Track every element, every document, and every certification — all in one place, updated in real time.</p>
+                  <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.55)', lineHeight: 1.6, marginBottom: '12px' }}>Track every element, every document, and every certification: all in one place, updated in real time.</p>
                   <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.3)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px' }}>Deadline: Jan 1, 2027</span>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.75, paddingTop: '8px' }}>
-              We help construction companies get certified, stay compliant, and manage their safety programs — whether you're chasing COR in Ontario or running SE-COR programs across Western Canada. One team, two service areas, four provinces.
+              We help construction companies get certified, stay compliant, and manage their safety programs — whether you're chasing COR in Ontario or running SE-COR programs across Western Canada: one team, two service areas, four provinces.
             </p>
           </div>
 
@@ -187,7 +187,7 @@ export default function HomePage() {
               <span style={{ fontSize: '28px' }}>🏆</span>
               <div>
                 <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#0D1F3C', marginBottom: '10px', lineHeight: 1.3 }}>COR Certification Consulting</p>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '16px' }}>We guide Ontario construction companies through the full COR 2020 certification process — building your safety program, preparing your documentation, and getting you audit-ready. The January 2027 Ottawa deadline is approaching. Don't wait.</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '16px' }}>We guide Ontario construction companies through the full COR 2020 certification process — building your safety program, preparing your documentation, and getting you audit-ready. The January 2027 Ottawa deadline is approaching. Do not wait.</p>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto' }}>
                 <ProvincePill>Ontario</ProvincePill>
@@ -240,7 +240,7 @@ export default function HomePage() {
               <span style={{ color: '#7BB8E0' }}>COR certification.</span>
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: 'rgba(255,255,255,0.55)', lineHeight: 1.75, marginBottom: '36px' }}>
-              Every feature in COR Pathways was designed around the COR 2020 standard. Not a generic safety tool — a purpose-built platform that maps directly to what IHSA auditors look for.
+              Every feature in COR Pathways was designed around the COR 2020 standard. Not a generic safety tool; a purpose-built platform that maps directly to what IHSA auditors look for.
             </p>
 
             {/* Numbered features */}
@@ -248,7 +248,7 @@ export default function HomePage() {
               {[
                 { n: '1', title: 'Track All 14 COR Elements', body: 'See your compliance score for every element in real time. Know exactly what is complete, what is missing, and what needs attention before your audit.' },
                 { n: '2', title: 'Certifications & Training Matrix', body: 'Track every employee certification, get expiry alerts before they lapse, and maintain a complete training record for your audit package.' },
-                { n: '3', title: 'Forms, Inspections & Hazard Assessments', body: 'Digital forms for every COR requirement — toolbox talks, inspections, incident reports, hazard assessments — all linked to the right audit element automatically.' },
+                { n: '3', title: 'Forms, Inspections & Hazard Assessments', body: 'Digital forms for every COR requirement — toolbox talks, inspections, incident reports, hazard assessments: all linked to the right audit element automatically.' },
                 { n: '4', title: 'AI-Powered Mock Audit Practice', body: 'Practice your audit interview with our AI auditor before the real thing. Build confidence and identify gaps before IHSA walks through your door.' },
               ].map((f) => (
                 <li key={f.n} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
@@ -341,7 +341,7 @@ export default function HomePage() {
               Running a small construction company in Western Canada means wearing every hat — project manager, estimator, HR, and now safety officer. We take the safety hat off your head entirely.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '32px' }}>
-              COR Pathways builds your complete SE-COR safety program from scratch, then manages it every month — remotely, affordably, and properly. You focus on your work. We keep you compliant.
+              COR Pathways builds your complete SE-COR safety program from scratch, then manages it every month: remotely, affordably, and properly. You focus on your work. We keep you compliant.
             </p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '32px' }}>
               {[

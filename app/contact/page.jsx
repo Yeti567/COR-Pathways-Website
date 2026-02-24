@@ -70,10 +70,10 @@ const labelStyle = {
 }
 
 const FAQS = [
-  { q: 'How quickly do you respond to inquiries?', a: 'Within one business day — usually faster. Blake personally responds to every message. You will not get an automated reply or be handed off to someone else.' },
-  { q: 'Is the consultation call really free?', a: 'Yes — completely free and with no obligation. The consultation exists so both of us can figure out whether we are a good fit before anyone commits to anything.' },
+  { q: 'How quickly do you respond to inquiries?', a: 'Within one business day, usually faster. Blake personally responds to every message. You will not get an automated reply or be handed off to someone else.' },
+  { q: 'Is the consultation call really free?', a: 'Yes, completely free and with no obligation. The consultation exists so both of us can figure out whether we are a good fit before anyone commits to anything.' },
   { q: 'Do I need to be in Ottawa to get COR consulting?', a: 'No. We work with Ontario construction companies across the province, not just Ottawa. The Ottawa deadline is the most urgent reason to act now but COR certification is valuable for any Ontario contractor bidding on municipal or institutional work anywhere in the province.' },
-  { q: 'Can I get a quote before the consultation call?', a: 'Consulting pricing is fixed and published on our pricing page — $2,500/month for up to 30 employees and $5,000/month for 31 to 150 employees. Compliance setup fees are also fixed. The consultation call is about understanding your specific situation and timeline — not negotiating price.' },
+  { q: 'Can I get a quote before the consultation call?', a: 'Consulting pricing is fixed and published on our pricing page: $2,500/month for up to 30 employees and $5,000/month for 31 to 150 employees. Compliance setup fees are also fixed. The consultation call is about understanding your specific situation and timeline, not negotiating price.' },
 ]
 
 function ContactForm() {
@@ -86,7 +86,7 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    const subject = encodeURIComponent(`New Inquiry — ${form.service || 'COR Pathways Contact Form'}`)
+    const subject = encodeURIComponent(`New Inquiry: ${form.service || 'COR Pathways Contact Form'}`)
     const body = encodeURIComponent(
       `Full Name: ${form.fullName}\n` +
       `Company: ${form.companyName}\n` +
@@ -148,8 +148,8 @@ function ContactForm() {
           <select id="service" name="service" required value={form.service} onChange={handleChange} style={{ ...inputStyle, color: form.service ? '#111827' : '#9CA3AF' }}>
             <option value="" disabled>Select a service</option>
             {[
-              'COR Certification Consulting — Ontario',
-              'Health & Safety Program Management — AB, BC, SK',
+              'COR Certification Consulting: Ontario',
+              'Health & Safety Program Management: AB, BC, SK',
               'ISNetworld Setup & Management',
               'Avetta Setup & Management',
               'ComplyWorks Setup & Management',
@@ -163,7 +163,7 @@ function ContactForm() {
         <label htmlFor="employees" style={labelStyle}>Number of employees <span style={{ color: '#9CA3AF', fontWeight: 400 }}>(optional)</span></label>
         <select id="employees" name="employees" value={form.employees} onChange={handleChange} style={{ ...inputStyle, color: form.employees ? '#111827' : '#9CA3AF', maxWidth: '100%' }}>
           <option value="">Select range</option>
-          {['1 — 10 employees', '11 — 30 employees', '31 — 75 employees', '76 — 150 employees', '150+ employees'].map((e) => <option key={e} value={e}>{e}</option>)}
+          {['1 to 10 employees', '11 to 30 employees', '31 to 75 employees', '76 to 150 employees', '150+ employees'].map((e) => <option key={e} value={e}>{e}</option>)}
         </select>
       </div>
       <div>
@@ -203,7 +203,7 @@ export default function ContactPage() {
             Let&apos;s talk about <span style={{ color: '#34D399' }}>your safety program.</span>
           </h1>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, maxWidth: '720px' }}>
-            Whether you are looking to get COR certified in Ontario, need your health and safety program managed in western Canada, or want your ISNetworld, Avetta, or ComplyWorks account set up and managed — reach out and we will get back to you within one business day.
+            Whether you are looking to get COR certified in Ontario, need your health and safety program managed in western Canada, or want your ISNetworld, Avetta, or ComplyWorks account set up and managed: reach out and we will get back to you within one business day.
           </p>
         </div>
       </section>
@@ -227,7 +227,7 @@ export default function ContactPage() {
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#34D399', marginBottom: '8px' }}>Call or Text</p>
                 <a href="tel:7808325158" style={{ fontFamily: 'var(--font-fraunces)', fontSize: '28px', fontWeight: 700, color: '#ffffff', textDecoration: 'none', display: 'block', marginBottom: '8px' }}>Call now</a>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.5)', marginBottom: '8px' }}>tel. 780-832-5158</p>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>Available Monday to Friday, 8am — 6pm Mountain Time</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>Available Monday to Friday, 8am to 6pm Mountain Time</p>
               </div>
               {/* Email */}
               <div style={{ background: '#0D1F3C', borderRadius: '16px', padding: '24px', border: '1px solid rgba(74,144,196,0.2)' }}>
@@ -257,14 +257,14 @@ export default function ContactPage() {
                   ))}
                 </div>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.4)', lineHeight: 1.6, fontStyle: 'italic' }}>
-                  Compliance management — ISNetworld, Avetta, ComplyWorks — available to contractors across all of Canada
+                  Compliance management: ISNetworld, Avetta, ComplyWorks, available to contractors across all of Canada
                 </p>
               </div>
               {/* Free consultation note */}
               <div style={{ background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.25)', borderLeft: '4px solid #34D399', borderRadius: '12px', padding: '20px 24px' }}>
-                <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '17px', fontWeight: 700, color: '#0D1F3C', marginBottom: '8px' }}>Free consultation — no obligation</p>
+                <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '17px', fontWeight: 700, color: '#0D1F3C', marginBottom: '8px' }}>Free consultation, no obligation</p>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: '#374151', lineHeight: 1.75 }}>
-                  Every engagement starts with a free consultation call. We learn about your company, explain exactly what is involved, and give you a clear picture of what working with COR Pathways looks like — before you commit to anything.
+                  Every engagement starts with a free consultation call. We learn about your company, explain exactly what is involved, and give you a clear picture of what working with COR Pathways looks like, before you commit to anything.
                 </p>
               </div>
             </div>
@@ -284,9 +284,9 @@ export default function ContactPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '24px' }}>
             {[
               { num: '01', title: 'You send us a message', body: 'Fill out the form or call us directly. Give us as much detail as you can about your company, your province, and what you are looking for.' },
-              { num: '02', title: 'We get back to you within one business day', body: 'Blake personally responds to every inquiry. No automated responses, no sales team handoffs — a direct reply from the person who will be working with you.' },
+              { num: '02', title: 'We get back to you within one business day', body: 'Blake personally responds to every inquiry. No automated responses, no sales team handoffs: a direct reply from the person who will be working with you.' },
               { num: '03', title: 'We schedule a free consultation call', body: 'A 30 to 60 minute call to learn about your company, assess your current situation, and explain exactly what COR certification or compliance management looks like for you.' },
-              { num: '04', title: 'You get a clear plan — no obligation', body: 'After the call you will have a clear picture of what is involved, what it costs, and what the timeline looks like. No pressure, no obligation — just the information you need to make a good decision.' },
+              { num: '04', title: 'You get a clear plan, no obligation', body: 'After the call you will have a clear picture of what is involved, what it costs, and what the timeline looks like. No pressure, no obligation; just the information you need to make a good decision.' },
             ].map((step) => (
               <div key={step.num} style={{ background: '#ffffff', borderRadius: '14px', padding: '28px 24px', border: '1px solid rgba(0,0,0,0.07)', boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}>
                 <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '36px', height: '36px', background: '#059669', borderRadius: '999px', fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, color: '#ffffff', marginBottom: '16px' }}>{step.num}</span>

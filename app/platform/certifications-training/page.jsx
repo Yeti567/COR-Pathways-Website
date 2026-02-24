@@ -2,8 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Certifications & Training — COR Pathways',
-  description: 'Track every employee certification, training record, and competency assessment — and get alerted before anything lapses.',
+  title: 'Certifications & Training: COR Pathways',
+  description: 'Track every employee certification, training record, and competency assessment, and get alerted before anything lapses.',
 }
 
 const MAX_W = '1200px'
@@ -50,14 +50,14 @@ export default function CertificationsTrainingPage() {
         <div aria-hidden="true" style={{ position: 'absolute', top: '-10%', left: '50%', transform: 'translateX(-50%)', width: '800px', height: '500px', background: 'radial-gradient(ellipse at center, rgba(52,211,153,0.12) 0%, rgba(74,144,196,0.08) 40%, transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <span style={{ display: 'inline-block', background: 'rgba(74,144,196,0.15)', border: '1px solid rgba(74,144,196,0.3)', color: '#7BB8E0', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: '999px', marginBottom: '28px' }}>
-            Platform — Certifications &amp; Training
+            Platform: Certifications &amp; Training
           </span>
           <h1 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(2.2rem, 5vw, 3.4rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.15, maxWidth: '800px', marginBottom: '24px' }}>
             Every certification. Every employee.<br />
             <span style={{ color: '#34D399' }}>Never expired.</span>
           </h1>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '660px', marginBottom: '40px' }}>
-            COR Pathways tracks every employee certification, training record, and competency assessment across your entire company — and alerts you before anything lapses so you are never caught off guard in an audit.
+            COR Pathways tracks every employee certification, training record, and competency assessment across your entire company, and alerts you before anything lapses so you are never caught off guard in an audit.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '64px' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
@@ -78,17 +78,17 @@ export default function CertificationsTrainingPage() {
               One expired certification can fail your entire audit. Most companies find out too late.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              Element 4 of the COR 2020 standard — Competency &amp; Training — carries a 1.1x weight multiplier. It is one of the most heavily scrutinized elements in any audit. Auditors will ask to see training records, orientation checklists, and certification documents for your workers. If anything is missing, expired, or unverifiable, your score drops.
+              Element 4 of the COR 2020 standard, Competency &amp; Training, carries a 1.1x weight multiplier. It is one of the most heavily scrutinized elements in any audit. Auditors will ask to see training records, orientation checklists, and certification documents for your workers. If anything is missing, expired, or unverifiable, your score drops.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75 }}>
-              For most companies, tracking certifications means a spreadsheet someone updates when they remember to — or a filing cabinet full of paper certificates that nobody has looked at in months. COR Pathways replaces all of that with a live, automated certification tracker that tells you exactly where you stand at all times.
+              For most companies, tracking certifications means a spreadsheet someone updates when they remember to, or a filing cabinet full of paper certificates that nobody has looked at in months. COR Pathways replaces all of that with a live, automated certification tracker that tells you exactly where you stand at all times.
             </p>
           </div>
           <div style={{ background: '#0D1F3C', borderRadius: '16px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {[
-              { text: 'John M. — First Aid certification expired 47 days ago', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
-              { text: 'Site crew — WHMIS training — 3 workers not on record', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
-              { text: 'Equipment operator certification — expiring in 14 days', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
+              { text: 'John M.: First Aid certification expired 47 days ago', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
+              { text: 'Site crew: WHMIS training, 3 workers not on record', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
+              { text: 'Equipment operator certification: expiring in 14 days', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
             ].map((item) => (
               <div key={item.text} style={{ background: item.bg, border: `1px solid ${item.border}`, borderRadius: '10px', padding: '14px 16px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                 <span style={{ fontSize: '16px', flexShrink: 0, marginTop: '1px' }}>⚠️</span>
@@ -97,7 +97,7 @@ export default function CertificationsTrainingPage() {
             ))}
             <div style={{ background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.25)', borderRadius: '10px', padding: '14px 16px', display: 'flex', alignItems: 'flex-start', gap: '10px', marginTop: '4px' }}>
               <span style={{ fontSize: '16px', flexShrink: 0, marginTop: '1px' }}>✅</span>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 500, color: '#34D399', lineHeight: 1.5 }}>COR Pathways flags every issue like this automatically — weeks before it becomes a problem.</p>
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 500, color: '#34D399', lineHeight: 1.5 }}>COR Pathways flags every issue like this automatically, weeks before it becomes a problem.</p>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function CertificationsTrainingPage() {
           <div style={{ textAlign: 'center', marginBottom: '56px' }}>
             <SectionLabel>The Certification Tracker</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.2, marginBottom: '16px' }}>
-              A complete picture of your team's compliance — at a glance.
+              A complete picture of your team’s compliance, at a glance.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.7, maxWidth: '620px', margin: '0 auto' }}>
               The certification dashboard gives admins instant visibility into the compliance status of every worker, every certification type, and every upcoming expiry.
@@ -121,7 +121,7 @@ export default function CertificationsTrainingPage() {
             <div style={{ background: '#ffffff', borderRadius: '16px', padding: '2rem', border: '1px solid rgba(0,0,0,0.06)' }}>
               <span style={{ fontSize: '28px', display: 'block', marginBottom: '14px' }}>📊</span>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '19px', fontWeight: 700, color: '#0D1F3C', marginBottom: '12px', lineHeight: 1.3 }}>Live Compliance Overview</p>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '20px' }}>At the top of every dashboard view — total workers, active certifications, expiring within 30 days, expired certifications, and your overall company compliance rate. One number tells you how you're doing.</p>
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '20px' }}>At the top of every dashboard view: total workers, active certifications, expiring within 30 days, expired certifications, and your overall company compliance rate. One number tells you how you're doing.</p>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '8px' }}>
                 {[{ n: '24', l: 'Workers' }, { n: '98', l: 'Active' }, { n: '4', l: 'Expiring' }, { n: '1', l: 'Expired' }, { n: '94%', l: 'Compliant' }].map((s) => (
                   <div key={s.l} style={{ background: '#F3F4F6', borderRadius: '8px', padding: '8px 4px', textAlign: 'center' }}>
@@ -136,14 +136,14 @@ export default function CertificationsTrainingPage() {
             <div style={{ background: '#ffffff', borderRadius: '16px', padding: '2rem', border: '1px solid rgba(0,0,0,0.06)' }}>
               <span style={{ fontSize: '28px', display: 'block', marginBottom: '14px' }}>🔔</span>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '19px', fontWeight: 700, color: '#0D1F3C', marginBottom: '12px', lineHeight: 1.3 }}>Automated Expiry Notifications</p>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7 }}>COR Pathways sends automatic alerts when certifications are approaching expiry — to the admin, the supervisor, and optionally the worker themselves. Set your own notification window: 90 days, 60 days, 30 days, or custom. Never be surprised by an expired certificate again.</p>
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7 }}>COR Pathways sends automatic alerts when certifications are approaching expiry: to the admin, the supervisor, and optionally the worker themselves. Set your own notification window: 90 days, 60 days, 30 days, or custom. Never be surprised by an expired certificate again.</p>
             </div>
 
             {/* Card 3 */}
             <div style={{ background: '#ffffff', borderRadius: '16px', padding: '2rem', border: '1px solid rgba(0,0,0,0.06)' }}>
               <span style={{ fontSize: '28px', display: 'block', marginBottom: '14px' }}>🧩</span>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '19px', fontWeight: 700, color: '#0D1F3C', marginBottom: '12px', lineHeight: 1.3 }}>Training Matrix by Role</p>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7 }}>See which certifications are required for each role in your company, and which workers are missing them. The training matrix shows you every competency gap at a glance — so you can schedule training proactively instead of reactively.</p>
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7 }}>See which certifications are required for each role in your company, and which workers are missing them. The training matrix shows you every competency gap at a glance, so you can schedule training proactively instead of reactively.</p>
             </div>
 
             {/* Card 4 */}
@@ -162,7 +162,7 @@ export default function CertificationsTrainingPage() {
           <div>
             <SectionLabel>What Gets Tracked</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.25, marginBottom: '20px' }}>
-              Every type of certification your company needs — in one place.
+              Every type of certification your company needs, in one place.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '28px' }}>
               COR Pathways supports four certification categories, covering everything from mandatory regulatory certifications to company-specific competency requirements. Each category can be customized to match your company's specific roles and trades.
@@ -203,7 +203,7 @@ export default function CertificationsTrainingPage() {
             <SiteImage src="/images/Mobile certification photo upload.webp" alt="Worker using a smartphone camera to photograph a paper training certificate for upload into the app" height={280} />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.3)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '6px 16px', borderRadius: '999px' }}>
-                Upload from anywhere — office or job site
+                Upload from anywhere: office or job site
               </span>
             </div>
           </div>
@@ -215,15 +215,15 @@ export default function CertificationsTrainingPage() {
               Upload certificates from anywhere. Access them forever.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '20px' }}>
-              Every certification in COR Pathways can have the actual certificate document attached — uploaded from a desktop, a tablet, or directly from a smartphone camera on the job site. Workers can upload their own certificates from the mobile app. Admins can bulk upload entire batches at once.
+              Every certification in COR Pathways can have the actual certificate document attached, uploaded from a desktop, a tablet, or directly from a smartphone camera on the job site. Workers can upload their own certificates from the mobile app. Admins can bulk upload entire batches at once.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '32px' }}>
-              Every uploaded certificate is stored permanently, linked to the worker's profile, and accessible instantly. When an auditor asks to see a worker's First Aid certificate, you have it in seconds — not after digging through a filing cabinet.
+              Every uploaded certificate is stored permanently, linked to the worker's profile, and accessible instantly. When an auditor asks to see a worker's First Aid certificate, you have it in seconds, not after digging through a filing cabinet.
             </p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
                 'Bulk certificate upload for large teams',
-                'Mobile photo capture — workers upload their own certs',
+                'Mobile photo capture: workers upload their own certs',
                 'Certificates linked to worker profiles permanently',
                 'Admin verification and approval workflow included',
               ].map((item) => (
@@ -251,10 +251,10 @@ export default function CertificationsTrainingPage() {
               Record training sessions. Prove competency. Pass your audit.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              Every training session your company runs — toolbox talks, orientation sessions, equipment training, safety courses — can be recorded directly in COR Pathways. Log the date, the trainer, the topics covered, and every worker who attended.
+              Every training session your company runs: toolbox talks, orientation sessions, equipment training, safety courses, can be recorded directly in COR Pathways. Log the date, the trainer, the topics covered, and every worker who attended.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '32px' }}>
-              Training records are linked directly to Element 8 of your COR audit — Training &amp; Communication. When your auditor asks for your training program evidence, every session is documented, searchable, and exportable in your audit package.
+              Training records are linked directly to Element 8 of your COR audit: Training &amp; Communication. When your auditor asks for your training program evidence, every session is documented, searchable, and exportable in your audit package.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               {[

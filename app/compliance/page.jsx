@@ -68,7 +68,7 @@ function PlatformCard({ name, setupPrice, accentColor, btnBg, mgmtItems }) {
         </div>
         <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.45)', marginBottom: '8px' }}>ongoing account management</p>
         <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', marginBottom: '20px' }}>
-          Or <strong style={{ color: accentColor }}>$300/month</strong> — manage up to 3 compliance accounts combined
+          Or <strong style={{ color: accentColor }}>$300/month</strong> to manage up to 3 compliance accounts combined
         </p>
         <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '24px' }}>
           {mgmtItems.map((item) => <CheckItem key={item} color={accentColor} textColor="rgba(255,255,255,0.8)">{item}</CheckItem>)}
@@ -111,7 +111,7 @@ export default function CompliancePage() {
             Get your green light.<br /><span style={{ color: '#34D399' }}>Stay compliant. Keep working.</span>
           </h1>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '40px', maxWidth: '760px' }}>
-            ISNetworld, Avetta, and ComplyWorks can be the difference between winning a contract and getting turned away at the gate. COR Pathways sets up your account from scratch and manages it ongoing — so you are always approved, always current, and always ready to work.
+            ISNetworld, Avetta, and ComplyWorks can be the difference between winning a contract and getting turned away at the gate. COR Pathways sets up your account from scratch and manages it ongoing, so you are always approved, always current, and always ready to work.
           </p>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '32px' }}>
             <FilledBtn href="/contact">Get Started Today</FilledBtn>
@@ -140,7 +140,7 @@ export default function CompliancePage() {
               One incomplete form. One expired certificate. And you are off the job site.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.75, marginBottom: '20px' }}>
-              Large general contractors, municipalities, and oil and gas companies use third-party compliance platforms to pre-qualify the subcontractors they hire. If your ISNetworld, Avetta, or ComplyWorks account is incomplete, expired, or showing a red status — you do not get the call. It is that simple.
+              Large general contractors, municipalities, and oil and gas companies use third-party compliance platforms to pre-qualify the subcontractors they hire. If your ISNetworld, Avetta, or ComplyWorks account is incomplete, expired, or showing a red status: you do not get the call. It is that simple.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.75 }}>
               The problem is that these platforms are time-consuming, confusing, and relentless about renewals. Insurance certificates expire. WCB statements come due. Safety statistics need updating. Most contractors either let their accounts lapse or spend hours every month keeping them current. COR Pathways takes all of that off your plate.
@@ -149,10 +149,10 @@ export default function CompliancePage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <div style={{ background: '#0D1F3C', borderRadius: '14px', padding: '24px', border: '1px solid rgba(74,144,196,0.2)' }}>
               {[
-                { dot: '#EF4444', text: 'ISNetworld account — insurance certificate expired 12 days ago' },
-                { dot: '#EF4444', text: 'Avetta profile — safety statistics section incomplete' },
-                { dot: '#F59E0B', text: 'ComplyWorks — WCB statement due in 8 days' },
-                { dot: '#EF4444', text: 'Result — contractor flagged as non-compliant, removed from approved vendor list' },
+                { dot: '#EF4444', text: 'ISNetworld account: insurance certificate expired 12 days ago' },
+                { dot: '#EF4444', text: 'Avetta profile: safety statistics section incomplete' },
+                { dot: '#F59E0B', text: 'ComplyWorks: WCB statement due in 8 days' },
+                { dot: '#EF4444', text: 'Result: contractor flagged as non-compliant, removed from approved vendor list' },
               ].map((item) => (
                 <div key={item.text} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '14px' }}>
                   <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: item.dot, flexShrink: 0, marginTop: '5px' }} />
@@ -163,7 +163,7 @@ export default function CompliancePage() {
             <div style={{ background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.3)', borderLeft: '4px solid #34D399', borderRadius: '10px', padding: '18px 20px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
               <span style={{ fontSize: '18px', flexShrink: 0 }}>✅</span>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, color: '#1F4D3A', lineHeight: 1.6 }}>
-                COR Pathways monitors every account, submits every renewal, and keeps you green — automatically.
+                COR Pathways monitors every account, submits every renewal, and keeps you green, automatically.
               </p>
             </div>
           </div>
@@ -179,13 +179,13 @@ export default function CompliancePage() {
               We handle everything. From first login to ongoing green status.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, maxWidth: '700px', margin: '0 auto' }}>
-              Every compliance engagement follows the same process — complete setup, full approval, then ongoing management so nothing ever lapses.
+              Every compliance engagement follows the same process: complete setup, full approval, then ongoing management so nothing ever lapses.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '24px' }}>
             {[
               { num: '01', title: 'You connect with us', body: 'We start with a quick call to understand which platforms you need, who your clients are, and what documentation you currently have. We tell you exactly what we need from you to get started.' },
-              { num: '02', title: 'We build your account', body: 'We set up your account from scratch — company information, safety program upload, insurance certificates, WCB records, safety statistics, and every other required section — completed fully and correctly.' },
+              { num: '02', title: 'We build your account', body: 'We set up your account from scratch: company information, safety program upload, insurance certificates, WCB records, safety statistics, and every other required section, completed fully and correctly.' },
               { num: '03', title: 'You get approved', body: 'We track your account through the approval process and resolve any issues or requests for additional information until your account shows a full green approved status. You are ready to work.' },
               { num: '04', title: 'We manage it ongoing', body: 'After approval we monitor your account every month. When your insurance renews, we submit it. When WCB statements are due, we file them. When anything needs updating, we handle it. You just keep us in the loop.' },
             ].map((step) => (
@@ -206,10 +206,10 @@ export default function CompliancePage() {
             <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.3)', color: '#059669', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>ISNetworld</span>
           </div>
           <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.9rem, 3.5vw, 2.75rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.2, marginBottom: '20px' }}>
-            ISNetworld — Complete setup and ongoing management.
+            ISNetworld: Complete setup and ongoing management.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, marginBottom: '56px', maxWidth: '820px' }}>
-            ISNetworld is one of the most widely used contractor prequalification platforms in North America. It is required by major general contractors, municipalities, and resource companies across Canada. Getting your account fully approved — and keeping it that way — is what we do.
+            ISNetworld is one of the most widely used contractor prequalification platforms in North America. It is required by major general contractors, municipalities, and resource companies across Canada. Getting your account fully approved, and keeping it that way, is what we do.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '56px', alignItems: 'flex-start' }}>
             <div>
@@ -220,8 +220,8 @@ export default function CompliancePage() {
                   'Safety program and policy document uploads',
                   'Insurance certificate submission and verification',
                   'WCB clearance letter and premium rate submission',
-                  'Safety statistics entry — TRIR, LTIR, and all required metrics',
-                  'Company questionnaire completion — all sections',
+                  'Safety statistics entry: TRIR, LTIR, and all required metrics',
+                  'Company questionnaire completion: all sections',
                   'Employee count and trade classification setup',
                   'Safety manual and procedure uploads',
                   'Tracking through review and approval process',
@@ -254,7 +254,7 @@ export default function CompliancePage() {
             <span style={{ display: 'inline-block', background: 'rgba(74,144,196,0.1)', border: '1px solid rgba(74,144,196,0.3)', color: '#4A90C4', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Avetta</span>
           </div>
           <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.9rem, 3.5vw, 2.75rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.2, marginBottom: '20px' }}>
-            Avetta — End-to-end compliance setup and management.
+            Avetta: End-to-end compliance setup and management.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, marginBottom: '56px', maxWidth: '820px' }}>
             Avetta is used by large enterprise clients across construction, oil and gas, utilities, and manufacturing to manage their contractor supply chains. If your client uses Avetta, your account needs to be complete and current — or you are not on their approved list.
@@ -301,7 +301,7 @@ export default function CompliancePage() {
             <span style={{ display: 'inline-block', background: '#163258', border: '1px solid rgba(22,50,88,0.6)', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>ComplyWorks</span>
           </div>
           <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.9rem, 3.5vw, 2.75rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.2, marginBottom: '20px' }}>
-            ComplyWorks — Full compliance setup at the lowest price.
+            ComplyWorks: Full compliance setup at the lowest price.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, marginBottom: '56px', maxWidth: '820px' }}>
             ComplyWorks is a contractor management platform used across western Canada and beyond. If your clients require ComplyWorks compliance, COR Pathways gets your account fully set up and approved — completely — for a flat $400 setup fee.
@@ -335,7 +335,7 @@ export default function CompliancePage() {
                 <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.5)', marginLeft: '6px' }}>/month</span>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.45)', marginTop: '4px', marginBottom: '8px' }}>ongoing account management</p>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', marginBottom: '20px' }}>
-                  Or <strong style={{ color: '#34D399' }}>$300/month</strong> — manage up to 3 compliance accounts combined
+                  Or <strong style={{ color: '#34D399' }}>$300/month</strong> to manage up to 3 compliance accounts combined
                 </p>
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '24px' }}>
                   {['Insurance renewals submitted', 'WCB statements filed when due', 'Document updates at no extra charge', 'Monthly compliance monitoring'].map((item) => (
@@ -400,13 +400,13 @@ export default function CompliancePage() {
             <div style={{ background: '#163258', borderRadius: '14px', padding: '28px', border: '1px solid rgba(74,144,196,0.2)' }}>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#ffffff', marginBottom: '12px' }}>$300/month Bundle</p>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75 }}>
-                Manage up to 3 compliance accounts — any combination of ISNetworld, Avetta, and ComplyWorks — for one flat monthly fee of $300.
+                Manage up to 3 compliance accounts, any combination of ISNetworld, Avetta, and ComplyWorks, for one flat monthly fee of $300.
               </p>
             </div>
             <div style={{ background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.25)', borderLeft: '4px solid #34D399', borderRadius: '14px', padding: '28px' }}>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#ffffff', marginBottom: '12px' }}>What&apos;s always included</p>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75 }}>
-                Every monthly management plan includes: insurance certificate submissions when they renew, WCB premium rate statement filings when they are due, document and profile updates at no extra charge, and monthly compliance status monitoring. You send us the paperwork when we ask — we handle everything else.
+                Every monthly management plan includes: insurance certificate submissions when they renew, WCB premium rate statement filings when they are due, document and profile updates at no extra charge, and monthly compliance status monitoring. You send us the paperwork when we ask; we handle everything else.
               </p>
             </div>
           </div>

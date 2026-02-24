@@ -76,22 +76,22 @@ function FaqItem({ question, answer }) {
 }
 
 const TIMELINE_STEPS = [
-  { badge: 'Week 1', title: 'Free COR Readiness Assessment', body: 'We start with a free consultation to understand your company — your size, your trades, your current safety program, and how far you are from COR ready. You leave the call with a clear picture of what is needed and a realistic timeline.', color: '#34D399' },
-  { badge: 'Weeks 1 — 2', title: 'Platform Setup & Company Onboarding', body: 'We set up your COR Pathways account, enter your company details, import your employee list, and configure your form templates. Your team gets access and a walkthrough of how to use the platform from day one.', color: '#4A90C4' },
-  { badge: 'Weeks 2 — 4', title: 'Gap Analysis Against All 14 Elements', body: 'We conduct a thorough gap analysis of your existing safety program against all 14 COR 2020 elements. Every gap is documented, scored, and added to your action plan with a priority level and target completion date.', color: '#34D399' },
-  { badge: 'Months 1 — 9', title: 'Safety Program Development', body: 'This is where the work happens. We build your complete health and safety management system — every policy, procedure, form, and record required by the COR 2020 standard. Your team uses the platform daily and we guide every step.', color: '#4A90C4' },
-  { badge: 'Months 9 — 12', title: 'Audit Preparation & Mock Audit', body: 'As your audit date approaches, we prepare your complete evidence package for AuditSoft, conduct a mock audit to identify any remaining gaps, and prepare you and your team for the auditor interview. You walk in ready.', color: '#34D399' },
-  { badge: 'Month 12 — 18', title: 'External Audit & COR Certificate', body: 'Your IHSA-certified external auditor conducts the audit. With COR Pathways behind you, your documentation is complete, your evidence is organized, and your team is prepared. We support you through the audit and beyond.', color: '#4A90C4' },
+  { badge: 'Week 1', title: 'Free COR Readiness Assessment', body: 'We start with a free consultation to understand your company: your size, your trades, your current safety program, and how far you are from COR ready. You leave the call with a clear picture of what is needed and a realistic timeline.', color: '#34D399' },
+  { badge: 'Weeks 1 to 2', title: 'Platform Setup & Company Onboarding', body: 'We set up your COR Pathways account, enter your company details, import your employee list, and configure your form templates. Your team gets access and a walkthrough of how to use the platform from day one.', color: '#4A90C4' },
+  { badge: 'Weeks 2 to 4', title: 'Gap Analysis Against All 14 Elements', body: 'We conduct a thorough gap analysis of your existing safety program against all 14 COR 2020 elements. Every gap is documented, scored, and added to your action plan with a priority level and target completion date.', color: '#34D399' },
+  { badge: 'Months 1 to 9', title: 'Safety Program Development', body: 'This is where the work happens. We build your complete health and safety management system: every policy, procedure, form, and record required by the COR 2020 standard. Your team uses the platform daily and we guide every step.', color: '#4A90C4' },
+  { badge: 'Months 9 to 12', title: 'Audit Preparation & Mock Audit', body: 'As your audit date approaches, we prepare your complete evidence package for AuditSoft, conduct a mock audit to identify any remaining gaps, and prepare you and your team for the auditor interview. You walk in ready.', color: '#34D399' },
+  { badge: 'Months 12 to 18', title: 'External Audit & COR Certificate', body: 'Your IHSA-certified external auditor conducts the audit. With COR Pathways behind you, your documentation is complete, your evidence is organized, and your team is prepared. We support you through the audit and beyond.', color: '#4A90C4' },
 ]
 
 const FAQS = [
   { q: 'How long does COR certification take?', a: 'For most companies, COR certification takes between 12 and 18 months from the start of the engagement to receiving your certificate. The timeline depends on your current safety program, the size of your company, and how quickly your team can implement the required changes. We build a realistic timeline into your action plan from day one.' },
   { q: 'Do I need to be in Ottawa to work with COR Pathways?', a: 'No. We work with construction companies across Ontario for COR certification and across Alberta, BC, and Saskatchewan for SE-COR Health & Safety Program Management. Everything is managed remotely through the COR Pathways platform, with regular calls and check-ins.' },
-  { q: 'What is the difference between COR and SE-COR?', a: 'COR — Certificate of Recognition — is the full safety certification program administered by IHSA in Ontario and by certifying partners in other provinces. It requires a complete 14-element safety management system and an external audit. SE-COR — Safety Essentials COR — is a streamlined version designed for smaller companies. It has fewer requirements and is generally less resource-intensive to achieve and maintain.' },
+  { q: 'What is the difference between COR and SE-COR?', a: 'COR (Certificate of Recognition) is the full safety certification program administered by IHSA in Ontario and by certifying partners in other provinces. It requires a complete 14-element safety management system and an external audit. SE-COR (Safety Essentials COR) is a streamlined version designed for smaller companies. It has fewer requirements and is generally less resource-intensive to achieve and maintain.' },
   { q: 'Is the COR Pathways platform included in the consulting fee?', a: 'Yes. Platform access is included in your monthly consulting fee for the duration of your engagement. There are no separate platform charges while you are an active consulting client.' },
-  { q: 'What happens after I get certified?', a: 'After certification you will need to maintain your safety program and complete a surveillance audit periodically to keep your COR status. COR Pathways can continue to support you on a reduced ongoing basis after certification — we can discuss what that looks like at the end of your engagement.' },
+  { q: 'What happens after I get certified?', a: 'After certification you will need to maintain your safety program and complete a surveillance audit periodically to keep your COR status. COR Pathways can continue to support you on a reduced ongoing basis after certification; we can discuss what that looks like at the end of your engagement.' },
   { q: 'Do I need any safety experience to work with you?', a: 'No. Many of our clients have little to no formal safety program when they start working with us. That is completely normal and exactly what we are here for. We build everything from scratch if needed.' },
-  { q: 'What is the City of Ottawa COR deadline?', a: 'Starting January 1, 2027, all contractors bidding on City of Ottawa contracts valued over $100,000 must hold a valid COR certificate. If your company bids on municipal work in Ottawa and you are not yet COR certified, you need to start the process now — a 12 to 18 month engagement means time is already tight.' },
+  { q: 'What is the City of Ottawa COR deadline?', a: 'Starting January 1, 2027, all contractors bidding on City of Ottawa contracts valued over $100,000 must hold a valid COR certificate. If your company bids on municipal work in Ottawa and you are not yet COR certified, you need to start the process now; a 12 to 18 month engagement means time is already tight.' },
   { q: 'Can you manage our ISNetworld or Avetta account as well?', a: 'Yes. COR Pathways offers complete setup and ongoing management for ISNetworld, Avetta, and ComplyWorks accounts. See our Compliance Services page for full details and pricing.' },
 ]
 
@@ -122,7 +122,7 @@ export default function ConsultingPage() {
           </h1>
 
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '40px', maxWidth: '760px' }}>
-            COR Pathways combines hands-on safety consulting expertise with purpose-built software to guide Ontario construction companies through full COR certification — and to manage complete health and safety programs for smaller companies across Alberta, BC, and Saskatchewan.
+            COR Pathways combines hands-on safety consulting expertise with purpose-built software to guide Ontario construction companies through full COR certification, and to manage complete health and safety programs for smaller companies across Alberta, BC, and Saskatchewan.
           </p>
 
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '32px' }}>
@@ -131,8 +131,8 @@ export default function ConsultingPage() {
           </div>
 
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '60px' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.25)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 600, padding: '6px 16px', borderRadius: '999px' }}>Ontario — COR Certification</span>
-            <span style={{ display: 'inline-block', background: 'rgba(74,144,196,0.1)', border: '1px solid rgba(74,144,196,0.25)', color: '#7BB8E0', fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 600, padding: '6px 16px', borderRadius: '999px' }}>Alberta · BC · Saskatchewan — H&amp;S Program Management</span>
+            <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.25)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 600, padding: '6px 16px', borderRadius: '999px' }}>Ontario: COR Certification</span>
+            <span style={{ display: 'inline-block', background: 'rgba(74,144,196,0.1)', border: '1px solid rgba(74,144,196,0.25)', color: '#7BB8E0', fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 600, padding: '6px 16px', borderRadius: '999px' }}>Alberta · BC · Saskatchewan: H&amp;S Program Management</span>
           </div>
 
           <div style={{ width: '100%', maxWidth: '900px', height: '420px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 32px 80px rgba(0,0,0,0.4)', position: 'relative' }}>
@@ -150,7 +150,7 @@ export default function ConsultingPage() {
           </div>
 
           <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.9rem, 3.5vw, 2.75rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.2, marginBottom: '20px' }}>
-            COR Certification Consulting — from first day to certified.
+            COR Certification Consulting: from first day to certified.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, marginBottom: '56px', maxWidth: '820px' }}>
             The COR 2020 standard requires a fully documented, actively managed health and safety management system. Most construction companies do not have the internal resources or expertise to build one from scratch while running a business at the same time. That is exactly what we are here for.
@@ -158,7 +158,7 @@ export default function ConsultingPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '56px', alignItems: 'flex-start' }}>
             <div>
-              <ChecklistSection title="Program Development" items={['Complete health and safety management system build — all 14 elements', 'Health and safety policy and objectives', 'Roles, responsibilities, and accountabilities documentation', 'Hazard identification and assessment program', 'Safe work practices and safe job procedures', 'Emergency response plan', 'All required COR 2020 forms and templates']} />
+              <ChecklistSection title="Program Development" items={['Complete health and safety management system build: all 14 elements', 'Health and safety policy and objectives', 'Roles, responsibilities, and accountabilities documentation', 'Hazard identification and assessment program', 'Safe work practices and safe job procedures', 'Emergency response plan', 'All required COR 2020 forms and templates']} />
               <ChecklistSection title="Audit Preparation" items={['Gap analysis against all 14 COR elements', 'Action plan with prioritized tasks and timelines', 'Internal audit preparation and mock audit practice', 'Evidence package assembly for AuditSoft submission', 'Pre-audit review of all documentation', 'Guidance through the IHSA external audit process']} />
               <ChecklistSection title="Ongoing Support" items={['Monthly check-ins and program reviews', 'Form and document updates as your company grows', 'Certification expiry monitoring via the COR Pathways app', 'Support for all 14 elements throughout the engagement', 'Available by phone and email throughout the engagement']} />
             </div>
@@ -173,7 +173,7 @@ export default function ConsultingPage() {
                   <span style={{ fontFamily: 'var(--font-fraunces)', fontSize: '44px', fontWeight: 700, color: '#0D1F3C', lineHeight: 1 }}>$2,500</span>
                   <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: '#9CA3AF', fontWeight: 500 }}>/month</span>
                 </div>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: '#6B7280', marginBottom: '24px' }}>12 — 18 month engagement</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: '#6B7280', marginBottom: '24px' }}>12 to 18 month engagement</p>
 
                 <hr style={{ border: 'none', borderTop: '1px solid rgba(0,0,0,0.08)', marginBottom: '20px' }} />
 
@@ -181,10 +181,10 @@ export default function ConsultingPage() {
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#059669', marginBottom: '16px' }}>Your monthly engagement includes:</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '24px' }}>
                   {[
-                    { icon: '🕐', title: '25 — 40 Hours of Consulting Time Per Month', body: 'Behind-the-scenes work building your safety program, reviewing your forms and submissions, monitoring your app activity, and preparing your audit evidence. You get real work done on your file every single month — not just a check-in call.' },
-                    { icon: '📹', title: 'Weekly Zoom Calls — Approximately 3 Hours Each', body: 'One dedicated Zoom call per week to review progress, walk through completed work, address questions, and plan the week ahead. These are working sessions — not status updates.' },
-                    { icon: '📱', title: 'Live App Training for Your Entire Team', body: 'We conduct a dedicated Zoom training session with your full team — workers, supervisors, and admins — walking everyone through how to use the COR Pathways app. Forms, inspections, hazard assessments, certification uploads — your crew learns it all live with us on screen.' },
-                    { icon: '👁️', title: 'Daily App Monitoring and Real-Time Feedback', body: 'We monitor your COR Pathways account on a daily basis. When workers submit forms, we review them. When something is filled out incorrectly or a gap appears, we flag it immediately. You get active guidance — not a monthly report telling you what went wrong.' },
+                    { icon: '🕐', title: '25 to 40 Hours of Consulting Time Per Month', body: 'Behind-the-scenes work building your safety program, reviewing your forms and submissions, monitoring your app activity, and preparing your audit evidence. You get real work done on your file every single month, not just a check-in call.' },
+                    { icon: '📹', title: 'Weekly Zoom Calls, Approximately 3 Hours Each', body: 'One dedicated Zoom call per week to review progress, walk through completed work, address questions, and plan the week ahead. These are working sessions, not status updates.' },
+                    { icon: '📱', title: 'Live App Training for Your Entire Team', body: 'We conduct a dedicated Zoom training session with your full team — workers, supervisors, and admins — walking everyone through the COR Pathways app. Forms, inspections, hazard assessments, certification uploads: your crew learns it all live with us on screen.' },
+                    { icon: '👁️', title: 'Daily App Monitoring and Real-Time Feedback', body: 'We monitor your COR Pathways account on a daily basis. When workers submit forms, we review them. When something is filled out incorrectly or a gap appears, we flag it immediately. You get active guidance, not a monthly report telling you what went wrong.' },
                   ].map((f) => (
                     <div key={f.title} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                       <span style={{ fontSize: '20px', flexShrink: 0, lineHeight: 1.3 }}>{f.icon}</span>
@@ -202,39 +202,39 @@ export default function ConsultingPage() {
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#059669', marginBottom: '14px' }}>Your complete consulting package includes:</p>
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '9px', marginBottom: '24px' }}>
                   {[
-                    'All COR 2020 required forms — pre-built and ready for your team',
-                    'All required health and safety policies — written for your company and trades',
+                    'All COR 2020 required forms, pre-built and ready for your team',
+                    'All required health and safety policies, written for your company and trades',
                     'Safe work practices and safe job procedures for your specific operations',
-                    'Training needs assessment — we identify exactly what training your workers require',
-                    'PPE assessment and fitting guidance — we advise on the right equipment for each role',
+                    'Training needs assessment: we identify exactly what training your workers require',
+                    'PPE assessment and fitting guidance: we advise on the right equipment for each role',
                     'Hazard assessments for your trades and jobsites',
                     'Emergency response plan',
                     'Complete health and safety manual',
                     'Gap analysis against all 14 COR elements',
                     'Action plan with prioritized tasks and deadlines',
                     'Internal audit preparation',
-                    'Mock audit practice — all 14 elements',
+                    'Mock audit practice: all 14 elements',
                     'AuditSoft evidence package assembly',
-                    'COR Pathways platform — full access included free',
+                    'COR Pathways platform: full access included free',
                   ].map((item) => <CheckItem key={item}>{item}</CheckItem>)}
                 </ul>
                 <FilledBtn href="/contact" fullWidth>Book a Free Consultation</FilledBtn>
               </div>
 
-              {/* ── Card 2: 31–150 Employees ── */}
+              {/* Card 2: 31–150 Employees ── */}
               <div style={{ background: '#0D1F3C', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.2)', position: 'relative' }}>
                 <div style={{ height: '3px', background: 'linear-gradient(90deg, #34D399, #4A90C4)' }} />
                 <div style={{ padding: '2rem' }}>
                   {/* Header row */}
                   <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
-                    <span style={{ display: 'inline-block', background: 'rgba(13,31,60,0.6)', border: '1px solid rgba(52,211,153,0.3)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>31 — 150 Employees</span>
+                    <span style={{ display: 'inline-block', background: 'rgba(13,31,60,0.6)', border: '1px solid rgba(52,211,153,0.3)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>'31 to 150 Employees'</span>
                     <span style={{ display: 'inline-block', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '10px', fontWeight: 700, padding: '3px 10px', borderRadius: '999px', letterSpacing: '0.06em', textTransform: 'uppercase' }}>Most Popular</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginBottom: '4px' }}>
                     <span style={{ fontFamily: 'var(--font-fraunces)', fontSize: '44px', fontWeight: 700, color: '#ffffff', lineHeight: 1 }}>$5,000</span>
                     <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.45)', fontWeight: 500 }}>/month</span>
                   </div>
-                  <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', marginBottom: '24px' }}>12 — 18 month engagement</p>
+                  <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', marginBottom: '24px' }}>12 to 18 month engagement</p>
 
                   <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', marginBottom: '20px' }} />
 
@@ -242,9 +242,9 @@ export default function ConsultingPage() {
                   <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#34D399', marginBottom: '16px' }}>Your monthly engagement includes:</p>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '24px' }}>
                     {[
-                      { icon: '🕐', title: '40 — 60 Hours of Consulting Time Per Month', body: 'Significantly more behind-the-scenes consulting time to match the complexity of a larger team — more employees, more trades, more supervisors, more documentation, more daily monitoring. Your file gets the attention it needs.' },
-                      { icon: '📹', title: 'Two Zoom Calls Per Week — 6 to 8 Hours Per Week Total', body: 'Two dedicated working Zoom sessions per week to keep a larger engagement moving at the right pace. More frequent touchpoints mean faster progress and fewer bottlenecks as your team builds momentum toward certification.' },
-                      { icon: '📱', title: 'Live App Training for Your Entire Team', body: 'A dedicated Zoom training session for your full team — workers, supervisors, department heads, and admins — walking everyone through the COR Pathways platform live. For larger teams we can run multiple sessions by department or trade.' },
+                      { icon: '🕐', title: '40 to 60 Hours of Consulting Time Per Month', body: 'Significantly more behind-the-scenes consulting time to match the complexity of a larger team: more employees, more trades, more supervisors, more documentation, and more daily monitoring. Your file gets the attention it needs.' },
+                      { icon: '📹', title: 'Two Zoom Calls Per Week, 6 to 8 Hours Per Week Total', body: 'Two dedicated working Zoom sessions per week to keep a larger engagement moving at the right pace. More frequent touchpoints mean faster progress and fewer bottlenecks as your team builds momentum toward certification.' },
+                      { icon: '📱', title: 'Live App Training for Your Entire Team', body: 'A dedicated Zoom training session for your full team: workers, supervisors, department heads, and admins, walking everyone through the COR Pathways platform live. For larger teams we can run multiple sessions by department or trade.' },
                       { icon: '👁️', title: 'Daily App Monitoring and Real-Time Feedback', body: 'We monitor your account daily. With a larger team submitting more forms and inspections, daily monitoring is essential. We catch errors, flag gaps, and give real-time feedback so small issues do not become audit problems.' },
                     ].map((f) => (
                       <div key={f.title} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
@@ -267,8 +267,8 @@ export default function ConsultingPage() {
                       'Multi-department setup and supervisor management',
                       'Larger team onboarding and role-based training',
                       'Multiple Zoom training sessions by department if needed',
-                      'Priority support — faster response times throughout engagement',
-                      'COR Pathways platform — full access included free',
+                      'Priority support: faster response times throughout engagement',
+                      'COR Pathways platform: full access included free',
                     ].map((item) => <CheckItem key={item} textColor="rgba(255,255,255,0.8)">{item}</CheckItem>)}
                   </ul>
                   <FilledBtn href="/contact" fullWidth>Book a Free Consultation</FilledBtn>
@@ -278,7 +278,7 @@ export default function ConsultingPage() {
               {/* ── Note box ── */}
               <div style={{ background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.25)', borderLeft: '4px solid #34D399', borderRadius: '10px', padding: '20px 24px' }}>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#1F4D3A', lineHeight: 1.75 }}>
-                  Every consulting engagement — at either price point — is a hands-on working relationship. We are not selling you a template package and wishing you luck. We build your safety program with you, monitor your team&apos;s progress daily through the app, and stay actively involved until you are certified.
+                  Every consulting engagement, at either price point, is a hands-on working relationship. We are not selling you a template package and wishing you luck. We build your safety program with you, monitor your team&apos;s progress daily through the app, and stay actively involved until you are certified.
                 </p>
               </div>
 
@@ -298,7 +298,7 @@ export default function ConsultingPage() {
           </p>
           <div style={{ display: 'flex', gap: '48px', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', marginBottom: '48px' }}>
             <div style={{ textAlign: 'center' }}>
-              <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(2.2rem, 4.5vw, 3.4rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1, marginBottom: '8px' }}>12 — 18 months</p>
+              <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(2.2rem, 4.5vw, 3.4rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1, marginBottom: '8px' }}>12 to 18 months</p>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em', textTransform: 'uppercase', fontWeight: 600 }}>Typical COR certification timeline</p>
             </div>
             <div style={{ width: '1px', height: '60px', background: 'rgba(255,255,255,0.25)' }} />
@@ -385,11 +385,11 @@ export default function ConsultingPage() {
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {[
                     'Monthly program reviews and updates',
-                    'Document revisions at no extra charge — just let us know',
-                    'Insurance certificate submissions — you connect us with your broker or send the documents and we handle the submission',
-                    'WCB premium rate statement filings — we file them when they are due',
+                    'Document revisions at no extra charge; just let us know',
+                    'Insurance certificate submissions: you connect us with your broker or send the documents and we handle the submission',
+                    'WCB premium rate statement filings; we file them when they are due',
                     'Compliance monitoring via the COR Pathways app',
-                    'Workers enter safety information in the app — we review and keep records current',
+                    'Workers enter safety information in the app; we review and keep records current',
                   ].map((item) => (
                     <CheckItem key={item} color="#4A90C4">{item}</CheckItem>
                   ))}
@@ -511,7 +511,7 @@ export default function ConsultingPage() {
             Let&apos;s talk about getting you certified.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '520px', marginBottom: '40px' }}>
-            Book a free consultation and find out exactly what it takes — no obligation, no jargon, just a straight conversation about your company and what COR certification looks like for you.
+            Book a free consultation and find out exactly what it takes: no obligation, no jargon, just a straight conversation about your company and what COR certification looks like for you.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '24px' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>

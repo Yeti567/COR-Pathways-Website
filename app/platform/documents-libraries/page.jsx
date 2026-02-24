@@ -2,8 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Documents & Libraries — COR Pathways',
-  description: 'A complete document control system and six master libraries pre-loaded with construction industry content — built for COR certification.',
+  title: 'Documents & Libraries: COR Pathways',
+  description: 'A complete document control system and six master libraries pre-loaded with construction industry content, built for COR certification.',
 }
 
 const MAX_W = '1200px'
@@ -42,12 +42,12 @@ function OutlineBtn({ href, children, onDark = true }) {
 }
 
 const LIBRARIES = [
-  { icon: '⚠️', title: 'Hazards', count: '120+ construction hazards', body: 'A comprehensive library of construction hazards organized by trade and work type — each with recommended controls. Powers your hazard assessments and safe work practices automatically.' },
-  { icon: '🚜', title: 'Equipment', count: 'Your full equipment inventory', body: 'Track every piece of equipment your company owns or operates — make, model, serial number, location, and maintenance schedule. Powers equipment inspection forms and maintenance records.' },
+  { icon: '⚠️', title: 'Hazards', count: '120+ construction hazards', body: 'A comprehensive library of construction hazards organized by trade and work type, each with recommended controls. Powers your hazard assessments and safe work practices automatically.' },
+  { icon: '🚜', title: 'Equipment', count: 'Your full equipment inventory', body: 'Track every piece of equipment your company owns or operates: make, model, serial number, location, and maintenance schedule. Powers equipment inspection forms and maintenance records.' },
   { icon: '📋', title: 'Tasks', count: 'Job and task templates', body: 'A library of construction job tasks and work procedures that power your hazard assessments and toolbox talks. Add your own company-specific tasks at any time.' },
-  { icon: '📍', title: 'Jobsites', count: 'Active project registry', body: 'Every active project your company is working on — tracked by location, client, and status. Forms and inspections link to jobsites automatically so your records are always organized by project.' },
+  { icon: '📍', title: 'Jobsites', count: 'Active project registry', body: 'Every active project your company is working on, tracked by location, client, and status. Forms and inspections link to jobsites automatically so your records are always organized by project.' },
   { icon: '🧪', title: 'Safety Data Sheets', count: 'Chemical and material SDS records', body: 'Store and manage Safety Data Sheets for every chemical or hazardous material used on your job sites. Workers can access SDS documents instantly from any device in the field.' },
-  { icon: '⚖️', title: 'Legislation', count: 'OH&S regulations reference', body: 'A reference library of occupational health and safety regulations relevant to your province and industry. Supports Element 13 — Regulatory Awareness — and keeps your team informed of applicable legal requirements.' },
+  { icon: '⚖️', title: 'Legislation', count: 'OH&S regulations reference', body: 'A reference library of occupational health and safety regulations relevant to your province and industry. Supports Element 13 (Regulatory Awareness) and keeps your team informed of applicable legal requirements.' },
 ]
 
 const DOC_TYPES = [
@@ -65,14 +65,14 @@ export default function DocumentsLibrariesPage() {
         <div aria-hidden="true" style={{ position: 'absolute', top: '-10%', left: '50%', transform: 'translateX(-50%)', width: '800px', height: '500px', background: 'radial-gradient(ellipse at center, rgba(52,211,153,0.12) 0%, rgba(74,144,196,0.08) 40%, transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <span style={{ display: 'inline-block', background: 'rgba(74,144,196,0.15)', border: '1px solid rgba(74,144,196,0.3)', color: '#7BB8E0', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: '999px', marginBottom: '28px' }}>
-            Platform — Documents &amp; Libraries
+            Platform: Documents &amp; Libraries
           </span>
           <h1 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(2rem, 4.5vw, 3.2rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.15, maxWidth: '860px', marginBottom: '24px' }}>
             Every document your safety program needs.<br />
             <span style={{ color: '#7BB8E0' }}>Controlled, versioned, and audit-ready.</span>
           </h1>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '660px', marginBottom: '40px' }}>
-            COR Pathways gives you a complete document control system and six master libraries pre-loaded with construction industry content — so you spend less time building your safety program from scratch and more time running your business.
+            COR Pathways gives you a complete document control system and six master libraries pre-loaded with construction industry content, so you spend less time building your safety program from scratch and more time running your business.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '64px' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
@@ -93,17 +93,17 @@ export default function DocumentsLibrariesPage() {
               A safety program buried in a filing cabinet is not a safety program. It is a liability.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              COR auditors expect to see a living, controlled document system — not a binder that hasn't been updated since 2019. Your health and safety manual, your safe work practices, your hazard assessments, your policies and procedures — all of it needs to be current, version-controlled, and accessible to the people who need it.
+              COR auditors expect to see a living, controlled document system, not a binder that hasn’t been updated since 2019. Your health and safety manual, your safe work practices, your hazard assessments, your policies and procedures: all of it needs to be current, version-controlled, and accessible to the people who need it.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75 }}>
-              Ontario is the only province where document control is a formal COR audit requirement. But even in Alberta, BC, and Saskatchewan, having your safety documents organized, current, and accessible makes your program significantly stronger — and makes our job of managing it far easier.
+              Ontario is the only province where document control is a formal COR audit requirement. But even in Alberta, BC, and Saskatchewan, having your safety documents organized, current, and accessible makes your program significantly stronger, and makes our job of managing it far easier.
             </p>
           </div>
           <div style={{ background: '#0D1F3C', borderRadius: '16px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {[
-              { text: 'H&S Manual — last updated 2021, no version record', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
-              { text: 'Safe Work Practice — two versions in circulation, nobody knows which is current', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
-              { text: 'Emergency Response Plan — not linked to any audit element', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
+              { text: 'H&S Manual: last updated 2021, no version record', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
+              { text: 'Safe Work Practice: two versions in circulation, nobody knows which is current', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
+              { text: 'Emergency Response Plan: not linked to any audit element', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
             ].map((item) => (
               <div key={item.text} style={{ background: item.bg, border: `1px solid ${item.border}`, borderRadius: '10px', padding: '14px 16px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                 <span style={{ fontSize: '16px', flexShrink: 0, marginTop: '1px' }}>📁</span>
@@ -127,15 +127,15 @@ export default function DocumentsLibrariesPage() {
               A proper document control system. Built in.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.7, maxWidth: '620px', margin: '0 auto' }}>
-              The document registry is your central hub for every safety document in your company — organized, version-controlled, and mapped to your COR audit.
+              The document registry is your central hub for every safety document in your company, organized, version-controlled, and mapped to your COR audit.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '24px' }}>
             {[
-              { icon: '📂', title: 'Centralized Document Hub', body: 'Every safety document your company produces lives in one place — organized by type, folder, and COR element. Policies, procedures, safe work practices, manuals, and forms are all searchable and accessible to the right people based on their role.' },
-              { icon: '🔄', title: 'Full Version History', body: 'Every document maintains a complete revision history. When you update a policy or procedure, the previous version is archived automatically. Your auditor can see that documents are actively maintained and improved — not just created once and forgotten.' },
+              { icon: '📂', title: 'Centralized Document Hub', body: 'Every safety document your company produces lives in one place, organized by type, folder, and COR element. Policies, procedures, safe work practices, manuals, and forms are all searchable and accessible to the right people based on their role.' },
+              { icon: '🔄', title: 'Full Version History', body: 'Every document maintains a complete revision history. When you update a policy or procedure, the previous version is archived automatically. Your auditor can see that documents are actively maintained and improved, not just created once and forgotten.' },
               { icon: '✅', title: 'Document Review & Approval', body: 'Documents go through a structured review and approval process before they are published. Admins approve, internal auditors review, and the system records every step. Your document control process becomes part of your audit evidence automatically.' },
-              { icon: '🗂️', title: 'Mapped to Your Audit', body: 'Every document in the registry is linked to the COR element it supports. When you are building your audit evidence package, the platform knows which documents belong to which element — and flags any elements that are missing supporting documentation.' },
+              { icon: '🗂️', title: 'Mapped to Your Audit', body: 'Every document in the registry is linked to the COR element it supports. When you are building your audit evidence package, the platform knows which documents belong to which element, and flags any elements that are missing supporting documentation.' },
             ].map((card) => (
               <div key={card.title} style={{ background: '#ffffff', borderRadius: '16px', padding: '2rem', border: '1px solid rgba(0,0,0,0.06)' }}>
                 <span style={{ fontSize: '28px', display: 'block', marginBottom: '14px' }}>{card.icon}</span>

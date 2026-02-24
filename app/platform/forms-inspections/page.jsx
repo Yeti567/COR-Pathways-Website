@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Forms & Inspections — COR Pathways',
+  title: 'Forms & Inspections: COR Pathways',
   description: 'Every COR 2020 form your audit needs — digital, organized by element, and ready for your team from day one.',
 }
 
@@ -74,14 +74,14 @@ export default function FormsInspectionsPage() {
         <div aria-hidden="true" style={{ position: 'absolute', top: '-10%', left: '50%', transform: 'translateX(-50%)', width: '800px', height: '500px', background: 'radial-gradient(ellipse at center, rgba(52,211,153,0.12) 0%, rgba(74,144,196,0.08) 40%, transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <span style={{ display: 'inline-block', background: 'rgba(74,144,196,0.15)', border: '1px solid rgba(74,144,196,0.3)', color: '#7BB8E0', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: '999px', marginBottom: '28px' }}>
-            Platform — Forms &amp; Inspections
+            Platform: Forms &amp; Inspections
           </span>
           <h1 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(2.2rem, 5vw, 3.4rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.15, maxWidth: '820px', marginBottom: '24px' }}>
             Every form your audit needs.<br />
             <span style={{ color: '#7BB8E0' }}>Digital, organized, and linked to the right element.</span>
           </h1>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '640px', marginBottom: '40px' }}>
-            COR Pathways replaces paper forms, scattered spreadsheets, and mismatched Word documents with a complete digital forms system — built around the COR 2020 standard from the ground up.
+            COR Pathways replaces paper forms, scattered spreadsheets, and mismatched Word documents with a complete digital forms system, built around the COR 2020 standard from the ground up.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '64px' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
@@ -102,7 +102,7 @@ export default function FormsInspectionsPage() {
               Paper forms get lost. Spreadsheets get out of date. And auditors notice.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              When an IHSA auditor asks to see your workplace inspection records, your toolbox talk sign-in sheets, or your hazard assessment forms — they need to be complete, consistent, and traceable. A folder of photocopied forms with missing dates and illegible signatures won't cut it.
+              When an IHSA auditor asks to see your workplace inspection records, your toolbox talk sign-in sheets, or your hazard assessment forms: they need to be complete, consistent, and traceable. A folder of photocopied forms with missing dates and illegible signatures won't cut it.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75 }}>
               COR Pathways digitizes every form required by the COR 2020 standard. Every submission is timestamped, linked to the right employee, mapped to the correct audit element, and stored permanently. Your records are always complete, always findable, and always audit-ready.
@@ -110,9 +110,9 @@ export default function FormsInspectionsPage() {
           </div>
           <div style={{ background: '#0D1F3C', borderRadius: '16px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {[
-              { text: 'Toolbox talk sign-in sheet — handwriting illegible, date missing', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
-              { text: 'Weekly inspection form — last submitted 6 weeks ago', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
-              { text: 'Hazard assessment — not linked to any jobsite record', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
+              { text: 'Toolbox talk sign-in sheet: handwriting illegible, date missing', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
+              { text: 'Weekly inspection form: last submitted 6 weeks ago', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
+              { text: 'Hazard assessment: not linked to any jobsite record', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
             ].map((item) => (
               <div key={item.text} style={{ background: item.bg, border: `1px solid ${item.border}`, borderRadius: '10px', padding: '14px 16px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                 <span style={{ fontSize: '16px', flexShrink: 0, marginTop: '1px' }}>📄</span>
@@ -174,7 +174,7 @@ export default function FormsInspectionsPage() {
               Forms that pull from your master libraries automatically.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              Four of the most commonly used forms in COR Pathways are integrated directly with your master libraries — hazards, equipment, jobsites, and tasks. When you open a hazard assessment, your library of 120+ construction hazards is already there. When you start an equipment inspection, your equipment inventory auto-populates. No re-entering the same information over and over.
+              Four of the most commonly used forms in COR Pathways are integrated directly with your master libraries: hazards, equipment, jobsites, and tasks. When you open a hazard assessment, your library of 120+ construction hazards is already there. When you start an equipment inspection, your equipment inventory auto-populates. No re-entering the same information over and over.
             </p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '0' }}>
               {[
@@ -212,7 +212,7 @@ export default function FormsInspectionsPage() {
             <SiteImage src="/images/Form Template Builder.webp" alt="Form template builder interface showing drag-and-drop fields, field types, and a form preview panel" height={300} />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.3)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '6px 16px', borderRadius: '999px' }}>
-                Custom form templates — no coding required
+                Custom form templates: no coding required
               </span>
             </div>
           </div>
@@ -224,15 +224,15 @@ export default function FormsInspectionsPage() {
               Need a custom form? Build it yourself in minutes.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '20px' }}>
-              Every company has forms unique to their operations — custom checklists, site-specific inspection forms, client-required documentation. COR Pathways includes a full form template builder so admins can create any form they need without touching a line of code.
+              Every company has forms unique to their operations: custom checklists, site-specific inspection forms, client-required documentation. COR Pathways includes a full form template builder so admins can create any form they need without touching a line of code.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '32px' }}>
-              You can also import existing PDF forms directly into the platform — COR Pathways converts them into digital, submittable forms that feed directly into your audit evidence.
+              You can also import existing PDF forms directly into the platform; COR Pathways converts them into digital, submittable forms that feed directly into your audit evidence.
             </p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
                 'Drag-and-drop form template builder',
-                'PDF form import — converts to digital automatically',
+                'PDF form import: converts to digital automatically',
                 'Custom forms link to COR elements just like standard forms',
                 'Forms available to workers on mobile instantly after publishing',
               ].map((item) => (
@@ -260,10 +260,10 @@ export default function FormsInspectionsPage() {
               Your crew completes forms from the job site. You see everything from the office.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              COR Pathways is a Progressive Web App — it works on any phone or tablet without downloading anything from an app store. Workers can complete hazard assessments, toolbox talks, inspection forms, and incident reports right from the job site, in real time.
+              COR Pathways is a Progressive Web App; it works on any phone or tablet without downloading anything from an app store. Workers can complete hazard assessments, toolbox talks, inspection forms, and incident reports right from the job site, in real time.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '36px' }}>
-              Admins and supervisors see every submission instantly. Forms are timestamped, GPS-optional, and linked to the worker's profile and the relevant jobsite record. When your auditor asks for your last 12 months of workplace inspections, they're all there — complete and organized.
+              Admins and supervisors see every submission instantly. Forms are timestamped, GPS-optional, and linked to the worker's profile and the relevant jobsite record. When your auditor asks for your last 12 months of workplace inspections, they're all there, complete and organized.
             </p>
 
             {/* Three stat callouts */}

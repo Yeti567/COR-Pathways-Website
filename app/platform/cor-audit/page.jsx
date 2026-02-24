@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'COR Audit Dashboard — COR Pathways',
+  title: 'COR Audit Dashboard: COR Pathways',
   description: 'Track all 14 COR 2020 elements in real time. Know your weighted compliance score before your auditor does.',
 }
 
@@ -77,14 +77,14 @@ export default function CorAuditPage() {
         <div aria-hidden="true" style={{ position: 'absolute', top: '-10%', left: '50%', transform: 'translateX(-50%)', width: '800px', height: '500px', background: 'radial-gradient(ellipse at center, rgba(52,211,153,0.12) 0%, rgba(74,144,196,0.08) 40%, transparent 70%)', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <span style={{ display: 'inline-block', background: 'rgba(74,144,196,0.15)', border: '1px solid rgba(74,144,196,0.3)', color: '#7BB8E0', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: '999px', marginBottom: '28px' }}>
-            Platform — COR Audit Management
+            Platform: COR Audit Management
           </span>
           <h1 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.15, maxWidth: '780px', marginBottom: '24px' }}>
             Know exactly where you stand.<br />
             <span style={{ color: '#7BB8E0' }}>Every element. Every day.</span>
           </h1>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '640px', marginBottom: '40px' }}>
-            The COR Pathways audit dashboard tracks all 14 elements of the COR 2020 standard in real time — so you always know what's complete, what's missing, and how close you are to certification.
+            The COR Pathways audit dashboard tracks all 14 elements of the COR 2020 standard in real time, so you always know what's complete, what's missing, and how close you are to certification.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '64px' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
@@ -105,7 +105,7 @@ export default function CorAuditPage() {
               COR certification is complex. Most companies don't know where the gaps are until it's too late.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              The COR 2020 standard has 14 elements, each with weighted scoring. Miss a requirement in a high-weight element and your entire audit score drops — even if everything else is perfect. Most companies going into their first audit have no idea which elements are weak until an auditor tells them.
+              The COR 2020 standard has 14 elements, each with weighted scoring. Miss a requirement in a high-weight element and your entire audit score drops, even if everything else is perfect. Most companies going into their first audit have no idea which elements are weak until an auditor tells them.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75 }}>
               COR Pathways eliminates that uncertainty. Every element is tracked continuously, scored in real time, and linked to the actual forms and documents that prove compliance. You walk into your audit knowing exactly what your score will be.
@@ -113,9 +113,9 @@ export default function CorAuditPage() {
           </div>
           <div style={{ background: '#0D1F3C', borderRadius: '16px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {[
-              { text: 'Element 10 — Incident Investigation: 3 forms missing', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
-              { text: 'Element 04 — Competency & Training: 2 certifications expired', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
-              { text: 'Element 02 — Hazard Identification: Monthly review overdue', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
+              { text: 'Element 10: Incident Investigation, 3 forms missing', color: '#EF4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.25)' },
+              { text: 'Element 04: Competency & Training, 2 certifications expired', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
+              { text: 'Element 02: Hazard Identification, monthly review overdue', color: '#F59E0B', bg: 'rgba(245,158,11,0.1)', border: 'rgba(245,158,11,0.25)' },
             ].map((item) => (
               <div key={item.text} style={{ background: item.bg, border: `1px solid ${item.border}`, borderRadius: '10px', padding: '14px 16px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                 <span style={{ fontSize: '16px', flexShrink: 0, marginTop: '1px' }}>⚠️</span>
@@ -124,7 +124,7 @@ export default function CorAuditPage() {
             ))}
             <div style={{ background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.25)', borderRadius: '10px', padding: '14px 16px', display: 'flex', alignItems: 'flex-start', gap: '10px', marginTop: '4px' }}>
               <span style={{ fontSize: '16px', flexShrink: 0, marginTop: '1px' }}>✅</span>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 500, color: '#34D399', lineHeight: 1.5 }}>COR Pathways identifies these gaps automatically — before your auditor does.</p>
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 500, color: '#34D399', lineHeight: 1.5 }}>COR Pathways identifies these gaps automatically, before your auditor does.</p>
             </div>
           </div>
         </div>
@@ -181,10 +181,10 @@ export default function CorAuditPage() {
               Not all elements are equal. The platform knows the difference.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              The COR 2020 standard uses weighted scoring. Elements 1, 2, and 3 — your management system, hazard identification, and hazard control — carry a 1.2x weight multiplier. Elements 4, 10, and 11 carry 1.1x. Getting these right matters more than anything else in your audit.
+              The COR 2020 standard uses weighted scoring. Elements 1, 2, and 3 (your management system, hazard identification, and hazard control) carry a 1.2x weight multiplier. Elements 4, 10, and 11 carry 1.1x. Getting these right matters more than anything else in your audit.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '36px' }}>
-              COR Pathways shows you your weighted compliance score at all times — not just a raw count of completed items. You always see the number that actually matters: the score your auditor will calculate.
+              COR Pathways shows you your weighted compliance score at all times, not just a raw count of completed items. You always see the number that actually matters: the score your auditor will calculate.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
               {[
@@ -214,10 +214,10 @@ export default function CorAuditPage() {
           <div>
             <SectionLabel>AuditSoft Integration</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.25, marginBottom: '24px' }}>
-              One click. Your entire evidence package — exported.
+              One click. Your entire evidence package, exported.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '20px' }}>
-              AuditSoft is the audit documentation platform used by IHSA-certified auditors across Ontario. When your audit date arrives, COR Pathways exports your entire evidence package — all forms, documents, certifications, and records — directly into AuditSoft format with one click.
+              AuditSoft is the audit documentation platform used by IHSA-certified auditors across Ontario. When your audit date arrives, COR Pathways exports your entire evidence package, all forms, documents, certifications, and records, directly into AuditSoft format with one click.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '32px' }}>
               No scrambling to find documents. No last-minute printing. No gaps. Just a clean, complete audit submission ready to go.
@@ -277,7 +277,7 @@ export default function CorAuditPage() {
                 'Simulates real IHSA auditor questioning style',
                 'Covers all 14 COR elements',
                 'Identifies knowledge gaps before your real audit',
-                'Available any time — practice as often as you need',
+                'Available any time; practice as often as you need',
               ].map((item) => (
                 <li key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151' }}>
                   <span style={{ color: '#34D399', fontWeight: 700, flexShrink: 0, marginTop: '1px' }}>→</span>
