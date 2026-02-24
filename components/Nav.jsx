@@ -316,7 +316,7 @@ function MobileDrawer({ open, onClose, pathname }) {
               alt="COR Pathways"
               width={140}
               height={38}
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'contain', backgroundColor: '#0D1F3C' }}
             />
           </Link>
 
@@ -666,7 +666,7 @@ export default function Nav() {
               alt="COR Pathways"
               width={160}
               height={44}
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'contain', backgroundColor: '#0D1F3C' }}
               priority
             />
           </Link>
