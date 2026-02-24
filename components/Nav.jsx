@@ -758,6 +758,7 @@ export default function Nav() {
               { label: 'Compliance', href: '/compliance' },
               { label: 'Pricing', href: '/pricing' },
               { label: 'About', href: '/about' },
+              { label: 'Contact', href: '/contact' },
             ].map((item) => (
               <Link
                 key={item.href}
