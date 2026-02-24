@@ -81,7 +81,7 @@ export default function Footer() {
             {/* Brand */}
             <div className="footer-brand">
               <Link href="/" style={{ textDecoration: 'none', display: 'inline-block', marginBottom: '16px' }}>
-                <Image src="/images/cor pathways bg removed.png" alt="COR Pathways" width={150} height={40} style={{ objectFit: 'contain', mixBlendMode: 'multiply' }} />
+                <Image src="/images/cor pathways logo bg removed.png" alt="COR Pathways" width={150} height={40} style={{ objectFit: 'contain', mixBlendMode: 'multiply' }} />
               </Link>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.5)', lineHeight: 1.75, marginBottom: '20px', maxWidth: '260px' }}>
                 COR certification consulting, contractor compliance management, and purpose-built safety software for construction companies across Canada.
