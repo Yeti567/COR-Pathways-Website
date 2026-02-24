@@ -37,9 +37,6 @@ export default function AboutPage() {
         <div aria-hidden="true" style={{ position: 'absolute', top: '10%', right: '-5%', width: '700px', height: '700px', background: 'radial-gradient(ellipse at center, rgba(52,211,153,0.08) 0%, rgba(74,144,196,0.06) 40%, transparent 70%)', pointerEvents: 'none' }} />
         <div aria-hidden="true" style={{ position: 'absolute', bottom: '5%', left: '-8%', width: '500px', height: '500px', background: 'radial-gradient(ellipse at center, rgba(74,144,196,0.08) 0%, transparent 60%)', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', background: 'rgba(123,184,224,0.12)', border: '1px solid rgba(123,184,224,0.3)', padding: '6px 16px', borderRadius: '999px', marginBottom: '32px' }}>
-            <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#7BB8E0' }}>About COR Pathways</span>
-          </div>
           <h1 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(2.4rem, 5vw, 3.6rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.15, marginBottom: '28px', letterSpacing: '-0.02em', maxWidth: '860px' }}>
             Safety expertise you can trust.<br /><span style={{ color: '#7BB8E0' }}>Software built to prove it.</span>
           </h1>
