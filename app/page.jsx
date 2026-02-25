@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'COR Pathways: COR Certification & Health and Safety Management',
-  description: 'COR Pathways helps Ontario construction companies get COR certified before the 2027 deadline and manages complete Health & Safety programs across Alberta, BC, and Saskatchewan.',
+  description: 'COR Pathways delivers COR certification consulting in Ontario and H&S program management across Alberta, BC, and Saskatchewan. Beat the 2027 deadline.',
 }
 
 const MAX_W = '1200px'

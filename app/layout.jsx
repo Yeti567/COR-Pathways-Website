@@ -3,9 +3,8 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'COR Pathways — Construction Safety Management',
-  description:
-    'COR Pathways helps construction companies achieve COR certification and manage health & safety programs across Canada.',
+  title: 'COR Pathways: COR Certification & Health and Safety Management',
+  description: 'COR Pathways helps Canadian construction companies get COR certified, manage contractor compliance, and run their safety programs with purpose-built software.',
 }
 
 export const viewport = {

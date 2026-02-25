@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Forms & Inspections: COR Pathways',
-  description: 'Every COR 2020 form your audit needs — digital, organized by element, and ready for your team from day one.',
+  description: 'Every COR 2020 form your audit needs: digital, organized by element, timestamped, and linked to the right employee. Ready for your team from day one.',
 }
 
 const MAX_W = '1200px'

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Documents & Libraries: COR Pathways',
-  description: 'A complete document control system and six master libraries pre-loaded with construction industry content, built for COR certification.',
+  description: 'Version-controlled document registry and six master libraries pre-loaded with construction hazards, equipment, tasks, and legislation. Built for COR certification.',
 }
 
 const MAX_W = '1200px'

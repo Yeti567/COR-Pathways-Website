@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'COR Audit Dashboard: COR Pathways',
-  description: 'Track all 14 COR 2020 elements in real time. Know your weighted compliance score before your auditor does.',
+  description: 'Track all 14 COR 2020 elements in real time, know your weighted score before your auditor arrives, and export a complete evidence package with one click.',
 }
 
 const MAX_W = '1200px'

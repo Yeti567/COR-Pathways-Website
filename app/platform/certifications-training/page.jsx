@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Certifications & Training: COR Pathways',
-  description: 'Track every employee certification, training record, and competency assessment, and get alerted before anything lapses.',
+  description: 'Track employee certifications, training records, and competency requirements. Get automatic expiry alerts before First Aid, WHMIS, or operator tickets lapse.',
 }
 
 const MAX_W = '1200px'
