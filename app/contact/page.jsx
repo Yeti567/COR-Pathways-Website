@@ -260,6 +260,13 @@ export default function ContactPage() {
                   Compliance management: ISNetworld, Avetta, ComplyWorks, available to contractors across all of Canada
                 </p>
               </div>
+              {/* Calendly */}
+              <div style={{ background: '#0D1F3C', borderRadius: '16px', padding: '24px', border: '1px solid rgba(52,211,153,0.3)' }}>
+                <span style={{ fontSize: '28px', display: 'block', marginBottom: '12px' }}>📅</span>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#34D399', marginBottom: '8px' }}>Book a Time Directly</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6, marginBottom: '16px' }}>Pick a time that works for you and we will have a free 30-minute consultation call, no back-and-forth required.</p>
+                <a href="https://calendly.com/blake-safetyconsultant/30min" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', background: '#34D399', color: '#0D1F3C', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 700, padding: '12px 24px', borderRadius: '8px', textDecoration: 'none' }}>Book a Free Consultation →</a>
+              </div>
               {/* Free consultation note */}
               <div style={{ background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.25)', borderLeft: '4px solid #34D399', borderRadius: '12px', padding: '20px 24px' }}>
                 <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '17px', fontWeight: 700, color: '#0D1F3C', marginBottom: '8px' }}>Free consultation, no obligation</p>
@@ -366,6 +373,7 @@ export default function ContactPage() {
             Every month you wait is a month off your certification timeline. Reach out today and let&apos;s figure out what it takes to get your company where it needs to be.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '24px' }}>
+            <a href="https://calendly.com/blake-safetyconsultant/30min" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', background: '#34D399', color: '#0D1F3C', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 700, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Book a Free Consultation →</a>
             <a href="tel:7808325158" style={{ display: 'inline-block', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Call now — tel. 780-832-5158</a>
             <a href="#contact-form" style={{ display: 'inline-block', background: 'transparent', color: '#ffffff', border: '1.5px solid rgba(255,255,255,0.35)', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Send a Message</a>
           </div>

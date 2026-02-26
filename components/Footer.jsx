@@ -20,6 +20,7 @@ const COMPANY = [
   { label: 'About', href: '/about' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'Contact', href: '/contact' },
+  { label: 'Book a Consultation', href: 'https://calendly.com/blake-safetyconsultant/30min', external: true },
 ]
 
 export default function Footer() {
@@ -122,7 +123,11 @@ export default function Footer() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 {COMPANY.map((l) => (
                   <li key={l.label}>
-                    <Link href={l.href} className="footer-link">{l.label}</Link>
+                    {l.external ? (
+                      <a href={l.href} target="_blank" rel="noopener noreferrer" className="footer-link">{l.label}</a>
+                    ) : (
+                      <Link href={l.href} className="footer-link">{l.label}</Link>
+                    )}
                   </li>
                 ))}
               </ul>

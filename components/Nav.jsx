@@ -824,8 +824,10 @@ export default function Nav() {
             </Link>
 
             {/* Start Free Trial — hidden on mobile */}
-            <Link
-              href="/contact"
+            <a
+              href="https://calendly.com/blake-safetyconsultant/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cta-button"
               style={{
                 background: '#059669',
@@ -843,7 +845,7 @@ export default function Nav() {
               onMouseLeave={(e) => { e.currentTarget.style.background = '#059669' }}
             >
               Book a Free Consultation
-            </Link>
+            </a>
 
             {/* Hamburger — mobile only */}
             <button
