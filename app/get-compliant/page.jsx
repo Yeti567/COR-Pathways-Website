@@ -448,16 +448,16 @@ function ContactForm() {
 ───────────────────────────────────────────── */
 const PLATFORM_DATA = {
   isn: {
-    whatItIs: 'ISNetworld (ISN) is the largest contractor management platform in North America, used by over 700 hiring clients including Shell, Suncor, Devon Energy, and major utilities. If you work in oil & gas, energy, construction, or industrial services — you almost certainly need ISNetworld.',
-    whyHard: "ISN analysts review every safety program against an exacting standard. Programs that don't contain the precise language they're looking for — even if your policy clearly addresses the hazard — get rejected. Getting a single RAVS® section to 100% can take weeks of back-and-forth for a company doing this for the first time.",
+    whatItIs: 'ISNetworld (ISN) is the largest contractor management platform in North America, used by over 700 hiring clients including Shell, Suncor, Devon Energy, and major utilities. If you work in oil & gas, energy, construction, or industrial services, you almost certainly need ISNetworld.',
+    whyHard: "ISN analysts review every safety program against an exacting standard. Programs that don't contain the precise language they're looking for (even if your policy clearly addresses the hazard) get rejected. Getting a single RAVS® section to 100% can take weeks of back-and-forth for a company doing this for the first time.",
     requirements: ['Company Profile & MSQ® (Management System Questionnaire)', 'RAVS® Written Safety Programs (tailored to your trades and hiring clients)', 'Insurance Documents (COI with specific endorsements per client)', 'OSHA 300 Logs / EMR Letter from your insurance broker', 'Employee training records and certifications', 'Incident rate data (TRIR, DART)', 'Annual renewal questionnaire (Q4 each year)'],
-    howWeHandle: 'We access your RAVS® Safety Program Matrix, identify exactly which programs your hiring clients require, write or revise each one to 100% passing standards, and upload directly. We guarantee passing scores — if any program gets less than 100%, we fix it at no additional cost.',
+    howWeHandle: 'We access your RAVS® Safety Program Matrix, identify exactly which programs your hiring clients require, write or revise each one to 100% passing standards, and upload directly. We guarantee passing scores. If any program gets less than 100%, we fix it at no additional cost.',
     ctaLabel: 'Get Started with ISNetworld',
   },
   avetta: {
-    whatItIs: 'Avetta connects large organizations — including BP, Chevron, Mosaic, and dozens of Fortune 500 companies — with pre-qualified contractors and suppliers. It focuses on insurance verification, safety prequalification, and worker-level compliance.',
-    whyHard: "Avetta's forms are rigid and assume a corporate structure that doesn't match most small contractors. Definitions are unclear, requirements vary by client, and the support team is slow to respond. Many contractors get charged per connection — costs that spiral quickly.",
-    requirements: ['Company Registration ($199 setup fee paid directly to Avetta)', 'PQF (Prequalification Form) — company details, safety history, financials', 'Insurance certificates with client-specific requirements', 'Safety manual review and gap analysis', 'Worker profiles and training records', 'Annual update questionnaire', 'Client-specific questionnaires for each connection'],
+    whatItIs: 'Avetta connects large organizations (including BP, Chevron, Mosaic, and dozens of Fortune 500 companies) with pre-qualified contractors and suppliers. It focuses on insurance verification, safety prequalification, and worker-level compliance.',
+    whyHard: "Avetta's forms are rigid and assume a corporate structure that doesn't match most small contractors. Definitions are unclear, requirements vary by client, and the support team is slow to respond. Many contractors get charged per connection, costs that spiral quickly.",
+    requirements: ['Company Registration ($199 setup fee paid directly to Avetta)', 'PQF (Prequalification Form): company details, safety history, financials', 'Insurance certificates with client-specific requirements', 'Safety manual review and gap analysis', 'Worker profiles and training records', 'Annual update questionnaire', 'Client-specific questionnaires for each connection'],
     howWeHandle: 'We complete your PQF, write or update your safety manual to close all Avetta audit gaps, upload insurance and WCB rate sheets, and monitor your account. We can also transfer documentation from your ISNetworld or ComplyWorks accounts directly into Avetta, saving time and ensuring consistency.',
     ctaLabel: 'Get Started with Avetta',
   },
@@ -471,13 +471,13 @@ const PLATFORM_DATA = {
 }
 
 const FAQS = [
-  { q: 'Do I need all three platforms?', a: "Not necessarily. It depends entirely on which companies you want to work for. ISNetworld is dominant in oil & gas and energy. Avetta is widely used in utilities and Fortune 500 supply chains. ComplyWorks is common in Western Canada and industrial sectors. We'll help you identify which platforms your target clients actually require — and recommend only what makes business sense for your company." },
-  { q: 'How can you get us compliant in 48 hours?', a: "Because we've done this hundreds of times. We know exactly what every platform is looking for, what language passes RAVS® review, and how to submit documents correctly the first time. We've eliminated all the trial and error. The 48-hour guarantee applies to account setup and initial submission — final platform approval depends on the platform's review queue, but we submit everything needed on Day 1." },
+  { q: 'Do I need all three platforms?', a: "Not necessarily. It depends entirely on which companies you want to work for. ISNetworld is dominant in oil & gas and energy. Avetta is widely used in utilities and Fortune 500 supply chains. ComplyWorks is common in Western Canada and industrial sectors. We'll help you identify which platforms your target clients actually require and recommend only what makes business sense for your company." },
+  { q: 'How can you get us compliant in 48 hours?', a: "Because we've done this hundreds of times. We know exactly what every platform is looking for, what language passes RAVS® review, and how to submit documents correctly the first time. We've eliminated all the trial and error. The 48-hour guarantee applies to account setup and initial submission. Final platform approval depends on the platform's review queue, but we submit everything needed on Day 1." },
   { q: 'What if ISNetworld rejects one of our safety programs?', a: "We fix it at no additional charge. Our service includes unlimited revisions until every section achieves 100% approval. We don't consider the job done until you're green." },
   { q: 'Can you take over an existing ISNetworld / Avetta / ComplyWorks account?', a: "Yes. Many of our clients come to us after struggling with their accounts for months. We take over management of existing accounts, clean up deficiencies, and bring you back to fully approved status. We'll do a free audit of your current account status before you commit to anything." },
-  { q: 'Do you write our safety manual from scratch?', a: "If you don't have one, yes — we build it. If you have one, we review it and make the targeted updates needed to pass platform review. We write programs specific to your scope of work and your actual hiring client requirements, not generic boilerplate." },
+  { q: 'Do you write our safety manual from scratch?', a: "If you don't have one, yes. We build it. If you have one, we review it and make the targeted updates needed to pass platform review. We write programs specific to your scope of work and your actual hiring client requirements, not generic boilerplate." },
   { q: "What happens after we're approved? Will we fall out of compliance?", a: "Not with our Annual Maintenance Plan. We monitor your accounts year-round, handle all renewals and updates, respond to new client requirements, and alert you if anything needs attention. Most of our clients have never had a compliance lapse since signing up." },
-  { q: 'Is CorPathway affiliated with ISNetworld, Avetta, or ComplyWorks?', a: 'No. CorPathway is an independent consulting firm. We are not endorsed, sponsored, or affiliated with any of the three platforms. We work on your behalf — not theirs.' },
+  { q: 'Is CorPathway affiliated with ISNetworld, Avetta, or ComplyWorks?', a: 'No. CorPathway is an independent consulting firm. We are not endorsed, sponsored, or affiliated with any of the three platforms. We work on your behalf, not theirs.' },
 ]
 
 /* ─────────────────────────────────────────────
@@ -529,7 +529,7 @@ export default function GetCompliantPage() {
             <span style={{ color: ORANGE }}>APPROVED IN 48 HRS.</span>
           </h1>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: 'clamp(1rem, 2vw, 1.2rem)', color: MUTED, maxWidth: '600px', marginBottom: '40px', lineHeight: 1.75 }}>
-            We handle every document, every questionnaire, every RAVS® section —
+            We handle every document, every questionnaire, every RAVS® section,
             so you can stop fighting the platforms and start winning contracts.
           </p>
 
@@ -580,15 +580,15 @@ export default function GetCompliantPage() {
             If you're a contractor trying to get compliant on ISNetworld, Avetta, or ComplyWorks, you've already discovered what thousands of others have complained about online:
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '40px' }}>
-            <PainCard platform="ISNetworld" headline={`"It's Like a Second Full-Time Job"`} body={`You paid $875+ to get in. Then you discovered the RAVS® questionnaires, the MSQ®, the written safety programs tailored to each hiring client — each one capable of failing you if a single phrase doesn't match their exact expectations.`} quote={`"I would rather have a root canal than use ISNetworld."`} delay={0} />
-            <PainCard platform="Avetta" headline='"Expensive, Confusing, and Nobody Answers the Phone"' body="Avetta is the most expensive platform per connection — and contractors are forced to subscribe because their clients require it. Rigid forms, unclear requirements, auto-pay charges without approval, and AI-powered support that puts you on hold indefinitely." quote='"Painful and frustrating. Customer service has gotten worse."' delay={100} />
-            <PainCard platform="ComplyWorks" headline='"Intimidating Questionnaires That Never Seem to End"' body="ComplyWorks questionnaires are detailed, industry-specific, and easy to get wrong. Without someone who knows the platform inside and out, you can spend weeks going back and forth — reuploading, resubmitting, re-explaining — while jobs slip away." quote='"Filling out ComplyWorks questionnaires is intimidating and time-consuming."' delay={200} />
+            <PainCard platform="ISNetworld" headline={`"It's Like a Second Full-Time Job"`} body={`You paid $875+ to get in. Then you discovered the RAVS® questionnaires, the MSQ®, the written safety programs tailored to each hiring client, each one capable of failing you if a single phrase doesn't match their exact expectations.`} quote={`"I would rather have a root canal than use ISNetworld."`} delay={0} />
+            <PainCard platform="Avetta" headline='"Expensive, Confusing, and Nobody Answers the Phone"' body="Avetta is the most expensive platform per connection, and contractors are forced to subscribe because their clients require it. Rigid forms, unclear requirements, auto-pay charges without approval, and AI-powered support that puts you on hold indefinitely." quote='"Painful and frustrating. Customer service has gotten worse."' delay={100} />
+            <PainCard platform="ComplyWorks" headline='"Intimidating Questionnaires That Never Seem to End"' body="ComplyWorks questionnaires are detailed, industry-specific, and easy to get wrong. Without someone who knows the platform inside and out, you can spend weeks going back and forth: reuploading, resubmitting, re-explaining, while jobs slip away." quote='"Filling out ComplyWorks questionnaires is intimidating and time-consuming."' delay={200} />
           </div>
           {/* Callout */}
           <div style={{ background: ORANGE, borderRadius: '16px', padding: '36px 40px', textAlign: 'center' }}>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#fff', lineHeight: 1.75 }}>
               <strong style={{ fontSize: '18px', display: 'block', marginBottom: '8px' }}>Every day your compliance is incomplete, you are invisible to hiring clients.</strong>
-              Contracts are being awarded RIGHT NOW to companies that are approved — and yours isn't one of them.
+              Contracts are being awarded RIGHT NOW to companies that are approved. Yours isn't one of them.
             </p>
           </div>
         </div>

@@ -85,18 +85,18 @@ const PAIN_POINTS = [
   },
   {
     title: '"I built a safety program but I failed the audit."',
-    body: 'Studies show that 70% of companies fail their first COR audit due to inadequate preparation. The most common reason? A safety manual that exists on paper but isn\'t being implemented in the field. Auditors interview workers, walk your site, and check whether your system is actually in use — not just filed away.',
-    fix: 'Our consulting team conducts a gap assessment and mock audit before your real one. The app tracks field evidence in real time — inspections, toolbox talks, hazard assessments — so you can prove your system is live, not theoretical.',
+    body: 'Studies show that 70% of companies fail their first COR audit due to inadequate preparation. The most common reason? A safety manual that exists on paper but isn\'t being implemented in the field. Auditors interview workers, walk your site, and check whether your system is actually in use, not just filed away.',
+    fix: 'Our consulting team conducts a gap assessment and mock audit before your real one. The app tracks field evidence in real time (inspections, toolbox talks, hazard assessments) so you can prove your system is live, not theoretical.',
   },
   {
     title: '"My COR expired and now I can\'t bid on jobs."',
-    body: 'COR is valid for 3 years — but only if you complete annual maintenance audits in years 2 and 3. Miss one, and your COR lapses. With an expired certificate, you\'re invisible to clients who require active COR. Getting back to compliant status takes time your business can\'t afford to lose.',
+    body: 'COR is valid for 3 years, but only if you complete annual maintenance audits in years 2 and 3. Miss one, and your COR lapses. With an expired certificate, you\'re invisible to clients who require active COR. Getting back to compliant status takes time your business can\'t afford to lose.',
     fix: 'We manage your annual maintenance schedule and alert you before deadlines. If your COR has already lapsed, we help you recover it as fast as possible. The app tracks your certificate status and maintenance requirements year-round.',
   },
   {
     title: '"I don\'t have time to run a safety program. I\'m too busy running my business."',
-    body: 'Small contractors wear every hat: project manager, estimator, HR, site supervisor — and now safety officer? Most small companies in Alberta don\'t have a dedicated safety person. But COR requires consistent evidence: regular inspections, toolbox talks, hazard assessments, incident reports, and more.',
-    fix: 'The CorPathway app is built for people in the field. Mobile-first, quick-entry forms, and automatic record-keeping. For SE-COR clients, we manage the entire program remotely — you just do the work, we handle the compliance.',
+    body: 'Small contractors wear every hat: project manager, estimator, HR, site supervisor, and now safety officer? Most small companies in Alberta don\'t have a dedicated safety person. But COR requires consistent evidence: regular inspections, toolbox talks, hazard assessments, incident reports, and more.',
+    fix: 'The CorPathway app is built for people in the field. Mobile-first, quick-entry forms, and automatic record-keeping. For SE-COR clients, we manage the entire program remotely: you just do the work, we handle the compliance.',
   },
   {
     title: '"I have no idea which Certifying Partner to use."',
@@ -104,9 +104,9 @@ const PAIN_POINTS = [
     fix: 'We know all 10 Certifying Partners. In your free consultation, we tell you exactly which one fits your industry, whether you qualify for a levy-funded partner, and what to expect from their process.',
   },
   {
-    title: '"I keep documents everywhere — email, paper, phone photos. It\'s a mess."',
-    body: 'When audit day arrives, you need evidence. Inspections from the past year. Training records. Toolbox talk sign-off sheets. Hazard assessments. Incident reports. Corrective actions. Companies that scramble to find this documentation — or recreate it from memory — fail audits or get poor scores.',
-    fix: 'The app centralizes everything. Six document libraries, a digital form system for every COR element, and a training matrix that tracks every certification and expiry date — all in one place, accessible from the field.',
+    title: '"I keep documents everywhere: email, paper, phone photos. It\'s a mess."',
+    body: 'When audit day arrives, you need evidence. Inspections from the past year. Training records. Toolbox talk sign-off sheets. Hazard assessments. Incident reports. Corrective actions. Companies that scramble to find this documentation, or recreate it from memory, fail audits or get poor scores.',
+    fix: 'The app centralizes everything. Six document libraries, a digital form system for every COR element, and a training matrix that tracks every certification and expiry date, all in one place, accessible from the field.',
   },
   {
     title: '"I don\'t know if my WCB PIR refund is being maximized."',
@@ -130,7 +130,7 @@ const CERTIFYING_PARTNERS = [
 
 const SECOR_STEPS = [
   { num: '01', title: 'Choose Your Certifying Partner', body: 'We help you identify the right partner for your industry in your free consultation. You register with them and confirm your SE-COR eligibility (10 or fewer WCB employees).' },
-  { num: '02', title: 'Build Your Health & Safety Management System', body: "Your Certifying Partner sets the requirements. CorPathway builds your program — policies, procedures, hazard assessments, and all required documentation — tailored to your scope of work and your partner's audit instrument." },
+  { num: '02', title: 'Build Your Health & Safety Management System', body: "Your Certifying Partner sets the requirements. CorPathway builds your program: policies, procedures, hazard assessments, and all required documentation, tailored to your scope of work and your partner's audit instrument." },
   { num: '03', title: 'Implement the Program', body: 'A safety program that only exists on paper will not pass. You need 3+ months of real evidence: toolbox talks, inspections, hazard assessments, training records. The CorPathway app makes collecting this evidence simple, fast, and field-ready.' },
   { num: '04', title: 'Complete Your Self-Assessment', body: 'For SE-COR, you conduct a self-assessment of your health and safety system. We walk you through every section, help you score your own program honestly, and identify any gaps before you submit.' },
   { num: '05', title: 'Certifying Partner Review & Certification', body: 'Your Certifying Partner reviews your self-assessment. If it meets standards, they jointly issue your SE-COR with the Government of Alberta. Valid for 3 years. Annual maintenance self-assessments required.' },
@@ -139,23 +139,23 @@ const SECOR_STEPS = [
 
 const COR_STEPS = [
   { num: '01', title: 'Choose Your Certifying Partner & Complete Required Training', body: 'At least one employee must complete all required COR courses through your Certifying Partner. These typically include: Principles of Health & Safety Management (PHSM), Leadership in Safety Excellence (LSE), OHS Legislation (LEG), and Audit Training (ATP).' },
-  { num: '02', title: 'Build Your Health & Safety Management System', body: "CorPathway builds or updates your complete OHSMS — written programs, policies, procedures, and all documentation to match your Certifying Partner's audit instrument and your hiring client requirements." },
+  { num: '02', title: 'Build Your Health & Safety Management System', body: "CorPathway builds or updates your complete OHSMS: written programs, policies, procedures, and all documentation to match your Certifying Partner's audit instrument and your hiring client requirements." },
   { num: '03', title: 'Implement with Consistent Field Evidence (6–12 Months)', body: 'The most important step. You need 3–6+ months of documented evidence that your system is working in the field. CorPathway tracks all of this through the app: inspections, hazard assessments, toolbox talks, training verification, corrective actions.' },
-  { num: '04', title: 'Mock Audit (CorPathway)', body: 'Before you face a real auditor, we conduct a full internal mock audit. We interview your team, review your documentation, and walk your site — just like a real auditor would. We identify gaps and fix them before they cost you.' },
+  { num: '04', title: 'Mock Audit (CorPathway)', body: 'Before you face a real auditor, we conduct a full internal mock audit. We interview your team, review your documentation, and walk your site, just like a real auditor would. We identify gaps and fix them before they cost you.' },
   { num: '05', title: 'External Audit by a Certified Auditor', body: 'You hire a certified external auditor (your Certifying Partner provides a list). They conduct document review, worker interviews, and site observation. You need 80% overall, 50%+ on each element. We prepare you to exceed that. Note: the consultant who builds your program cannot conduct your external audit.' },
   { num: '06', title: 'Certification & Annual Maintenance', body: '3-year COR issued by the Government of Alberta and your Certifying Partner. Annual maintenance audits required (years 2 and 3). CorPathway manages your schedule, reminders, and documentation year-round.' },
 ]
 
 const FAQS = [
-  { q: "What's the difference between COR and SE-COR?", a: "SE-COR (Small Employer COR) is for businesses with 10 or fewer employees under their WCB-Alberta account — including owners, managers, part-time staff, and family members. SE-COR uses a self-assessment instead of a full external audit. Full COR is for companies with more than 10 employees and requires an external auditor. Both qualify for WCB PIR refunds and provide the same certification status with most hiring clients." },
-  { q: 'How long does it take to get COR or SE-COR certified?', a: "It depends on where you're starting. If you already run consistent safety practices — weekly inspections, toolbox talks, training records — you may be ready in 6–10 weeks of building your documentation. If you're starting from scratch, most companies take 6–12 months. The biggest variable is how consistently you implement the program after it's built. We help you get there as quickly as your situation allows." },
-  { q: 'Which Certifying Partner should I use?', a: "It depends entirely on your industry. ACSA is by far the most common for construction and trades. Energy Safety Canada is the standard for oil and gas. We'll tell you in your free consultation — and whether you qualify for a levy-funded partner (which can significantly reduce your cost to participate)." },
+  { q: "What's the difference between COR and SE-COR?", a: "SE-COR (Small Employer COR) is for businesses with 10 or fewer employees under their WCB-Alberta account, including owners, managers, part-time staff, and family members. SE-COR uses a self-assessment instead of a full external audit. Full COR is for companies with more than 10 employees and requires an external auditor. Both qualify for WCB PIR refunds and provide the same certification status with most hiring clients." },
+  { q: 'How long does it take to get COR or SE-COR certified?', a: "It depends on where you're starting. If you already run consistent safety practices (weekly inspections, toolbox talks, training records), you may be ready in 6–10 weeks of building your documentation. If you're starting from scratch, most companies take 6–12 months. The biggest variable is how consistently you implement the program after it's built. We help you get there as quickly as your situation allows." },
+  { q: 'Which Certifying Partner should I use?', a: "It depends entirely on your industry. ACSA is by far the most common for construction and trades. Energy Safety Canada is the standard for oil and gas. We'll tell you in your free consultation, including whether you qualify for a levy-funded partner (which can significantly reduce your cost to participate)." },
   { q: 'How much is the WCB PIR refund?', a: "Up to 20% of your WCB-Alberta annual premiums. For a company paying $50,000 per year in WCB premiums, that's up to $10,000 back annually. The actual amount depends on your audit score and your injury history. CorPathway helps you structure your program to maximize the refund you qualify for." },
-  { q: 'What if my COR has already expired?', a: "You're not alone — it happens more than you'd think. Contact us immediately. We'll assess how far lapsed your certification is, what documentation you still have, and map out the fastest possible path back to active certification. Every month without active COR is a month you're not qualifying for contracts or WCB refunds." },
-  { q: 'Can you build my safety program if I have nothing in place?', a: "Yes. That's one of the most common situations we start with. We build your entire health and safety management system from scratch — customized to your scope of work, your Certifying Partner's requirements, and your company size. The CorPathway app then becomes the system you use to keep it running daily." },
-  { q: 'Do I need to hire a full-time safety officer?', a: "No. Most small Alberta contractors don't have one, and SE-COR was specifically designed for that reality. For SE-COR clients, CorPathway manages your program remotely on a flat monthly fee — acting as your outsourced safety function at a fraction of the cost of a full-time hire." },
-  { q: 'Can CorPathway conduct my external COR audit?', a: "No — and by law, the consultant who helps you build your program cannot conduct your external audit. We help you prepare for and find a certified external auditor through your Certifying Partner's list. We do, however, conduct a full internal mock audit before your real one so you're completely prepared." },
-  { q: "Does the CorPathway app work with my Certifying Partner's requirements?", a: "Yes. The app is built around the core elements of the Alberta COR audit standard — which all 10 Certifying Partners follow with minor variations. During your consulting engagement, we configure the app to align specifically with your Certifying Partner's audit instrument." },
+  { q: 'What if my COR has already expired?', a: "You're not alone. It happens more than you'd think. Contact us immediately. We'll assess how far lapsed your certification is, what documentation you still have, and map out the fastest possible path back to active certification. Every month without active COR is a month you're not qualifying for contracts or WCB refunds." },
+  { q: 'Can you build my safety program if I have nothing in place?', a: "Yes. That's one of the most common situations we start with. We build your entire health and safety management system from scratch, customized to your scope of work, your Certifying Partner's requirements, and your company size. The CorPathway app then becomes the system you use to keep it running daily." },
+  { q: 'Do I need to hire a full-time safety officer?', a: "No. Most small Alberta contractors don't have one, and SE-COR was specifically designed for that reality. For SE-COR clients, CorPathway manages your program remotely on a flat monthly fee, acting as your outsourced safety function at a fraction of the cost of a full-time hire." },
+  { q: 'Can CorPathway conduct my external COR audit?', a: "No. By law, the consultant who helps you build your program cannot conduct your external audit. We help you prepare for and find a certified external auditor through your Certifying Partner's list. We do, however, conduct a full internal mock audit before your real one so you're completely prepared." },
+  { q: "Does the CorPathway app work with my Certifying Partner's requirements?", a: "Yes. The app is built around the core elements of the Alberta COR audit standard, which all 10 Certifying Partners follow with minor variations. During your consulting engagement, we configure the app to align specifically with your Certifying Partner's audit instrument." },
   { q: 'Is CorPathway based in Alberta?', a: "Yes. We're Alberta-based and serve Alberta, BC, and Saskatchewan. Our phone number is 780-832-5158. Book a free consultation or call us directly." },
 ]
 
@@ -284,10 +284,10 @@ export default function AlbertaCORPage() {
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: BLUE, marginBottom: '20px' }}>Alberta · COR &amp; SE-COR Certification</p>
             <h1 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(2.4rem, 5vw, 3.8rem)', lineHeight: 1.05, color: TEXT, marginBottom: '24px', letterSpacing: '-0.01em' }}>
               Your COR or SE-COR Certification,<br />
-              <span style={{ color: ORANGE }}>Handled</span> — App, Consulting,<br />and Everything In Between.
+              <span style={{ color: ORANGE }}>Handled.</span> App, Consulting,<br />and Everything In Between.
             </h1>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: MUTED, lineHeight: 1.75, marginBottom: '36px', maxWidth: '540px' }}>
-              CorPathway is the only platform that combines purpose-built Alberta COR software with real safety consulting — so you can stop drowning in paperwork and start winning the contracts your certification was meant to unlock.
+              CorPathway is the only platform that combines purpose-built Alberta COR software with real safety consulting, so you can stop drowning in paperwork and start winning the contracts your certification was meant to unlock.
             </p>
             <div className="acor-hero-btns" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '32px' }}>
               <OrangeBtn href="https://calendly.com/blake-safetyconsultant/30min" external>Book a Free Consultation →</OrangeBtn>
@@ -320,12 +320,12 @@ export default function AlbertaCORPage() {
           </h2>
           <div style={{ maxWidth: '760px', marginBottom: '56px' }}>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: MUTED, lineHeight: 1.85, marginBottom: '20px' }}>
-              The Certificate of Recognition (COR) is Alberta's government-approved health and safety certification program. It's run through the Partnerships in Injury Reduction (PIR) program — a joint initiative between the Government of Alberta, industry groups, and WCB-Alberta.
+              The Certificate of Recognition (COR) is Alberta's government-approved health and safety certification program. It's run through the Partnerships in Injury Reduction (PIR) program, a joint initiative between the Government of Alberta, industry groups, and WCB-Alberta.
             </p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              <CheckLi>COR proves your health and safety management system has been independently audited and meets provincial standards. It's not just policies on paper — auditors check whether your system is actually working in the field.</CheckLi>
-              <CheckLi>Many Alberta general contractors, oil and gas companies, and public-sector clients now require COR or SE-COR before they'll even consider a bid. It's not a nice-to-have — it's a price of entry.</CheckLi>
-              <CheckLi>COR certification qualifies your company for WCB-Alberta PIR premium refunds of <strong style={{ color: GREEN }}>up to 20%</strong> on your annual WCB premiums. For many companies, that refund alone pays for the entire certification process — and then some.</CheckLi>
+              <CheckLi>COR proves your health and safety management system has been independently audited and meets provincial standards. It is not just policies on paper: auditors check whether your system is actually working in the field.</CheckLi>
+              <CheckLi>Many Alberta general contractors, oil and gas companies, and public-sector clients now require COR or SE-COR before they'll even consider a bid. It's not a nice-to-have. It's a price of entry.</CheckLi>
+              <CheckLi>COR certification qualifies your company for WCB-Alberta PIR premium refunds of <strong style={{ color: GREEN }}>up to 20%</strong> on your annual WCB premiums. For many companies, that refund alone pays for the entire certification process, and then some.</CheckLi>
             </ul>
           </div>
 
@@ -362,7 +362,7 @@ export default function AlbertaCORPage() {
           {/* Note box */}
           <div style={{ background: `${ORANGE}14`, border: `1px solid ${ORANGE}44`, borderLeft: `4px solid ${ORANGE}`, borderRadius: '12px', padding: '20px 24px' }}>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: TEXT, lineHeight: 1.75 }}>
-              <strong>⚠️ Important:</strong> The 10-employee count under WCB-Alberta includes everyone on your WCB account — owners, managers, office staff, part-time workers, temporary staff, and family members. Not sure which program you qualify for? That's what we're here for.
+              <strong>⚠️ Important:</strong> The 10-employee count under WCB-Alberta includes everyone on your WCB account: owners, managers, office staff, part-time workers, temporary staff, and family members. Not sure which program you qualify for? That's what we're here for.
             </p>
           </div>
         </div>
