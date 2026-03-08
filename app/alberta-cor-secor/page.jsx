@@ -605,34 +605,6 @@ export default function AlbertaCORPage() {
         </div>
       </section>
 
-      {/* ══ S9: TESTIMONIALS ══ */}
-      <section style={{ background: NAVY, padding: '96px 1.5rem' }}>
-        <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '48px', lineHeight: 1.1 }}>
-            Alberta Contractors. Real Results.
-          </h2>
-          <div className="acor-grid-3">
-            {[
-              { initials: 'JB', quote: "We're a small landscaping company with 6 employees. We had no safety program at all. CorPathway built our entire SE-COR program from scratch, registered us with ACSA, and had us certified within a year. The app makes our inspections and toolbox talks so fast my foreman actually does them. The WCB refund we got back covered everything.", name: 'J. Bergmann', company: 'Owner — Landscaping Contractor, Red Deer, AB' },
-              { initials: 'KL', quote: "Our COR lapsed while I was dealing with a major project. We went six months without an active certificate and lost two bids because of it. CorPathway got us back on track, rebuilt our program, and had us through the audit process as fast as it could be done. Now we're back to bidding with confidence.", name: 'K. Larsen', company: 'President — Civil Construction, Edmonton, AB' },
-              { initials: 'RS', quote: "We needed COR to work with a major energy company in northern Alberta. The process seemed impossible for a 15-person company without a safety officer. CorPathway acted as our safety team — built our program, ran a mock audit, and we passed the real thing on our first try. The pipeline contract we won paid back the entire investment in the first month.", name: 'R. Singh', company: 'Owner — Pipeline Services Contractor, Grand Prairie, AB' },
-            ].map(t => (
-              <article key={t.name} style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '32px 28px' }}>
-                <div style={{ color: ORANGE, fontSize: '16px', letterSpacing: '3px', marginBottom: '16px' }}>★★★★★</div>
-                <blockquote style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: TEXT, fontStyle: 'italic', lineHeight: 1.8, marginBottom: '24px' }}>"{t.quote}"</blockquote>
-                <footer style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: SURFACE2, border: `2px solid ${ORANGE}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: '12px', color: ORANGE, flexShrink: 0 }}>{t.initials}</div>
-                  <div>
-                    <strong style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: TEXT, display: 'block' }}>{t.name}</strong>
-                    <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', color: MUTED }}>{t.company}</span>
-                  </div>
-                </footer>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ══ S10: FAQ ══ */}
       <section style={{ background: SURFACE, padding: '96px 1.5rem' }}>
         <div style={{ maxWidth: '820px', margin: '0 auto' }}>
