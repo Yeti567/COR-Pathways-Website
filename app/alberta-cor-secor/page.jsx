@@ -271,11 +271,15 @@ export default function AlbertaCORPage() {
 
       {/* ══ S1: HERO ══ */}
       <section style={{ background: NAVY, padding: '96px 1.5rem 80px', position: 'relative', overflow: 'hidden' }}>
-        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(74,144,196,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(74,144,196,0.07) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
-        <div aria-hidden="true" style={{ position: 'absolute', top: '15%', right: '-5%', width: '700px', height: '700px', background: 'radial-gradient(ellipse at center, rgba(59,130,246,0.09) 0%, rgba(74,144,196,0.06) 40%, transparent 70%)', pointerEvents: 'none' }} />
-        <div aria-hidden="true" style={{ position: 'absolute', bottom: '5%', left: '-8%', width: '500px', height: '500px', background: 'radial-gradient(ellipse at center, rgba(249,115,22,0.06) 0%, transparent 60%)', pointerEvents: 'none' }} />
+        {/* Hero background photo */}
+        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <Image src="/images/Western Canada Construction Site.webp" alt="" fill style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.18 }} priority />
+        </div>
+        {/* Overlay + grid */}
+        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to right, rgba(13,31,60,0.97) 40%, rgba(13,31,60,0.7) 100%)' }} />
+        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, backgroundImage: 'linear-gradient(rgba(74,144,196,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(74,144,196,0.06) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
 
-        <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
+        <div style={{ position: 'relative', zIndex: 2, maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
           <div>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: BLUE, marginBottom: '20px' }}>Alberta · COR &amp; SE-COR Certification</p>
             <h1 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(2.4rem, 5vw, 3.8rem)', lineHeight: 1.05, color: TEXT, marginBottom: '24px', letterSpacing: '-0.01em' }}>
@@ -395,8 +399,11 @@ export default function AlbertaCORPage() {
       </section>
 
       {/* ══ S4: THE APP ══ */}
-      <section style={{ background: SURFACE, padding: '96px 1.5rem' }}>
-        <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
+      <section style={{ background: SURFACE, padding: '96px 1.5rem', position: 'relative', overflow: 'hidden' }}>
+        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <Image src="/images/Safety Audit Review Panel.webp" alt="" fill style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.06 }} />
+        </div>
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel color={ORANGE}>THE APP</SectionLabel>
           <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '16px', lineHeight: 1.1 }}>
             One App. Every Element.<br />Built Specifically for Alberta COR Certification.
