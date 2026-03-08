@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Hard hat dome -->
+    <path d="M18 38
+             C18 26 24 18 32 18
+             C40 18 46 26 46 38"
+          stroke="#1A1A1A" stroke-width="2"/>
+
+    <!-- Brim -->
+    <path d="M14 38 H50"
+          stroke="#1A1A1A" stroke-width="2"/>
+
+    <!-- Side supports -->
+    <path d="M20 38 C20 44 24 48 30 48"
+          stroke="#1A1A1A" stroke-width="2"/>
+    <path d="M44 38 C44 44 40 48 34 48"
+          stroke="#1A1A1A" stroke-width="2"/>
+
+    <!-- Center ridge accent -->
+    <path d="M32 18 V38"
+          stroke="#FF6B00" stroke-width="2"/>
+    <path d="M27 24 C29 22 35 22 37 24"
+          stroke="#FF6B00" stroke-width="2"/>
+  </g>
+</svg>

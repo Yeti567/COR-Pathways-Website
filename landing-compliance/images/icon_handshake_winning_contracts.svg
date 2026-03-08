@@ -1,0 +1,27 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left sleeve/arm -->
+    <path d="M10 34 L20 24 L28 32 L20 40 L10 34 Z"
+          stroke="#C8D6F0" stroke-width="2"/>
+
+    <!-- Right sleeve/arm -->
+    <path d="M54 34 L44 24 L36 32 L44 40 L54 34 Z"
+          stroke="#C8D6F0" stroke-width="2"/>
+
+    <!-- Handshake connection -->
+    <path d="M28 32 L32 36 L36 32"
+          stroke="#FF6B00" stroke-width="2"/>
+    <path d="M24 36 L29 41"
+          stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M40 36 L35 41"
+          stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M29 41 L32 38 L35 41"
+          stroke="#FF6B00" stroke-width="2"/>
+
+    <!-- Wrist details -->
+    <path d="M20 24 L24 28"
+          stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M44 24 L40 28"
+          stroke="#C8D6F0" stroke-width="2"/>
+  </g>
+</svg>

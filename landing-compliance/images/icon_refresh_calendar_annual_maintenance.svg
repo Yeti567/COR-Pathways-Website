@@ -1,0 +1,31 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Calendar body -->
+    <rect x="18" y="18" width="28" height="24" rx="2" ry="2"
+          stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M18 26 H46" stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M24 14 V22" stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M40 14 V22" stroke="#C8D6F0" stroke-width="2"/>
+
+    <!-- Calendar date marks -->
+    <path d="M24 32 H28" stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M32 32 H36" stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M24 38 H28" stroke="#C8D6F0" stroke-width="2"/>
+    <path d="M32 38 H36" stroke="#C8D6F0" stroke-width="2"/>
+
+    <!-- Circular refresh arrow accent -->
+    <path d="M48 40
+             C48 48 42 54 34 54
+             C28 54 23 51 20 46"
+          stroke="#FF6B00" stroke-width="2"/>
+    <path d="M20 46 L20 52 L25 49"
+          stroke="#FF6B00" stroke-width="2"/>
+
+    <path d="M16 24
+             C18 16 24 10 32 10
+             C40 10 47 15 50 23"
+          stroke="#FF6B00" stroke-width="2"/>
+    <path d="M50 23 L44 22 L47 17"
+          stroke="#FF6B00" stroke-width="2"/>
+  </g>
+</svg>
