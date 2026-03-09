@@ -276,7 +276,7 @@ export default function CompliancePortalsPage() {
       <section style={{ background: BG, padding: '100px 1.5rem 88px', position: 'relative', overflow: 'hidden' }}>
         {/* Hero background texture */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <Image src="/images/hero background texture isn landing.webp" alt="" fill style={{ objectFit: 'cover', opacity: 0.12 }} />
+          <Image src="/images/hero background texture isn landing.webp" alt="" fill style={{ objectFit: 'cover', opacity: 0.12 }} priority />
         </div>
         {/* Grid texture */}
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, backgroundImage: 'linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
@@ -359,6 +359,7 @@ export default function CompliancePortalsPage() {
             src="/images/Pain point section ISN landing.webp"
             alt=""
             fill
+            loading="lazy"
             style={{ objectFit: 'cover', opacity: 0.08 }}
           />
         </div>
@@ -423,7 +424,7 @@ export default function CompliancePortalsPage() {
             {/* ISNetworld visual — image on CA, status card on US */}
             <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', overflow: 'hidden' }}>
               <div style={{ position: 'relative', width: '100%', height: '200px' }}>
-                <Image src="/images/ISNetWorld compliance.webp" alt="ISNetworld compliance dashboard" fill style={{ objectFit: 'cover' }} />
+                <Image src="/images/ISNetWorld compliance.webp" alt="ISNetworld compliance dashboard" fill loading="lazy" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '28px' }}>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: MUTED, marginBottom: '20px' }}>ISNetworld Account Status</p>
@@ -466,7 +467,7 @@ export default function CompliancePortalsPage() {
             {/* Avetta visual card */}
             <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', overflow: 'hidden', direction: 'ltr' }}>
               <div style={{ position: 'relative', width: '100%', height: '200px' }}>
-                <Image src="/images/Avetta Service Section ISN Landing.webp" alt="Avetta compliance management" fill style={{ objectFit: 'cover' }} />
+                <Image src="/images/Avetta Service Section ISN Landing.webp" alt="Avetta compliance management" fill loading="lazy" style={{ objectFit: 'cover' }} />
               </div>
               <div style={{ padding: '28px' }}>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: MUTED, marginBottom: '16px' }}>Avetta Compliance Score</p>
@@ -511,7 +512,7 @@ export default function CompliancePortalsPage() {
               {/* ComplyWorks visual card */}
               <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', overflow: 'hidden' }}>
                 <div style={{ position: 'relative', width: '100%', height: '200px' }}>
-                  <Image src="/images/Comply Works section support isn landing.webp" alt="ComplyWorks compliance management" fill style={{ objectFit: 'cover' }} />
+                  <Image src="/images/Comply Works section support isn landing.webp" alt="ComplyWorks compliance management" fill loading="lazy" style={{ objectFit: 'cover' }} />
                 </div>
                 <div style={{ padding: '28px' }}>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: MUTED, marginBottom: '20px' }}>ComplyWorks Account — Quick View</p>
@@ -533,7 +534,7 @@ export default function CompliancePortalsPage() {
           {/* US Industrial crew photo */}
           {!isCA && (
             <div style={{ marginTop: '64px', position: 'relative', width: '100%', height: '320px', borderRadius: '16px', overflow: 'hidden' }}>
-              <Image src="/images/USA Industrial Crew Photo ISN Landing.webp" alt="US industrial contractor crew" fill style={{ objectFit: 'cover' }} />
+              <Image src="/images/USA Industrial Crew Photo ISN Landing.webp" alt="US industrial contractor crew" fill loading="lazy" style={{ objectFit: 'cover' }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(7,9,15,0.7) 0%, transparent 60%)' }} />
               <div style={{ position: 'absolute', bottom: '32px', left: '40px' }}>
                 <p style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: '1.6rem', color: TEXT, lineHeight: 1.2 }}>Trusted by contractors<br />across all 50 states.</p>
@@ -551,6 +552,7 @@ export default function CompliancePortalsPage() {
             src="/images/How it works section ISN landing.webp"
             alt=""
             fill
+            loading="lazy"
             style={{ objectFit: 'cover', opacity: 0.07 }}
           />
         </div>
@@ -698,7 +700,7 @@ export default function CompliancePortalsPage() {
       {/* ── FINAL CTA ── */}
       <section style={{ background: BG, padding: '96px 1.5rem', borderTop: `1px solid ${BORDER}`, position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <Image src="/images/Final CTA Section Background ISN Landing.webp" alt="" fill style={{ objectFit: 'cover', opacity: 0.1 }} />
+          <Image src="/images/Final CTA Section Background ISN Landing.webp" alt="" fill loading="lazy" style={{ objectFit: 'cover', opacity: 0.1 }} />
         </div>
         <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
           <SectionLabel>Get Started Today</SectionLabel>
