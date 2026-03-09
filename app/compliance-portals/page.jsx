@@ -229,14 +229,14 @@ export default function CompliancePortalsPage() {
       {isCA && (
         <div style={{ background: 'linear-gradient(90deg, #1a1200, #241a00, #1a1200)', borderBottom: '1px solid rgba(201,168,76,0.3)', padding: '10px 1.5rem', textAlign: 'center' }}>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: GOLD_LT }}>
-            🇨🇦 Serving contractors across Alberta · BC · Saskatchewan · Ontario · Manitoba — ISNetworld, Avetta &amp; ComplyWorks experts
+            🇨🇦 Serving contractors across Alberta · BC · Saskatchewan · Ontario · Manitoba: ISNetworld, Avetta &amp; ComplyWorks experts
           </p>
         </div>
       )}
       {!isCA && (
         <div style={{ background: 'linear-gradient(90deg, #00111a, #001a25, #00111a)', borderBottom: '1px solid rgba(76,130,201,0.3)', padding: '10px 1.5rem', textAlign: 'center' }}>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: '#7aaef0' }}>
-            🇺🇸 Serving contractors across the United States — ISNetworld &amp; Avetta compliance experts
+            🇺🇸 Serving contractors across the United States: ISNetworld &amp; Avetta compliance experts
           </p>
         </div>
       )}
@@ -288,7 +288,7 @@ export default function CompliancePortalsPage() {
           {/* Eyebrow */}
           <div className="fade-up-1" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: `${GOLD}14`, border: `1px solid ${BORDER}`, borderRadius: '100px', padding: '6px 16px', marginBottom: '32px' }}>
             <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: GOLD_LT }}>
-              {isCA ? '🇨🇦 Canadian Contractors — ISNetworld · Avetta · ComplyWorks' : '🇺🇸 US Contractors — ISNetworld · Avetta'}
+              {isCA ? '🇨🇦 Canadian Contractors: ISNetworld · Avetta · ComplyWorks' : '🇺🇸 US Contractors: ISNetworld · Avetta'}
             </span>
           </div>
 
@@ -457,7 +457,7 @@ export default function CompliancePortalsPage() {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '28px' }}>
                 {(isCA
-                  ? ['Full Avetta profile setup and company configuration', 'Document, certificate, and safety program uploads', 'Insurance and WCB verification management', 'Prequalification questionnaire completion', 'Compliance gap identification and resolution', 'Score optimization — we know what Avetta weighs heavily', 'Ongoing monthly management and renewal tracking']
+                  ? ['Full Avetta profile setup and company configuration', 'Document, certificate, and safety program uploads', 'Insurance and WCB verification management', 'Prequalification questionnaire completion', 'Compliance gap identification and resolution', 'Score optimization: we know what Avetta weighs heavily', 'Ongoing monthly management and renewal tracking']
                   : ['Full Avetta profile creation and company setup', 'Written safety program submission and document uploads', 'Insurance certificate and OSHA documentation', 'EMR and incident rate submission', 'Prequalification questionnaire completion', 'Score optimization: we know what Avetta weights heavily', 'Ongoing monthly management, renewals, and re-submissions']
                 ).map(f => <CheckRow key={f}>{f}</CheckRow>)}
               </div>
@@ -515,7 +515,7 @@ export default function CompliancePortalsPage() {
                   <Image src="/images/Comply Works section support isn landing.webp" alt="ComplyWorks compliance management" fill loading="lazy" style={{ objectFit: 'cover' }} />
                 </div>
                 <div style={{ padding: '28px' }}>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: MUTED, marginBottom: '20px' }}>ComplyWorks Account — Quick View</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: MUTED, marginBottom: '20px' }}>ComplyWorks Account: Quick View</p>
                 <StatusRow label="Company Profile" badge="✓ Complete" />
                 <StatusRow label="Safety Documents" badge="✓ Uploaded" />
                 <StatusRow label="Insurance Certificate" badge="✓ Current" />
@@ -571,12 +571,12 @@ export default function CompliancePortalsPage() {
               { num: '01', title: 'Free Consultation Call', body: 'We audit your current portal status, identify every gap, and tell you exactly what it will take to get approved. No jargon, no obligation.' },
               { num: '02', title: 'We Gather Your Documents', body: 'We send you a simple checklist. You provide your insurance certificates, WCB account number, and any safety documents you have. We handle the rest.' },
               { num: '03', title: 'We Build & Submit Everything', body: 'Our team builds or completes your safety program, uploads all documents, enters your stats, and submits everything to the portal, properly formatted and compliant.' },
-              { num: '04', title: "Green Status — You're Approved", body: 'We track your submission and resolve any review comments until you receive full approval. Then we manage your account monthly so you never fall out again.' },
+              { num: '04', title: "Green Status: You're Approved", body: 'We track your submission and resolve any review comments until you receive full approval. Then we manage your account monthly so you never fall out again.' },
             ] : [
               { num: '01', title: 'Free Consultation Call', body: 'We audit your current portal status, identify every gap, and give you a plain-English picture of exactly what it will take to get approved. No obligation.' },
               { num: '02', title: 'We Gather Your Info', body: "We send you a clear checklist. You provide your insurance certificate, OSHA logs, hours worked, and any safety documents you have. We'll tell you exactly what's needed." },
               { num: '03', title: 'We Build & Submit Everything', body: 'We build your safety program if needed, calculate your incident rates, enter your stats, and submit all documents, properly formatted for portal approval.' },
-              { num: '04', title: "Green — You're Back to Work", body: 'We track your submission, respond to review comments immediately, and stay on it until you are fully approved. Then we manage your account monthly so you never lapse again.' },
+              { num: '04', title: "Green. You're Back to Work.", body: 'We track your submission, respond to review comments immediately, and stay on it until you are fully approved. Then we manage your account monthly so you never lapse again.' },
             ]).map(s => (
               <div key={s.num} style={{ background: SURFACE, padding: '32px 28px' }}>
                 <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 800, fontSize: '3rem', color: `${GOLD}30`, lineHeight: 1, marginBottom: '16px' }}>{s.num}</div>
@@ -621,7 +621,7 @@ export default function CompliancePortalsPage() {
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginBottom: '6px' }}>
                 <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: 800, fontSize: '3rem', color: TEXT }}>$1,500</span>
               </div>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: MUTED, marginBottom: '28px' }}>one-time setup — ISNetworld or Avetta</p>
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: MUTED, marginBottom: '28px' }}>one-time setup: ISNetworld or Avetta</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '28px', flex: 1 }}>
                 {['Full portal setup from scratch', 'Safety program build or upload', isCA ? 'Insurance & WCB submission' : 'Insurance & OSHA submission', 'Approval tracking to green status'].map(f => <CheckRow key={f}>{f}</CheckRow>)}
                 <div style={{ borderTop: `1px solid ${BORDER}`, paddingTop: '16px', marginTop: '8px' }}>
@@ -641,7 +641,7 @@ export default function CompliancePortalsPage() {
                 <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: 800, fontSize: '3rem', color: TEXT }}>{isCA ? '$3,400' : '$2,800'}</span>
               </div>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: MUTED, marginBottom: '28px' }}>
-                {isCA ? 'one-time setup — ISN + Avetta + ComplyWorks' : 'one-time setup — ISNetworld + Avetta'}
+                {isCA ? 'one-time setup: ISN + Avetta + ComplyWorks' : 'one-time setup: ISNetworld + Avetta'}
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '28px', flex: 1 }}>
                 {(isCA
