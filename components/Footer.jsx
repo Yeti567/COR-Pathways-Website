@@ -21,6 +21,8 @@ const COMPANY = [
   { label: 'Pricing', href: '/pricing' },
   { label: 'Contact', href: '/contact' },
   { label: 'Book a Consultation', href: 'https://calendly.com/blake-safetyconsultant/30min', external: true },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
+  { label: 'Terms of Use', href: '/terms-of-use' },
 ]
 
 export default function Footer() {
