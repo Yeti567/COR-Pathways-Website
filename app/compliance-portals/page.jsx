@@ -97,13 +97,14 @@ function FaqItem({ question, answer }) {
     <div style={{ borderBottom: `1px solid ${BORDER}` }}>
       <button
         onClick={() => setOpen(o => !o)}
+        className="cp-faq-q"
         style={{ width: '100%', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '22px 0', textAlign: 'left', gap: '16px' }}
       >
-        <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', fontWeight: 600, color: TEXT }}>{question}</span>
-        <span style={{ color: GOLD, fontSize: '20px', flexShrink: 0, transition: 'transform 0.2s', transform: open ? 'rotate(45deg)' : 'rotate(0)' }}>+</span>
+        <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', fontWeight: 600, color: TEXT, lineHeight: 1.4 }}>{question}</span>
+        <span style={{ color: GOLD, fontSize: '22px', flexShrink: 0, transition: 'transform 0.2s', transform: open ? 'rotate(45deg)' : 'rotate(0)', minWidth: '28px', textAlign: 'center' }}>+</span>
       </button>
       {open && (
-        <div style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: MUTED, lineHeight: 1.8, paddingBottom: '22px' }}>
+        <div className="cp-faq-a" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: MUTED, lineHeight: 1.8, paddingBottom: '22px' }}>
           {answer}
         </div>
       )}
@@ -201,20 +202,44 @@ export default function CompliancePortalsPage() {
         .cp-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
         .cp-stats  { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
         .cp-price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .cp-section-pad { padding: 96px 1.5rem; }
+        .cp-hero-pad { padding: 80px 1.5rem 72px; }
+        .cp-mobile-cta { display: none; }
+        .cp-tags-scroll { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .cp-footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 48px; }
+
+        /* Tablet */
         @media (max-width: 900px) {
-          .cp-grid-3 { grid-template-columns: 1fr !important; }
+          .cp-grid-3 { grid-template-columns: repeat(2, 1fr) !important; }
           .cp-grid-2 { grid-template-columns: 1fr !important; gap: 40px !important; }
           .cp-grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
           .cp-stats  { grid-template-columns: repeat(2, 1fr) !important; }
           .cp-price-grid { grid-template-columns: 1fr !important; }
-          .cp-hero-btns { flex-direction: column !important; }
+          .cp-hero-btns { flex-direction: column !important; align-items: flex-start !important; }
           .cp-nav-links { display: none !important; }
           .cp-hero-img { display: none !important; }
+          .cp-section-pad { padding: 72px 1.25rem !important; }
+          .cp-mobile-cta { display: flex !important; align-items: center; gap: 12px; }
         }
+
+        /* Mobile */
         @media (max-width: 600px) {
+          .cp-grid-3 { grid-template-columns: 1fr !important; }
           .cp-grid-4 { grid-template-columns: 1fr !important; }
-          .cp-stats  { grid-template-columns: 1fr !important; }
+          .cp-stats  { grid-template-columns: repeat(2, 1fr) !important; }
+          .cp-price-grid { grid-template-columns: 1fr !important; }
+          .cp-section-pad { padding: 56px 1rem !important; }
+          .cp-hero-pad { padding: 56px 1rem 48px !important; }
+          .cp-hero-btns { flex-direction: column !important; align-items: stretch !important; }
+          .cp-footer-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+          .cp-tags-scroll { gap: 10px !important; }
+          .cp-mobile-cta { display: flex !important; }
+          .cp-faq-q { font-size: 15px !important; padding: 18px 16px !important; }
+          .cp-faq-a { font-size: 14px !important; padding: 0 16px 18px !important; }
+          .cp-stat-num { font-size: 2rem !important; }
+          .cp-price-card { padding: 32px 24px !important; }
         }
+
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(28px); }
           to   { opacity: 1; transform: translateY(0); }
@@ -258,7 +283,7 @@ export default function CompliancePortalsPage() {
             </span>
           </Link>
 
-          {/* Nav links */}
+          {/* Desktop nav links */}
           <div className="cp-nav-links" style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
             <a href="#services" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>Services</a>
             <a href="#pricing" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>Pricing</a>
@@ -269,11 +294,17 @@ export default function CompliancePortalsPage() {
             <a href={PHONE_TEL} style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: TEXT, textDecoration: 'none' }}>📞 {PHONE_DISPLAY}</a>
             <GoldBtn href={CALENDLY} external>Book Free Consultation</GoldBtn>
           </div>
+
+          {/* Mobile nav: phone + CTA only */}
+          <div className="cp-mobile-cta" style={{ display: 'none' }}>
+            <a href={PHONE_TEL} style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: TEXT, textDecoration: 'none', whiteSpace: 'nowrap' }}>📞 {PHONE_DISPLAY}</a>
+            <GoldBtn href={CALENDLY} external>Book Now</GoldBtn>
+          </div>
         </div>
       </nav>
 
       {/* ── HERO ── */}
-      <section style={{ background: BG, padding: '100px 1.5rem 88px', position: 'relative', overflow: 'hidden' }}>
+      <section className="cp-hero-pad" style={{ background: BG, padding: '100px 1.5rem 88px', position: 'relative', overflow: 'hidden' }}>
         {/* Hero background texture */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <Image src="/images/hero background texture isn landing.webp" alt="" fill style={{ objectFit: 'cover', opacity: 0.12 }} priority />
@@ -341,18 +372,18 @@ export default function CompliancePortalsPage() {
 
       {/* ── INDUSTRY TAGS BAR (US only) ── */}
       {!isCA && (
-        <div style={{ background: SURFACE, borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}`, padding: '18px 1.5rem', overflowX: 'auto' }}>
-          <div style={{ maxWidth: MAX_W, margin: '0 auto', display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
-            <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: MUTED, whiteSpace: 'nowrap' }}>Industries we serve:</span>
+        <div style={{ background: SURFACE, borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}`, padding: '16px 1rem', overflowX: 'auto' }}>
+          <div className="cp-tags-scroll" style={{ maxWidth: MAX_W, margin: '0 auto' }}>
+            <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: MUTED, whiteSpace: 'nowrap' }}>Industries:</span>
             {['⚡ Electrical', '🔧 Mechanical', '🛢️ Oil & Gas', '🏗️ General Contracting', '🏭 Industrial', '🔌 Utilities', '🛣️ Civil & Infrastructure', '🏠 Roofing & Specialty'].map(tag => (
-              <span key={tag} style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: MUTED, whiteSpace: 'nowrap' }}>{tag}</span>
+              <span key={tag} style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', color: MUTED, whiteSpace: 'nowrap' }}>{tag}</span>
             ))}
           </div>
         </div>
       )}
 
       {/* ── PAIN POINTS ── */}
-      <section style={{ background: BG2, padding: '96px 1.5rem', position: 'relative', overflow: 'hidden' }}>
+      <section className="cp-section-pad" style={{ background: BG2, padding: '96px 1.5rem', position: 'relative', overflow: 'hidden' }}>
         {/* Pain section background image */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <Image
@@ -386,7 +417,7 @@ export default function CompliancePortalsPage() {
       </section>
 
       {/* ── SERVICES ── */}
-      <section id="services" style={{ background: BG, padding: '96px 1.5rem' }}>
+      <section id="services" className="cp-section-pad" style={{ background: BG, padding: '96px 1.5rem' }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel>Our Services</SectionLabel>
           <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '16px', lineHeight: 1.1 }}>
@@ -545,7 +576,7 @@ export default function CompliancePortalsPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section style={{ background: BG2, padding: '96px 1.5rem', position: 'relative', overflow: 'hidden' }}>
+      <section className="cp-section-pad" style={{ background: BG2, padding: '96px 1.5rem', position: 'relative', overflow: 'hidden' }}>
         {/* How it works background image */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <Image
@@ -593,9 +624,9 @@ export default function CompliancePortalsPage() {
               { num: isCA ? '3' : '2', label: isCA ? 'Portals managed' : 'Portals managed' },
               { num: '$0', label: 'Hidden fees or surprises' },
             ].map(s => (
-              <div key={s.num} style={{ background: SURFACE, padding: '32px 24px', textAlign: 'center' }}>
-                <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 800, fontSize: '2.6rem', color: GOLD, lineHeight: 1, marginBottom: '8px' }}>{s.num}</div>
-                <div style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: MUTED }}>{s.label}</div>
+              <div key={s.num} style={{ background: SURFACE, padding: '32px 20px', textAlign: 'center' }}>
+                <div className="cp-stat-num" style={{ fontFamily: 'Playfair Display, serif', fontWeight: 800, fontSize: '2.6rem', color: GOLD, lineHeight: 1, marginBottom: '8px' }}>{s.num}</div>
+                <div style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: MUTED, lineHeight: 1.4 }}>{s.label}</div>
               </div>
             ))}
           </div>
@@ -603,7 +634,7 @@ export default function CompliancePortalsPage() {
       </section>
 
       {/* ── PRICING ── */}
-      <section id="pricing" style={{ background: BG, padding: '96px 1.5rem' }}>
+      <section id="pricing" className="cp-section-pad" style={{ background: BG, padding: '96px 1.5rem' }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel>Transparent Pricing</SectionLabel>
           <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '16px', lineHeight: 1.1 }}>
@@ -616,7 +647,7 @@ export default function CompliancePortalsPage() {
           </p>
           <div className="cp-price-grid">
             {/* Single Portal */}
-            <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '40px 32px', display: 'flex', flexDirection: 'column' }}>
+            <div className="cp-price-card" style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '40px 32px', display: 'flex', flexDirection: 'column' }}>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: MUTED, marginBottom: '12px' }}>Single Portal</p>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginBottom: '6px' }}>
                 <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: 800, fontSize: '3rem', color: TEXT }}>$1,500</span>
@@ -631,8 +662,8 @@ export default function CompliancePortalsPage() {
               <GoldBtn href={CALENDLY} external fullWidth>Book a Consultation</GoldBtn>
             </div>
 
-            {/* All Portals — Featured */}
-            <div style={{ background: SURFACE, border: `2px solid ${GOLD}`, borderRadius: '16px', padding: '40px 32px', display: 'flex', flexDirection: 'column', position: 'relative' }}>
+            {/* All Portals Featured */}
+            <div className="cp-price-card" style={{ background: SURFACE, border: `2px solid ${GOLD}`, borderRadius: '16px', padding: '40px 32px', display: 'flex', flexDirection: 'column', position: 'relative' }}>
               <div style={{ position: 'absolute', top: '-14px', left: '50%', transform: 'translateX(-50%)', background: GOLD, color: '#07090f', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '5px 18px', borderRadius: '100px', whiteSpace: 'nowrap' }}>
                 {isCA ? 'Most Popular' : 'Best Value'}
               </div>
@@ -656,7 +687,7 @@ export default function CompliancePortalsPage() {
             </div>
 
             {/* ComplyWorks / Single Add-on */}
-            <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '40px 32px', display: 'flex', flexDirection: 'column' }}>
+            <div className="cp-price-card" style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '40px 32px', display: 'flex', flexDirection: 'column' }}>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: MUTED, marginBottom: '12px' }}>
                 {isCA ? 'ComplyWorks Only' : 'Avetta'}
               </p>
@@ -682,7 +713,7 @@ export default function CompliancePortalsPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section id="faq" style={{ background: BG2, padding: '96px 1.5rem' }}>
+      <section id="faq" className="cp-section-pad" style={{ background: BG2, padding: '96px 1.5rem' }}>
         <div style={{ maxWidth: '820px', margin: '0 auto' }}>
           <SectionLabel>Common Questions</SectionLabel>
           <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '16px', lineHeight: 1.1 }}>
@@ -698,7 +729,7 @@ export default function CompliancePortalsPage() {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section style={{ background: BG, padding: '96px 1.5rem', borderTop: `1px solid ${BORDER}`, position: 'relative', overflow: 'hidden' }}>
+      <section className="cp-section-pad" style={{ background: BG, padding: '96px 1.5rem', borderTop: `1px solid ${BORDER}`, position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <Image src="/images/Final CTA Section Background ISN Landing.webp" alt="" fill loading="lazy" style={{ objectFit: 'cover', opacity: 0.1 }} />
         </div>
@@ -729,9 +760,9 @@ export default function CompliancePortalsPage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer style={{ background: BG2, borderTop: `1px solid ${BORDER}`, padding: '64px 1.5rem 32px' }}>
+      <footer style={{ background: BG2, borderTop: `1px solid ${BORDER}`, padding: 'clamp(40px, 8vw, 64px) 1rem 32px' }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '48px', marginBottom: '48px' }}>
+          <div className="cp-footer-grid" style={{ marginBottom: '48px' }}>
             {/* Brand */}
             <div>
               <p style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: '22px', color: TEXT, marginBottom: '12px' }}>COR Pathways</p>
