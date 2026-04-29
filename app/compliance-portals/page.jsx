@@ -802,9 +802,9 @@ export default function CompliancePortalsPage() {
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: GOLD, marginBottom: '16px' }}>Company</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 {[
-                  { label: 'About', href: 'https://corpathway.com/about' },
-                  { label: 'Pricing', href: 'https://corpathway.com/pricing' },
-                  { label: 'Contact', href: 'https://corpathway.com/contact' },
+                  { label: 'About', href: '//about' },
+                  { label: 'Pricing', href: '//pricing' },
+                  { label: 'Contact', href: '//contact' },
                   { label: 'Book a Consultation', href: CALENDLY },
                 ].map(l => (
                   <Link key={l.label} href={l.href} style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>{l.label}</Link>

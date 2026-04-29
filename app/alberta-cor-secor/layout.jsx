@@ -5,7 +5,7 @@ export const metadata = {
   openGraph: {
     title: 'COR & SE-COR Certification Alberta | CorPathway',
     description: 'Alberta COR and SE-COR certification consulting + purpose-built app. All 10 Certifying Partners. WCB PIR refund support.',
-    url: 'https://corpathway.com/alberta-cor-secor',
+    url: 'https://corpathways.com/alberta-cor-secor',
   },
 }
 
