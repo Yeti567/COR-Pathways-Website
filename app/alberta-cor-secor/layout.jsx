@@ -1,11 +1,13 @@
 export const metadata = {
-  title: 'COR & SE-COR Certification Alberta | CorPathway',
+  title: 'COR & SE-COR Certification Alberta',
   description: 'Get COR or SE-COR certified in Alberta with expert consulting and purpose-built software. We work with all 10 Alberta Certifying Partners. Free consultation.',
   keywords: 'COR certification Alberta, SE-COR Alberta, SECOR certification Alberta, ACSA COR, Alberta safety certification, WCB PIR refund, COR consulting Alberta',
+  alternates: { canonical: '/alberta-cor-secor' },
   openGraph: {
-    title: 'COR & SE-COR Certification Alberta | CorPathway',
+    title: 'COR & SE-COR Certification Alberta | COR Pathways',
     description: 'Alberta COR and SE-COR certification consulting + purpose-built app. All 10 Certifying Partners. WCB PIR refund support.',
-    url: 'https://corpathways.com/alberta-cor-secor',
+    url: '/alberta-cor-secor',
+    type: 'website',
   },
 }
 
