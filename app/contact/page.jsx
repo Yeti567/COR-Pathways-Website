@@ -69,6 +69,20 @@ const labelStyle = {
   marginBottom: '6px',
 }
 
+const fieldErrorStyle = {
+  marginTop: '6px',
+  fontFamily: 'var(--font-dm-sans)',
+  fontSize: '13px',
+  color: '#B91C1C',
+}
+
+// Mirrors the server-side caps in app/api/contact/route.js
+const MAX_NAME = 200
+const MAX_COMPANY = 200
+const MAX_EMAIL = 320
+const MAX_PHONE = 50
+const MAX_MESSAGE = 5000
+
 const FAQS = [
   { q: 'How quickly do you respond to inquiries?', a: 'Within one business day, usually faster. Blake personally responds to every message. You will not get an automated reply or be handed off to someone else.' },
   { q: 'Is the consultation call really free?', a: 'Yes, completely free and with no obligation. The consultation exists so both of us can figure out whether we are a good fit before anyone commits to anything.' },
@@ -77,75 +91,124 @@ const FAQS = [
 ]
 
 function ContactForm() {
-  const [form, setForm] = useState({ fullName: '', companyName: '', email: '', phone: '', province: '', service: '', employees: '', message: '' })
-  const [status, setStatus] = useState('idle') // idle | success
+  const [form, setForm] = useState({ fullName: '', companyName: '', email: '', phone: '', province: '', service: '', employees: '', message: '', website: '' })
+  const [status, setStatus] = useState('idle') // idle | submitting | success | error
+  const [fieldErrors, setFieldErrors] = useState({})
+  const [submitError, setSubmitError] = useState(null)
 
   function handleChange(e) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+    if (fieldErrors[e.target.name]) {
+      setFieldErrors((prev) => ({ ...prev, [e.target.name]: undefined }))
+    }
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    const subject = encodeURIComponent(`New Inquiry: ${form.service || 'COR Pathways Contact Form'}`)
-    const body = encodeURIComponent(
-      `Full Name: ${form.fullName}\n` +
-      `Company: ${form.companyName}\n` +
-      `Email: ${form.email}\n` +
-      `Phone: ${form.phone}\n` +
-      `Province: ${form.province}\n` +
-      `Service Needed: ${form.service}\n` +
-      (form.employees ? `Number of Employees: ${form.employees}\n` : '') +
-      (form.message ? `\nMessage:\n${form.message}` : '')
-    )
-    window.location.href = `mailto:blake.safetyconsultant@gmail.com?subject=${subject}&body=${body}`
-    setStatus('success')
+    setStatus('submitting')
+    setFieldErrors({})
+    setSubmitError(null)
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+
+      if (res.ok) {
+        setStatus('success')
+        return
+      }
+
+      if (res.status === 422) {
+        const data = await res.json().catch(() => ({}))
+        setFieldErrors(data.errors || {})
+        setSubmitError('Please fix the highlighted fields and try again.')
+      } else if (res.status === 429) {
+        setSubmitError('You have sent a few messages recently. Please wait a few minutes before trying again.')
+      } else {
+        setSubmitError('Something went wrong on our end. Please try again, or email blake.safetyconsultant@gmail.com directly.')
+      }
+      setStatus('error')
+    } catch {
+      setSubmitError('We could not reach the server. Check your connection and try again.')
+      setStatus('error')
+    }
   }
 
   if (status === 'success') {
     return (
-      <div style={{ background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.3)', borderLeft: '4px solid #34D399', borderRadius: '12px', padding: '40px 32px', textAlign: 'center' }}>
-        <span style={{ fontSize: '48px', display: 'block', marginBottom: '20px' }}>✅</span>
-        <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '24px', fontWeight: 700, color: '#0D1F3C', marginBottom: '12px' }}>Message sent successfully.</p>
+      <div role="status" style={{ background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.3)', borderLeft: '4px solid #34D399', borderRadius: '12px', padding: '40px 32px', textAlign: 'center' }}>
+        <span style={{ fontSize: '48px', display: 'block', marginBottom: '20px' }} aria-hidden="true">✅</span>
+        <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '24px', fontWeight: 700, color: '#0D1F3C', marginBottom: '12px' }}>Thanks. We received your message.</p>
         <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.75, maxWidth: '440px', margin: '0 auto' }}>
-          Your email client should have opened with the message pre-filled. Send it from there and Blake will get back to you within one business day.
+          Blake will get back to you within one business day. If it&apos;s urgent, call 780-832-5158.
         </p>
       </div>
     )
   }
 
+  const errorInputStyle = { ...inputStyle, border: '1.5px solid #EF4444' }
+  const styleFor = (key) => (fieldErrors[key] ? errorInputStyle : inputStyle)
+  const errorIdFor = (key) => (fieldErrors[key] ? `${key}-error` : undefined)
+
   return (
-    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }} noValidate>
+      {/* Honeypot: hidden from real users, bots fill it and get silently dropped server-side. */}
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, width: 0, overflow: 'hidden' }}>
+        <label htmlFor="website">Website</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          value={form.website}
+          onChange={handleChange}
+        />
+      </div>
+      {submitError && (
+        <div role="alert" style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderLeft: '4px solid #EF4444', borderRadius: '8px', padding: '12px 16px', fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: '#7F1D1D' }}>
+          {submitError}
+        </div>
+      )}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
         <div>
           <label htmlFor="fullName" style={labelStyle}>Full Name <span style={{ color: '#EF4444' }}>*</span></label>
-          <input id="fullName" name="fullName" type="text" required placeholder="Your full name" value={form.fullName} onChange={handleChange} style={inputStyle} />
+          <input id="fullName" name="fullName" type="text" required aria-required="true" aria-invalid={!!fieldErrors.fullName} aria-describedby={errorIdFor('fullName')} maxLength={MAX_NAME} placeholder="Your full name" value={form.fullName} onChange={handleChange} style={styleFor('fullName')} />
+          {fieldErrors.fullName && <p id="fullName-error" style={fieldErrorStyle}>{fieldErrors.fullName}</p>}
         </div>
         <div>
           <label htmlFor="companyName" style={labelStyle}>Company Name <span style={{ color: '#EF4444' }}>*</span></label>
-          <input id="companyName" name="companyName" type="text" required placeholder="Your company name" value={form.companyName} onChange={handleChange} style={inputStyle} />
+          <input id="companyName" name="companyName" type="text" required aria-required="true" aria-invalid={!!fieldErrors.companyName} aria-describedby={errorIdFor('companyName')} maxLength={MAX_COMPANY} placeholder="Your company name" value={form.companyName} onChange={handleChange} style={styleFor('companyName')} />
+          {fieldErrors.companyName && <p id="companyName-error" style={fieldErrorStyle}>{fieldErrors.companyName}</p>}
         </div>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
         <div>
           <label htmlFor="email" style={labelStyle}>Email Address <span style={{ color: '#EF4444' }}>*</span></label>
-          <input id="email" name="email" type="email" required placeholder="your@email.com" value={form.email} onChange={handleChange} style={inputStyle} />
+          <input id="email" name="email" type="email" required aria-required="true" aria-invalid={!!fieldErrors.email} aria-describedby={errorIdFor('email')} maxLength={MAX_EMAIL} autoComplete="email" placeholder="your@email.com" value={form.email} onChange={handleChange} style={styleFor('email')} />
+          {fieldErrors.email && <p id="email-error" style={fieldErrorStyle}>{fieldErrors.email}</p>}
         </div>
         <div>
           <label htmlFor="phone" style={labelStyle}>Phone Number <span style={{ color: '#EF4444' }}>*</span></label>
-          <input id="phone" name="phone" type="tel" required placeholder="Your phone number" value={form.phone} onChange={handleChange} style={inputStyle} />
+          <input id="phone" name="phone" type="tel" required aria-required="true" aria-invalid={!!fieldErrors.phone} aria-describedby={errorIdFor('phone')} maxLength={MAX_PHONE} autoComplete="tel" placeholder="Your phone number" value={form.phone} onChange={handleChange} style={styleFor('phone')} />
+          {fieldErrors.phone && <p id="phone-error" style={fieldErrorStyle}>{fieldErrors.phone}</p>}
         </div>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
         <div>
           <label htmlFor="province" style={labelStyle}>Province <span style={{ color: '#EF4444' }}>*</span></label>
-          <select id="province" name="province" required value={form.province} onChange={handleChange} style={{ ...inputStyle, color: form.province ? '#111827' : '#9CA3AF' }}>
+          <select id="province" name="province" required aria-required="true" aria-invalid={!!fieldErrors.province} aria-describedby={errorIdFor('province')} value={form.province} onChange={handleChange} style={{ ...styleFor('province'), color: form.province ? '#111827' : '#9CA3AF' }}>
             <option value="" disabled>Select your province</option>
             {['Ontario', 'Alberta', 'British Columbia', 'Saskatchewan', 'Other'].map((p) => <option key={p} value={p}>{p}</option>)}
           </select>
+          {fieldErrors.province && <p id="province-error" style={fieldErrorStyle}>{fieldErrors.province}</p>}
         </div>
         <div>
           <label htmlFor="service" style={labelStyle}>What can we help you with? <span style={{ color: '#EF4444' }}>*</span></label>
-          <select id="service" name="service" required value={form.service} onChange={handleChange} style={{ ...inputStyle, color: form.service ? '#111827' : '#9CA3AF' }}>
+          <select id="service" name="service" required aria-required="true" aria-invalid={!!fieldErrors.service} aria-describedby={errorIdFor('service')} value={form.service} onChange={handleChange} style={{ ...styleFor('service'), color: form.service ? '#111827' : '#9CA3AF' }}>
             <option value="" disabled>Select a service</option>
             {[
               'COR Certification Consulting: Ontario',
@@ -157,6 +220,7 @@ function ContactForm() {
               'General inquiry',
             ].map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
+          {fieldErrors.service && <p id="service-error" style={fieldErrorStyle}>{fieldErrors.service}</p>}
         </div>
       </div>
       <div>
@@ -168,11 +232,14 @@ function ContactForm() {
       </div>
       <div>
         <label htmlFor="message" style={labelStyle}>Message <span style={{ color: '#9CA3AF', fontWeight: 400 }}>(optional)</span></label>
-        <textarea id="message" name="message" rows={5} placeholder="Tell us a bit about your company and what you are looking for. The more detail you share the better we can prepare for our conversation." value={form.message} onChange={handleChange} style={{ ...inputStyle, resize: 'vertical', lineHeight: 1.6 }} />
+        <textarea id="message" name="message" rows={5} maxLength={MAX_MESSAGE} placeholder="Tell us a bit about your company and what you are looking for. The more detail you share the better we can prepare for our conversation." value={form.message} onChange={handleChange} style={{ ...inputStyle, resize: 'vertical', lineHeight: 1.6 }} />
       </div>
-      <button type="submit" style={{ width: '100%', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '16px', fontWeight: 600, padding: '15px 28px', borderRadius: '8px', border: 'none', cursor: 'pointer' }}>
-        Send Message →
+      <button type="submit" disabled={status === 'submitting'} style={{ width: '100%', background: status === 'submitting' ? '#6B7280' : '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '16px', fontWeight: 600, padding: '15px 28px', borderRadius: '8px', border: 'none', cursor: status === 'submitting' ? 'not-allowed' : 'pointer', opacity: status === 'submitting' ? 0.7 : 1 }}>
+        {status === 'submitting' ? 'Sending…' : 'Send Message →'}
       </button>
+      <p role="status" aria-live="polite" style={{ position: 'absolute', left: '-9999px' }}>
+        {status === 'submitting' ? 'Sending your message.' : ''}
+      </p>
       <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: '#9CA3AF', fontStyle: 'italic', textAlign: 'center', lineHeight: 1.6 }}>
         We respond to all inquiries within one business day. Your information is never shared with third parties.
       </p>
