@@ -35,7 +35,7 @@ function CheckItem({ children, color = '#34D399', textColor = '#374151' }) {
 }
 
 function FaqItem({ question, answer }) {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   return (
     <div style={{ background: '#ffffff', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.08)', overflow: 'hidden' }}>
       <button onClick={() => setOpen(!open)} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', padding: '20px 24px', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}>
@@ -83,12 +83,12 @@ export default function PricingPage() {
           <h1 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(2.4rem, 5vw, 3.6rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.15, marginBottom: '28px', letterSpacing: '-0.02em', maxWidth: '820px' }}>
             Everything you need to get certified and <span style={{ color: '#34D399' }}>stay compliant.</span>
           </h1>
-          <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '60px', maxWidth: '680px' }}>
+          <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '12px', maxWidth: '680px' }}>
             COR consulting, compliance management, and post-certification platform access: all with flat, predictable pricing and no hidden fees.
           </p>
-          <div style={{ width: '100%', maxWidth: '800px', height: '320px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 32px 80px rgba(0,0,0,0.4)', position: 'relative' }}>
-            <Image src="/images/hero Section, page 5.webp" alt="Clean overhead shot of a desk with a calculator, contract documents, a hard hat, and a coffee mug, pricing and planning concept" fill style={{ objectFit: 'cover' }} priority />
-          </div>
+          <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.4)', letterSpacing: '0.02em' }}>
+            All prices in CAD. HST applied where applicable.
+          </p>
         </div>
       </section>
 

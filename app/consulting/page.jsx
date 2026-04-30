@@ -54,7 +54,7 @@ function ChecklistSection({ title, items }) {
 }
 
 function FaqItem({ question, answer }) {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   return (
     <div style={{ background: '#ffffff', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.08)', overflow: 'hidden' }}>
       <button
@@ -77,11 +77,11 @@ function FaqItem({ question, answer }) {
 
 const TIMELINE_STEPS = [
   { badge: 'Week 1', title: 'Free COR Readiness Assessment', body: 'We start with a free consultation to understand your company: your size, your trades, your current safety program, and how far you are from COR ready. You leave the call with a clear picture of what is needed and a realistic timeline.', color: '#34D399' },
-  { badge: 'Weeks 1 to 2', title: 'Platform Setup & Company Onboarding', body: 'We set up your COR Pathways account, enter your company details, import your employee list, and configure your form templates. Your team gets access and a walkthrough of how to use the platform from day one.', color: '#4A90C4' },
+  { badge: 'Weeks 1 to 2', title: 'Platform Setup & Company Onboarding', body: 'We set up your COR Pathways account, enter your company details, import your employee list, and configure your form templates. Your team gets access and a walkthrough of how to use the platform from day one.', color: '#34D399' },
   { badge: 'Weeks 2 to 4', title: 'Gap Analysis Against All 14 Elements', body: 'We conduct a thorough gap analysis of your existing safety program against all 14 COR 2020 elements. Every gap is documented, scored, and added to your action plan with a priority level and target completion date.', color: '#34D399' },
-  { badge: 'Months 1 to 9', title: 'Safety Program Development', body: 'This is where the work happens. We build your complete health and safety management system: every policy, procedure, form, and record required by the COR 2020 standard. Your team uses the platform daily and we guide every step.', color: '#4A90C4' },
+  { badge: 'Months 1 to 9', title: 'Safety Program Development', body: 'This is where the work happens. We build your complete health and safety management system: every policy, procedure, form, and record required by the COR 2020 standard. Your team uses the platform daily and we guide every step.', color: '#34D399' },
   { badge: 'Months 9 to 12', title: 'Audit Preparation & Mock Audit', body: 'As your audit date approaches, we prepare your complete evidence package for AuditSoft, conduct a mock audit to identify any remaining gaps, and prepare you and your team for the auditor interview. You walk in ready.', color: '#34D399' },
-  { badge: 'Months 12 to 18', title: 'External Audit & COR Certificate', body: 'Your IHSA-certified external auditor conducts the audit. With COR Pathways behind you, your documentation is complete, your evidence is organized, and your team is prepared. We support you through the audit and beyond.', color: '#4A90C4' },
+  { badge: 'Months 12 to 18', title: 'External Audit & COR Certificate', body: 'Your IHSA-certified external auditor conducts the audit. With COR Pathways behind you, your documentation is complete, your evidence is organized, and your team is prepared. We support you through the audit and beyond.', color: '#34D399' },
 ]
 
 const FAQS = [
@@ -348,9 +348,12 @@ export default function ConsultingPage() {
 
       {/* ══ SECTION 5: WESTERN CANADA ══ */}
       <section id="western-canada" style={{ background: '#ffffff', padding: '0 0 96px' }}>
-        {/* Divider */}
-        <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', padding: '24px 1.5rem', textAlign: 'center', marginBottom: '72px' }}>
-          <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#0D1F3C', opacity: 0.45 }}>Also serving Alberta · BC · Saskatchewan</p>
+        {/* Region transition */}
+        <div style={{ padding: '56px 1.5rem 24px', textAlign: 'center', marginBottom: '48px', borderTop: '4px solid #4A90C4', background: 'linear-gradient(180deg, rgba(74,144,196,0.06) 0%, transparent 100%)' }}>
+          <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#4A90C4', marginBottom: '8px' }}>Working in western Canada instead?</p>
+          <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: '#6B7280', lineHeight: 1.6, maxWidth: '520px', margin: '0 auto' }}>
+            Below is our Health &amp; Safety Program Management service for smaller contractors in Alberta, BC, and Saskatchewan. Different program, different scope.
+          </p>
         </div>
 
         <div style={{ maxWidth: MAX_W, margin: '0 auto', padding: '0 1.5rem' }}>

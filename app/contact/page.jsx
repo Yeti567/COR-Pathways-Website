@@ -29,7 +29,7 @@ function OutlineBtn({ href, children }) {
 }
 
 function FaqItem({ question, answer }) {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   return (
     <div style={{ background: '#ffffff', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.08)', overflow: 'hidden' }}>
       <button onClick={() => setOpen(!open)} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', padding: '20px 24px', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}>
@@ -280,7 +280,10 @@ export default function ContactPage() {
         <div style={{ maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '64px', alignItems: 'flex-start' }}>
           {/* Left, Form */}
           <div>
-            <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#34D399', marginBottom: '20px' }}>Send Us a Message</p>
+            <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#34D399', marginBottom: '12px' }}>Send Us a Message</p>
+            <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: '#6B7280', lineHeight: 1.6, marginBottom: '24px' }}>
+              Takes about 90 seconds. Blake personally responds within one business day.
+            </p>
             <ContactForm />
           </div>
 
