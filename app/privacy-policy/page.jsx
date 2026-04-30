@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
             Information We Collect
           </h2>
           <ul style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.8, marginBottom: '48px', paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            <li><strong style={{ color: '#0D1F3C' }}>Contact information:</strong> name, email address, phone number, company name,collected when you contact us, book a consultation, or sign up for our platform.</li>
+            <li><strong style={{ color: '#0D1F3C' }}>Contact information:</strong> name, email address, phone number, company name, collected when you contact us, book a consultation, or sign up for our platform.</li>
             <li><strong style={{ color: '#0D1F3C' }}>Account information:</strong> login credentials, subscription details, and usage data when you access the COR Pathways platform.</li>
             <li><strong style={{ color: '#0D1F3C' }}>Payment information:</strong> billing details processed securely through our third-party payment processor. We do not store credit card numbers.</li>
             <li><strong style={{ color: '#0D1F3C' }}>Technical data:</strong> IP address, browser type, device information, and cookies collected automatically when you visit our website.</li>

@@ -64,7 +64,7 @@ export default function CertificationsTrainingPage() {
             <OutlineBtn href="/platform">See All Platform Features</OutlineBtn>
           </div>
           <div style={{ width: '100%', maxWidth: '900px' }}>
-            <SiteImage src="/images/Hero image page 3.webp" alt="Certification tracker dashboard showing employee list with certification status badges,green, amber, and red expiry indicators" height={400} rounded="16px" />
+            <SiteImage src="/images/Hero image page 3.webp" alt="Certification tracker dashboard showing employee list with certification status badges, green, amber, and red expiry indicators" height={400} rounded="16px" />
           </div>
         </div>
       </section>
@@ -198,7 +198,7 @@ export default function CertificationsTrainingPage() {
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(74,144,196,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(74,144,196,0.05) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* Left,visual */}
+          {/* Left, visual */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <SiteImage src="/images/Mobile certification photo upload.webp" alt="Worker using a smartphone camera to photograph a paper training certificate for upload into the app" height={280} />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -208,7 +208,7 @@ export default function CertificationsTrainingPage() {
             </div>
           </div>
 
-          {/* Right,copy */}
+          {/* Right, copy */}
           <div>
             <SectionLabel>Certificate Uploads &amp; Records</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.25, marginBottom: '24px' }}>
@@ -244,7 +244,7 @@ export default function CertificationsTrainingPage() {
       <section style={{ background: '#F3F4F6', padding: SECTION_PAD }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* Left,copy */}
+          {/* Left, copy */}
           <div>
             <SectionLabel>Training Records</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.25, marginBottom: '24px' }}>
@@ -270,7 +270,7 @@ export default function CertificationsTrainingPage() {
             </div>
           </div>
 
-          {/* Right,visual */}
+          {/* Right, visual */}
           <div>
             <SiteImage src="/images/Safety Training Session.webp" alt="Safety trainer standing in front of a small group of construction workers in a site office delivering a toolbox talk" height={360} />
           </div>

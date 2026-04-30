@@ -39,13 +39,13 @@ const SERVICES_ITEMS = [
   {
     icon: '🏆',
     title: 'COR Certification Consulting',
-    subtitle: 'Full COR 2020 certification,Ontario',
+    subtitle: 'Full COR 2020 certification, Ontario',
     href: '/consulting',
   },
   {
     icon: '🛡️',
     title: 'Health & Safety Program Management',
-    subtitle: 'SE-COR program management,AB, BC, SK',
+    subtitle: 'SE-COR program management, AB, BC, SK',
     href: '/consulting#western-canada',
   },
 ]
@@ -343,7 +343,7 @@ function MobileDrawer({ open, onClose, pathname }) {
         <nav style={{ flex: 1 }}>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0' }}>
 
-            {/* Platform,expanded by default */}
+            {/* Platform, expanded by default */}
             <li>
               <span
                 style={{
@@ -387,7 +387,7 @@ function MobileDrawer({ open, onClose, pathname }) {
               </ul>
             </li>
 
-            {/* Services,expanded by default */}
+            {/* Services, expanded by default */}
             <li>
               <span
                 style={{
@@ -765,7 +765,7 @@ export default function Nav() {
               flexShrink: 0,
             }}
           >
-            {/* Phone,desktop only */}
+            {/* Phone, desktop only */}
             <a
               href="tel:+17808325158"
               className="nav-phone"
@@ -784,7 +784,7 @@ export default function Nav() {
               📞 780-832-5158
             </a>
 
-            {/* Sign In,hidden on mobile */}
+            {/* Sign In, hidden on mobile */}
             <Link
               href="https://2026-core.vercel.app/login"
               className="sign-in-link"
@@ -803,7 +803,7 @@ export default function Nav() {
               Sign In
             </Link>
 
-            {/* Start Free Trial,hidden on mobile */}
+            {/* Start Free Trial, hidden on mobile */}
             <a
               href="https://calendly.com/blake-safetyconsultant/30min"
               target="_blank"
@@ -827,7 +827,7 @@ export default function Nav() {
               Book a Free Consultation
             </a>
 
-            {/* Hamburger,mobile only */}
+            {/* Hamburger, mobile only */}
             <button
               className="hamburger-button"
               onClick={() => setMobileOpen(true)}

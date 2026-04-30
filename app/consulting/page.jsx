@@ -136,7 +136,7 @@ export default function ConsultingPage() {
           </div>
 
           <div style={{ width: '100%', maxWidth: '900px', height: '420px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 32px 80px rgba(0,0,0,0.4)', position: 'relative' }}>
-            <Image src="/images/Consultant talking to client.webp" alt="Safety consultant reviewing documents with a construction company owner at a desk or job site office,professional, approachable" fill style={{ objectFit: 'cover' }} priority />
+            <Image src="/images/Consultant talking to client.webp" alt="Safety consultant reviewing documents with a construction company owner at a desk or job site office, professional, approachable" fill style={{ objectFit: 'cover' }} priority />
           </div>
         </div>
       </section>
@@ -183,7 +183,7 @@ export default function ConsultingPage() {
                   {[
                     { icon: '🕐', title: '25 to 40 Hours of Consulting Time Per Month', body: 'Behind-the-scenes work building your safety program, reviewing your forms and submissions, monitoring your app activity, and preparing your audit evidence. You get real work done on your file every single month, not just a check-in call.' },
                     { icon: '📹', title: 'Weekly Zoom Calls, Approximately 3 Hours Each', body: 'One dedicated Zoom call per week to review progress, walk through completed work, address questions, and plan the week ahead. These are working sessions, not status updates.' },
-                    { icon: '📱', title: 'Live App Training for Your Entire Team', body: 'We conduct a dedicated Zoom training session with your full team,workers, supervisors, and admins,walking everyone through the COR Pathways app. Forms, inspections, hazard assessments, certification uploads: your crew learns it all live with us on screen.' },
+                    { icon: '📱', title: 'Live App Training for Your Entire Team', body: 'We conduct a dedicated Zoom training session with your full team, workers, supervisors, and admins, walking everyone through the COR Pathways app. Forms, inspections, hazard assessments, certification uploads: your crew learns it all live with us on screen.' },
                     { icon: '👁️', title: 'Daily App Monitoring and Real-Time Feedback', body: 'We monitor your COR Pathways account on a daily basis. When workers submit forms, we review them. When something is filled out incorrectly or a gap appears, we flag it immediately. You get active guidance, not a monthly report telling you what went wrong.' },
                   ].map((f) => (
                     <div key={f.title} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
@@ -365,11 +365,11 @@ export default function ConsultingPage() {
             Health &amp; Safety Program Management for SE-COR companies.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, marginBottom: '56px', maxWidth: '820px' }}>
-            For smaller construction companies in Alberta, British Columbia, and Saskatchewan operating under SE-COR safety programs, COR Pathways offers a complete remote health and safety program management service. You get a professionally built and actively managed safety program,without hiring a full-time safety officer.
+            For smaller construction companies in Alberta, British Columbia, and Saskatchewan operating under SE-COR safety programs, COR Pathways offers a complete remote health and safety program management service. You get a professionally built and actively managed safety program, without hiring a full-time safety officer.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '56px', alignItems: 'flex-start' }}>
-            {/* Left,what is included */}
+            {/* Left, what is included */}
             <div>
               <div style={{ marginBottom: '32px' }}>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#4A90C4', marginBottom: '14px' }}>We Build Your Safety Program</p>
@@ -411,14 +411,14 @@ export default function ConsultingPage() {
               </div>
             </div>
 
-            {/* Right,info card + image */}
+            {/* Right, info card + image */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               <div style={{ background: '#0D1F3C', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.15)' }}>
                 <div style={{ height: '3px', background: 'linear-gradient(90deg, #4A90C4, #7BB8E0)' }} />
                 <div style={{ padding: '2rem' }}>
                   <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#ffffff', marginBottom: '12px', lineHeight: 1.3 }}>Available for SE-COR Programs Only</p>
                   <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75, marginBottom: '24px' }}>
-                    This service is designed specifically for smaller companies in Alberta, BC, and Saskatchewan operating under SE-COR safety programs. SE-COR is a streamlined safety certification designed for companies with fewer employees,separate from the full COR certification required in Ontario.
+                    This service is designed specifically for smaller companies in Alberta, BC, and Saskatchewan operating under SE-COR safety programs. SE-COR is a streamlined safety certification designed for companies with fewer employees, separate from the full COR certification required in Ontario.
                   </p>
                   <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '24px' }}>
                     {['Alberta', 'British Columbia', 'Saskatchewan'].map((p) => (
@@ -435,7 +435,7 @@ export default function ConsultingPage() {
               </div>
 
               <div style={{ width: '100%', height: '260px', borderRadius: '12px', overflow: 'hidden', position: 'relative', border: '1px solid rgba(74,144,196,0.15)' }}>
-                <Image src="/images/Western Canada Construction Site.webp" alt="Wide landscape shot of a construction site in Alberta or BC,mountains or prairie backdrop, heavy equipment, workers in high-vis vests" fill style={{ objectFit: 'cover' }} />
+                <Image src="/images/Western Canada Construction Site.webp" alt="Wide landscape shot of a construction site in Alberta or BC, mountains or prairie backdrop, heavy equipment, workers in high-vis vests" fill style={{ objectFit: 'cover' }} />
               </div>
             </div>
           </div>
@@ -460,12 +460,12 @@ export default function ConsultingPage() {
               {
                 icon: '🏗️',
                 title: 'Deep Construction Industry Expertise',
-                body: 'We know the COR 2020 standard inside and out,every element, every weighted score, every piece of evidence an auditor looks for. We have helped construction companies across multiple trades get certified and we bring that experience to every engagement.',
+                body: 'We know the COR 2020 standard inside and out, every element, every weighted score, every piece of evidence an auditor looks for. We have helped construction companies across multiple trades get certified and we bring that experience to every engagement.',
               },
               {
                 icon: '📱',
                 title: 'Software Built Around the Standard',
-                body: 'Every feature in COR Pathways was designed around a specific COR audit requirement. The platform does not just store documents,it tracks compliance, alerts you to gaps, and builds your evidence package automatically.',
+                body: 'Every feature in COR Pathways was designed around a specific COR audit requirement. The platform does not just store documents, it tracks compliance, alerts you to gaps, and builds your evidence package automatically.',
               },
               {
                 icon: '🤝',

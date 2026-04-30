@@ -278,13 +278,13 @@ export default function ContactPage() {
       {/* ══ S2: CONTACT MAIN ══ */}
       <section id="contact-form" style={{ background: '#ffffff', padding: '96px 1.5rem' }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '64px', alignItems: 'flex-start' }}>
-          {/* Left,Form */}
+          {/* Left, Form */}
           <div>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#34D399', marginBottom: '20px' }}>Send Us a Message</p>
             <ContactForm />
           </div>
 
-          {/* Right,Contact Details */}
+          {/* Right, Contact Details */}
           <div>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#34D399', marginBottom: '20px' }}>Contact Information</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -385,7 +385,7 @@ export default function ContactPage() {
               <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.15)', border: '1px solid rgba(52,211,153,0.3)', color: '#059669', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '16px', alignSelf: 'flex-start' }}>Ontario</span>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#0D1F3C', marginBottom: '12px', lineHeight: 1.3 }}>Need COR certification?</p>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#4B5563', lineHeight: 1.75, marginBottom: '20px', flex: 1 }}>
-                If you are an Ontario contractor who needs to get COR certified,especially before the January 1, 2027 City of Ottawa deadline,COR consulting is what you need.
+                If you are an Ontario contractor who needs to get COR certified, especially before the January 1, 2027 City of Ottawa deadline, COR consulting is what you need.
               </p>
               <Link href="/consulting" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 700, color: '#059669', textDecoration: 'none' }}>Learn about COR consulting →</Link>
             </div>
@@ -403,7 +403,7 @@ export default function ContactPage() {
               <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.15)', border: '1px solid rgba(52,211,153,0.3)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '16px', alignSelf: 'flex-start' }}>All Provinces</span>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#ffffff', marginBottom: '12px', lineHeight: 1.3 }}>Need ISNetworld, Avetta, or ComplyWorks?</p>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75, marginBottom: '20px', flex: 1 }}>
-                If you need a compliance account set up from scratch or managed ongoing,no matter where you are in Canada,compliance management is a standalone service.
+                If you need a compliance account set up from scratch or managed ongoing, no matter where you are in Canada, compliance management is a standalone service.
               </p>
               <Link href="/compliance" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 700, color: '#34D399', textDecoration: 'none' }}>Learn about compliance services →</Link>
             </div>

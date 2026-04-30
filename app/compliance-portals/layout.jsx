@@ -29,7 +29,7 @@ export const metadata = {
         url: '/images/Canadian Hero Regional Visual ISN Landing.webp',
         width: 1200,
         height: 630,
-        alt: 'ISNetworld and Avetta compliance portal management for contractors,COR Pathways',
+        alt: 'ISNetworld and Avetta compliance portal management for contractors, COR Pathways',
       },
     ],
   },
