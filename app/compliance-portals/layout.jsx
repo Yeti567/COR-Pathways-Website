@@ -1,9 +1,9 @@
 export const metadata = {
   title: 'ISNetworld, Avetta & ComplyWorks Setup & Management | COR Pathways',
   description: 'COR Pathways handles your ISNetworld, Avetta, and ComplyWorks compliance portal setup and monthly management. Get to green status fast. Done-for-you service for contractors across Canada and the USA.',
-  authors: [{ name: 'COR Pathways', url: 'https://corpathways.com' }],
+  authors: [{ name: 'COR Pathways', url: 'https://corpathway.com' }],
   creator: 'COR Pathways',
-  metadataBase: new URL('https://corpathways.com'),
+  metadataBase: new URL('https://corpathway.com'),
   alternates: {
     canonical: '/compliance-portals',
   },
@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: 'ISNetworld, Avetta & ComplyWorks Setup & Management | COR Pathways',
     description: 'Done-for-you compliance portal setup and monthly management for contractors. ISNetworld, Avetta, ComplyWorks. Canada and USA. Get green fast.',
-    url: 'https://corpathways.com/compliance-portals',
+    url: 'https://corpathway.com/compliance-portals',
     siteName: 'COR Pathways',
     locale: 'en_CA',
     type: 'website',

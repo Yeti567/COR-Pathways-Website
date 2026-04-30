@@ -2,7 +2,7 @@ import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-const SITE_URL = 'https://corpathways.com'
+const SITE_URL = 'https://corpathway.com'
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

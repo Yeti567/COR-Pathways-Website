@@ -1,4 +1,4 @@
-const SITE_URL = 'https://corpathways.com'
+const SITE_URL = 'https://corpathway.com'
 
 export default function robots() {
   return {

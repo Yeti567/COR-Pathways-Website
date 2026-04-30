@@ -3,42 +3,42 @@
 
   <!-- Core pages -->
   <url>
-    <loc>https://corpathways.com/</loc>
+    <loc>https://corpathway.com/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/consulting</loc>
+    <loc>https://corpathway.com/consulting</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/compliance</loc>
+    <loc>https://corpathway.com/compliance</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/pricing</loc>
+    <loc>https://corpathway.com/pricing</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/about</loc>
+    <loc>https://corpathway.com/about</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/contact</loc>
+    <loc>https://corpathway.com/contact</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -46,21 +46,21 @@
 
   <!-- Landing pages -->
   <url>
-    <loc>https://corpathways.com/compliance-portals</loc>
+    <loc>https://corpathway.com/compliance-portals</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/alberta-cor-secor</loc>
+    <loc>https://corpathway.com/alberta-cor-secor</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/get-compliant</loc>
+    <loc>https://corpathway.com/get-compliant</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -68,14 +68,14 @@
 
   <!-- Legal pages -->
   <url>
-    <loc>https://corpathways.com/privacy-policy</loc>
+    <loc>https://corpathway.com/privacy-policy</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/terms-of-use</loc>
+    <loc>https://corpathway.com/terms-of-use</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -83,28 +83,28 @@
 
   <!-- Platform pages -->
   <url>
-    <loc>https://corpathways.com/platform/cor-audit</loc>
+    <loc>https://corpathway.com/platform/cor-audit</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/platform/certifications-training</loc>
+    <loc>https://corpathway.com/platform/certifications-training</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/platform/forms-inspections</loc>
+    <loc>https://corpathway.com/platform/forms-inspections</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://corpathways.com/platform/documents-libraries</loc>
+    <loc>https://corpathway.com/platform/documents-libraries</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

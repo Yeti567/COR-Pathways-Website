@@ -82,7 +82,7 @@ async function sendViaResend(payload) {
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) return { ok: false, reason: 'no-api-key' }
 
-  const from = process.env.CONTACT_FROM || 'COR Pathways <noreply@corpathways.com>'
+  const from = process.env.CONTACT_FROM || 'COR Pathways <noreply@corpathway.com>'
   const to = process.env.CONTACT_TO || 'blake.safetyconsultant@gmail.com'
 
   const text =
