@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd, { breadcrumbJsonLd } from '@/components/JsonLd';
 
-const SITE_URL = 'https://corpathways.com';
+const SITE_URL = 'https://corpathway.com';
 
 const serviceJsonLd = {
   '@context': 'https://schema.org',

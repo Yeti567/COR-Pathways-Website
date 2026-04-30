@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import JsonLd, { breadcrumbJsonLd } from '@/components/JsonLd';
 
-const SITE_URL = 'https://corpathways.com';
+const SITE_URL = 'https://corpathway.com';
 
 const personJsonLd = {
   '@context': 'https://schema.org',

@@ -11,7 +11,7 @@ export default function JsonLd({ data }: JsonLdProps) {
   );
 }
 
-const SITE_URL = 'https://corpathways.com';
+const SITE_URL = 'https://corpathway.com';
 
 export function breadcrumbJsonLd(
   items: { name: string; path: string }[],

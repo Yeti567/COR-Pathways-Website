@@ -10,7 +10,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const SITE_URL = 'https://corpathways.com';
+const SITE_URL = 'https://corpathway.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
