@@ -210,34 +210,6 @@ function TimelineStep({ num, icon, title, body, last = false, delay = 0 }) {
 }
 
 /* ─────────────────────────────────────────────
-   TESTIMONIAL CARD
-───────────────────────────────────────────── */
-function TestimonialCard({ initials, quote, name, company, delay = 0 }) {
-  const [ref, visible] = useReveal()
-  return (
-    <article
-      ref={ref}
-      style={{
-        background: NAVY_CARD, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '36px 32px',
-        opacity: visible ? 1 : 0,
-        transform: visible ? 'translateY(0)' : 'translateY(32px)',
-        transition: `opacity 0.6s ease ${delay}ms, transform 0.6s ease ${delay}ms`,
-      }}
-    >
-      <div style={{ color: ORANGE, fontSize: '18px', letterSpacing: '3px', marginBottom: '16px' }}>★★★★★</div>
-      <blockquote style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: TEXT, fontStyle: 'italic', lineHeight: 1.75, marginBottom: '24px' }}>"{quote}"</blockquote>
-      <footer style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-        <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: NAVY_LIGHT, border: `2px solid ${ORANGE}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: '13px', color: ORANGE, flexShrink: 0 }}>{initials}</div>
-        <div>
-          <strong style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: TEXT, display: 'block' }}>{name}</strong>
-          <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', color: MUTED }}>{company}</span>
-        </div>
-      </footer>
-    </article>
-  )
-}
-
-/* ─────────────────────────────────────────────
    PRICING CARD
 ───────────────────────────────────────────── */
 function PricingCard({ tag, badge, badgeGreen, title, priceLabel, priceUnit, features, noFeatures, ctaLabel, ctaHref, highlighted, delay = 0 }) {
@@ -647,36 +619,6 @@ export default function GetCompliantPage() {
           </div>
 
           <PlatformPanel {...PLATFORM_DATA[activeTab]} />
-        </div>
-      </section>
-
-      {/* ══ 5. SOCIAL PROOF ══ */}
-      <section style={{ background: NAVY, padding: '96px 1.5rem', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <Image src="/images/Trust Approval Section, landing page.png" alt="" fill style={{ objectFit: 'cover', objectPosition: 'center top', opacity: 0.07 }} />
-        </div>
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: MAX_W, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '56px', lineHeight: 1.1 }}>
-            Real Companies. Real Approvals. Real Fast.
-          </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '64px' }}>
-            <TestimonialCard initials="OM" quote="We'd been fighting with ISNetworld for three months trying to get our RAVS® approved. CorPathway had us green in less than 48 hours. I wish we'd found them day one." name="Operations Manager" company="Industrial Electrical Contractor, Alberta" delay={0} />
-            <TestimonialCard initials="CO" quote="We needed Avetta AND ISNetworld to bid a major pipeline contract. CorPathway handled both simultaneously and had us fully approved before the bid deadline. We got the contract." name="Owner" company="Mechanical Services Company, Texas" delay={100} />
-            <TestimonialCard initials="SC" quote="ComplyWorks questionnaires were killing our admin team. Outsourcing to CorPathway was the best decision we made this year. Now it's just handled, every year, automatically." name="Safety Coordinator" company="Civil Construction Firm, Saskatchewan" delay={200} />
-          </div>
-
-          {/* Trust badges */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center', alignItems: 'center', background: NAVY_CARD, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '36px 40px' }}>
-            {[['ISNetworld', 'Verified Specialist', false], ['Avetta', 'Approved Partner', false], ['ComplyWorks', 'Compliance Expert', false], ['500+', 'Companies Approved', true], ['48-Hr', 'Guarantee', true]].map(([label, sub, orange]) => (
-              <div key={label} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px', padding: '8px 16px', opacity: 0.7, transition: 'opacity 0.2s', cursor: 'default' }}
-                onMouseEnter={e => e.currentTarget.style.opacity = '1'}
-                onMouseLeave={e => e.currentTarget.style.opacity = '0.7'}
-              >
-                <span style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: '15px', color: '#fff', background: orange ? ORANGE : NAVY_LIGHT, border: `1px solid ${orange ? ORANGE : BORDER}`, borderRadius: '8px', padding: '8px 16px', whiteSpace: 'nowrap' }}>{label}</span>
-                <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', color: MUTED }}>{sub}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

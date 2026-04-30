@@ -463,27 +463,6 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Testimonials */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            {[
-              { quote: 'We had no idea where to start with COR. COR Pathways walked us through every element, built our safety program from scratch, and had us audit-ready in under a year. Worth every penny.', name: 'M. Tremblay', role: 'Owner, General Contractor', location: 'Ottawa, ON', initials: 'MT' },
-              { quote: 'The ISNetworld setup was a nightmare when we tried to do it ourselves. COR Pathways handled the whole thing in two weeks and we had our green light to go back to work. The monthly management is completely hands-off for us now.', name: 'D. Kowalski', role: 'President, Electrical Contractor', location: 'Calgary, AB', initials: 'DK' },
-              { quote: 'As a small paving company in BC, we couldn\'t afford a safety officer. COR Pathways manages our entire safety program remotely. The app makes it easy for my crew to submit what they need to.', name: 'S. Randhawa', role: 'Owner, Paving Contractor', location: 'Kelowna, BC', initials: 'SR' },
-            ].map((t) => (
-              <div key={t.initials} style={{ background: '#163258', borderRadius: '16px', padding: '2rem', border: '1px solid rgba(74,144,196,0.2)', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.75, fontStyle: 'italic', flex: 1 }}>"{t.quote}"</p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'linear-gradient(135deg, #4A90C4, #163258)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', fontWeight: 700, color: '#ffffff' }}>{t.initials}</span>
-                  </div>
-                  <div>
-                    <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 600, color: '#ffffff' }}>{t.name}</p>
-                    <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>{t.role},{t.location}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
