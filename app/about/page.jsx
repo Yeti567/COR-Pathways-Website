@@ -41,7 +41,7 @@ export default function AboutPage() {
             Safety expertise you can trust.<br /><span style={{ color: '#7BB8E0' }}>Software built to prove it.</span>
           </h1>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '64px', maxWidth: '760px' }}>
-            COR Pathways was built by a safety professional with nearly two decades of hands-on experience across construction, oil and gas, and general industry, because we knew there had to be a better way to get contractors certified and keep them compliant.
+            COR Pathways was built by a safety professional with nearly 20 years of hands-on experience across construction, oil and gas, and general industry, because we knew there had to be a better way to get contractors certified and keep them compliant.
           </p>
           <div style={{ width: '100%', maxWidth: '900px', height: '380px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 32px 80px rgba(0,0,0,0.4)', position: 'relative' }}>
             <Image src="/images/Western Canada Construction Site.webp" alt="Wide shot of a Canadian construction site at golden hour — crane, heavy equipment, workers in high-vis vests, dramatic sky — conveys scale and professionalism" fill style={{ objectFit: 'cover' }} priority />
@@ -58,7 +58,7 @@ export default function AboutPage() {
               Built by someone who has done the work.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.8, marginBottom: '20px' }}>
-              COR Pathways was founded by Blake Cowan, a National Construction Safety Officer with 15 to 20 years of health and safety experience across construction, oil and gas, and general industry in multiple provinces across Canada. Blake has spent his career on job sites, in site trailers, in boardrooms, and in audit interviews; understanding exactly what it takes to build a safety program that actually works and actually passes.
+              COR Pathways was founded by Blake Cowan, a National Construction Safety Officer with nearly 20 years of health and safety experience across construction, oil and gas, and general industry in multiple provinces across Canada. Blake has spent his career on job sites, in site trailers, in boardrooms, and in audit interviews; understanding exactly what it takes to build a safety program that actually works and actually passes.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.8, marginBottom: '20px' }}>
               After years of watching construction companies struggle through COR certification with outdated tools: spreadsheets, paper forms, filing cabinets full of documents nobody could find. Blake built COR Pathways. Not as a generic safety software platform, but as a purpose-built certification tool designed around the COR 2020 standard from the ground up. Every feature exists because a real audit required it.
@@ -70,7 +70,7 @@ export default function AboutPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
               { icon: '🎓', title: 'National Construction Safety Officer', body: 'Blake holds the NCSO designation, one of the most recognized safety credentials in the Canadian construction industry. The NCSO designation reflects deep knowledge of occupational health and safety legislation, hazard management, and safety program development.' },
-              { icon: '🏗️', title: '15 to 20 Years of Field Experience', body: 'Construction, oil and gas, and general industry across multiple Canadian provinces. Real job sites, real audits, real safety programs built from scratch. Not theoretical knowledge: working experience.' },
+              { icon: '🏗️', title: 'Nearly 20 Years of Field Experience', body: 'Construction, oil and gas, and general industry across multiple Canadian provinces. Real job sites, real audits, real safety programs built from scratch. Not theoretical knowledge: working experience.' },
               { icon: '🗺️', title: 'Multi-Province Safety Expertise', body: 'Experience working across Ontario, Alberta, British Columbia, Saskatchewan, and beyond, with deep knowledge of provincial OH&S legislation, IHSA COR requirements, and SE-COR program standards in western Canada.' },
             ].map((card) => (
               <div key={card.title} style={{ background: '#0D1F3C', borderRadius: '14px', padding: '24px', border: '1px solid rgba(74,144,196,0.2)' }}>

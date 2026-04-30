@@ -239,7 +239,7 @@ function ContactForm() {
         Book My Free Consultation →
       </button>
       <div style={{ textAlign: 'center', marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-        <a href="tel:7808325158" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>📞 Prefer to call? <span style={{ color: TEXT }}>tel. 780-832-5158</span></a>
+        <a href="tel:+17808325158" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>📞 Prefer to call? <span style={{ color: TEXT }}>tel. 780-832-5158</span></a>
         <a href="mailto:blake.safetyconsultant@gmail.com" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>📧 blake.safetyconsultant@gmail.com</a>
         <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: MUTED }}>🔒 Your information is never shared.</span>
       </div>

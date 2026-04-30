@@ -277,7 +277,7 @@ export default function DocumentsLibrariesPage() {
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
-            <OutlineBtn href="tel:7808325158">Call tel. 780-832-5158</OutlineBtn>
+            <OutlineBtn href="tel:+17808325158">Call tel. 780-832-5158</OutlineBtn>
           </div>
         </div>
       </section>

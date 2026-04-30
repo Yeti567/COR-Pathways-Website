@@ -500,28 +500,8 @@ function MobileDrawer({ open, onClose, pathname }) {
           >
             Book a Free Consultation
           </Link>
-          <Link
-            href="/contact"
-            onClick={onClose}
-            style={{
-              display: 'block',
-              width: '100%',
-              textAlign: 'center',
-              background: 'rgba(255,255,255,0.07)',
-              color: '#ffffff',
-              fontSize: '15px',
-              fontFamily: 'var(--font-dm-sans)',
-              fontWeight: 600,
-              padding: '14px 24px',
-              borderRadius: '8px',
-              textDecoration: 'none',
-              border: '1px solid rgba(255,255,255,0.12)',
-            }}
-          >
-            Book a Free Consultation
-          </Link>
           <a
-            href="tel:7808325158"
+            href="tel:+17808325158"
             style={{
               display: 'block',
               textAlign: 'center',
@@ -787,7 +767,7 @@ export default function Nav() {
           >
             {/* Phone — desktop only */}
             <a
-              href="tel:7808325158"
+              href="tel:+17808325158"
               className="nav-phone"
               style={{
                 color: 'rgba(255,255,255,0.6)',

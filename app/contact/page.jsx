@@ -292,7 +292,7 @@ export default function ContactPage() {
               <div style={{ background: '#0D1F3C', borderRadius: '16px', padding: '24px', border: '1px solid rgba(74,144,196,0.2)' }}>
                 <span style={{ fontSize: '28px', display: 'block', marginBottom: '12px' }}>📞</span>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#34D399', marginBottom: '8px' }}>Call or Text</p>
-                <a href="tel:7808325158" style={{ fontFamily: 'var(--font-fraunces)', fontSize: '28px', fontWeight: 700, color: '#ffffff', textDecoration: 'none', display: 'block', marginBottom: '8px' }}>Call now</a>
+                <a href="tel:+17808325158" style={{ fontFamily: 'var(--font-fraunces)', fontSize: '28px', fontWeight: 700, color: '#ffffff', textDecoration: 'none', display: 'block', marginBottom: '8px' }}>Call now</a>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.5)', marginBottom: '8px' }}>tel. 780-832-5158</p>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>Available Monday to Friday, 8am to 6pm Mountain Time</p>
               </div>
@@ -441,7 +441,7 @@ export default function ContactPage() {
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '24px' }}>
             <a href="https://calendly.com/blake-safetyconsultant/30min" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', background: '#34D399', color: '#0D1F3C', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 700, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Book a Free Consultation →</a>
-            <a href="tel:7808325158" style={{ display: 'inline-block', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Call now — tel. 780-832-5158</a>
+            <a href="tel:+17808325158" style={{ display: 'inline-block', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Call now — tel. 780-832-5158</a>
             <a href="#contact-form" style={{ display: 'inline-block', background: 'transparent', color: '#ffffff', border: '1.5px solid rgba(255,255,255,0.35)', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Send a Message</a>
           </div>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.03em' }}>

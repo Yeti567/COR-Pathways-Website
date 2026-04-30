@@ -477,7 +477,7 @@ export default function PricingPage() {
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '24px' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
-            <OutlineBtn href="tel:7808325158">Call tel. 780-832-5158</OutlineBtn>
+            <OutlineBtn href="tel:+17808325158">Call tel. 780-832-5158</OutlineBtn>
           </div>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.03em' }}>
             Free consultation · No commitment · All provinces

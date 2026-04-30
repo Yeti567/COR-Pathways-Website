@@ -170,7 +170,7 @@ export default function PrivacyPolicyPage() {
               Email: <a href="mailto:blake.safetyconsultant@gmail.com" style={{ color: '#059669', textDecoration: 'none' }}>blake.safetyconsultant@gmail.com</a>
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#4B5563', lineHeight: 1.8, marginBottom: '4px' }}>
-              Phone: <a href="tel:7808325158" style={{ color: '#059669', textDecoration: 'none' }}>780-832-5158</a>
+              Phone: <a href="tel:+17808325158" style={{ color: '#059669', textDecoration: 'none' }}>780-832-5158</a>
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#4B5563', lineHeight: 1.8 }}>
               Serving Ontario, Alberta, British Columbia, and Saskatchewan

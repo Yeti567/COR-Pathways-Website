@@ -178,7 +178,7 @@ export default function CompliancePortalsPage() {
   const isCA = region !== 'US'
   const CALENDLY = 'https://calendly.com/blake-safetyconsultant/30min'
   const PHONE_DISPLAY = '780-832-5158'
-  const PHONE_TEL = 'tel:7808325158'
+  const PHONE_TEL = 'tel:+17808325158'
 
   if (region === null) {
     return (
