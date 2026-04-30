@@ -56,19 +56,23 @@ export const metadata: Metadata = {
   },
 };
 
-const organizationJsonLd = {
+const professionalServiceJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': 'ProfessionalService',
+  '@id': `${SITE_URL}/#organization`,
   name: 'COR Pathways',
   url: SITE_URL,
   logo: `${SITE_URL}/icon`,
+  image: `${SITE_URL}/opengraph-image`,
   email: 'blake.safetyconsultant@gmail.com',
   telephone: '+1-780-832-5158',
+  priceRange: 'CA$299–CA$499 per month',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '4702 Birch Lane',
     addressLocality: 'Barriere',
     addressRegion: 'BC',
+    postalCode: 'V0E 1E0',
     addressCountry: 'CA',
   },
   areaServed: [
@@ -76,6 +80,22 @@ const organizationJsonLd = {
     { '@type': 'AdministrativeArea', name: 'Alberta' },
     { '@type': 'AdministrativeArea', name: 'British Columbia' },
   ],
+  knowsAbout: [
+    'COR 2020 certification',
+    'SECOR certification',
+    'Construction health and safety',
+    'Occupational health and safety management',
+  ],
+};
+
+const webSiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${SITE_URL}/#website`,
+  url: SITE_URL,
+  name: 'COR Pathways',
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'en-CA',
 };
 
 const softwareApplicationJsonLd = {
@@ -111,7 +131,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }}
         />
         <script
           type="application/ld+json"

@@ -1,28 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export default function Navigation() {
   const pathname = usePathname();
-  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith('#')) {
-      e.preventDefault();
-      setIsMenuOpen(false);
-      if (pathname === '/') {
-        const element = document.querySelector(href);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      } else {
-        router.push(`/${href}`);
-      }
-    }
-  };
 
   return (
     <header className="sticky top-0 bg-white shadow-sm z-50">
@@ -38,20 +22,39 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a 
-              href="#features" 
-              onClick={(e) => handleAnchorClick(e, '#features')}
-              className="text-gray-700 hover:text-orange transition-colors"
+            <Link
+              href="/platform"
+              aria-current={pathname === '/platform' ? 'page' : undefined}
+              className={`transition-colors ${
+                pathname === '/platform'
+                  ? 'text-orange font-semibold'
+                  : 'text-gray-700 hover:text-orange'
+              }`}
+            >
+              Platform
+            </Link>
+            <Link
+              href="/features"
+              aria-current={pathname === '/features' ? 'page' : undefined}
+              className={`transition-colors ${
+                pathname === '/features'
+                  ? 'text-orange font-semibold'
+                  : 'text-gray-700 hover:text-orange'
+              }`}
             >
               Features
-            </a>
-            <a 
-              href="#how-it-works" 
-              onClick={(e) => handleAnchorClick(e, '#how-it-works')}
-              className="text-gray-700 hover:text-orange transition-colors"
+            </Link>
+            <Link
+              href="/how-it-works"
+              aria-current={pathname === '/how-it-works' ? 'page' : undefined}
+              className={`transition-colors ${
+                pathname === '/how-it-works'
+                  ? 'text-orange font-semibold'
+                  : 'text-gray-700 hover:text-orange'
+              }`}
             >
               How It Works
-            </a>
+            </Link>
             <Link
               href="/pricing"
               aria-current={pathname === '/pricing' ? 'page' : undefined}
@@ -104,20 +107,42 @@ export default function Navigation() {
         {isMenuOpen && (
           <div id="mobile-menu" className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
             <div className="flex flex-col gap-4">
-              <a 
-                href="#features" 
-                onClick={(e) => handleAnchorClick(e, '#features')}
-                className="text-gray-700 hover:text-orange transition-colors"
+              <Link
+                href="/platform"
+                onClick={() => setIsMenuOpen(false)}
+                aria-current={pathname === '/platform' ? 'page' : undefined}
+                className={`transition-colors ${
+                  pathname === '/platform'
+                    ? 'text-orange font-semibold'
+                    : 'text-gray-700 hover:text-orange'
+                }`}
+              >
+                Platform
+              </Link>
+              <Link
+                href="/features"
+                onClick={() => setIsMenuOpen(false)}
+                aria-current={pathname === '/features' ? 'page' : undefined}
+                className={`transition-colors ${
+                  pathname === '/features'
+                    ? 'text-orange font-semibold'
+                    : 'text-gray-700 hover:text-orange'
+                }`}
               >
                 Features
-              </a>
-              <a 
-                href="#how-it-works" 
-                onClick={(e) => handleAnchorClick(e, '#how-it-works')}
-                className="text-gray-700 hover:text-orange transition-colors"
+              </Link>
+              <Link
+                href="/how-it-works"
+                onClick={() => setIsMenuOpen(false)}
+                aria-current={pathname === '/how-it-works' ? 'page' : undefined}
+                className={`transition-colors ${
+                  pathname === '/how-it-works'
+                    ? 'text-orange font-semibold'
+                    : 'text-gray-700 hover:text-orange'
+                }`}
               >
                 How It Works
-              </a>
+              </Link>
               <Link
                 href="/pricing"
                 onClick={() => setIsMenuOpen(false)}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import JsonLd, { breadcrumbJsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Start Your Free Trial',
@@ -12,12 +13,25 @@ export const metadata: Metadata = {
     description: 'Sign up for a 14-day free trial of COR Pathways.',
     url: '/signup',
     type: 'website',
+    siteName: 'COR Pathways',
+    locale: 'en_CA',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Start Your Free Trial | COR Pathways',
+    description: 'Sign up for a 14-day free trial of COR Pathways.',
   },
 };
 
 export default function SignupPage() {
   return (
     <div className="bg-white">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Sign Up', path: '/signup' },
+        ])}
+      />
       <section className="bg-gradient-to-br from-navy to-blue-900 text-white py-20">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <div className="inline-block bg-orange/20 text-orange px-4 py-2 rounded-full text-sm font-semibold mb-4">

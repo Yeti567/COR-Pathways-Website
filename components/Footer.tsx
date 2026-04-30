@@ -31,7 +31,10 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Product</h3>
             <ul className="space-y-2 text-gray-300 text-sm">
+              <li><Link href="/platform" className="hover:text-white transition-colors">Platform</Link></li>
               <li><Link href="/features" className="hover:text-white transition-colors">Features</Link></li>
+              <li><Link href="/compliance" className="hover:text-white transition-colors">Compliance Tracking</Link></li>
+              <li><Link href="/secor-program-management" className="hover:text-white transition-colors">SECOR Program Management</Link></li>
               <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/how-it-works" className="hover:text-white transition-colors">How It Works</Link></li>
               <li><Link href="/signup" className="hover:text-white transition-colors">Start Free Trial</Link></li>
@@ -43,7 +46,7 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2 text-gray-300 text-sm">
               <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
-              <li><Link href="/about#contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 

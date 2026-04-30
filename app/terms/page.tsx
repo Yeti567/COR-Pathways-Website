@@ -1,15 +1,37 @@
 import type { Metadata } from 'next';
+import JsonLd, { breadcrumbJsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description:
     'Terms governing the use of the COR Pathways website and platform.',
   alternates: { canonical: '/terms' },
+  openGraph: {
+    title: 'Terms of Service | COR Pathways',
+    description:
+      'Terms governing the use of the COR Pathways website and platform.',
+    url: '/terms',
+    type: 'website',
+    siteName: 'COR Pathways',
+    locale: 'en_CA',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Service | COR Pathways',
+    description:
+      'Terms governing the use of the COR Pathways website and platform.',
+  },
 };
 
 export default function TermsPage() {
   return (
     <div className="bg-white">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Terms of Service', path: '/terms' },
+        ])}
+      />
       <section className="bg-navy-50 py-16">
         <div className="container mx-auto px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold text-navy mb-4">

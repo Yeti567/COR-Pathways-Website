@@ -1,15 +1,37 @@
 import type { Metadata } from 'next';
+import JsonLd, { breadcrumbJsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
     'How COR Pathways handles personal information collected through this website.',
   alternates: { canonical: '/privacy' },
+  openGraph: {
+    title: 'Privacy Policy | COR Pathways',
+    description:
+      'How COR Pathways handles personal information collected through this website.',
+    url: '/privacy',
+    type: 'website',
+    siteName: 'COR Pathways',
+    locale: 'en_CA',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | COR Pathways',
+    description:
+      'How COR Pathways handles personal information collected through this website.',
+  },
 };
 
 export default function PrivacyPage() {
   return (
     <div className="bg-white">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Privacy Policy', path: '/privacy' },
+        ])}
+      />
       <section className="bg-navy-50 py-16">
         <div className="container mx-auto px-6 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold text-navy mb-4">

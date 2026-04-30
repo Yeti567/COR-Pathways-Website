@@ -5,6 +5,20 @@ const nextConfig = {
   async rewrites() {
     return [];
   },
+  async redirects() {
+    return [
+      {
+        source: '/contact',
+        destination: '/about#contact',
+        permanent: true,
+      },
+      {
+        source: '/compliance-portals',
+        destination: '/compliance',
+        permanent: true,
+      },
+    ];
+  },
 }
 
 module.exports = nextConfig

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import JsonLd, { breadcrumbJsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
   title: 'Pricing',
@@ -11,6 +12,14 @@ export const metadata: Metadata = {
       'Starter, Professional, and Enterprise plans. 14-day free trial, no credit card required.',
     url: '/pricing',
     type: 'website',
+    siteName: 'COR Pathways',
+    locale: 'en_CA',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pricing | COR Pathways',
+    description:
+      'Starter, Professional, and Enterprise plans. 14-day free trial, no credit card required.',
   },
 };
 
@@ -76,10 +85,13 @@ export default function PricingLayout({
 }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Pricing', path: '/pricing' },
+        ])}
       />
+      <JsonLd data={faqJsonLd} />
       {children}
     </>
   );

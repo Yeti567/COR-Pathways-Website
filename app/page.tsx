@@ -1,8 +1,34 @@
-'use client';
+import type { Metadata } from 'next';
+import JsonLd, { breadcrumbJsonLd } from '@/components/JsonLd';
+
+export const metadata: Metadata = {
+  title: 'COR 2020 Certification Software for Ontario & Alberta',
+  description:
+    'COR Pathways is the digital safety management platform built for Ontario and Alberta construction companies. Track all 14 COR 2020 elements, manage 70+ safety forms, and pass your audit in 3 to 9 months.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'COR Pathways: COR 2020 Certification Software for Ontario & Alberta',
+    description:
+      'Track all 14 COR 2020 elements, manage 70+ safety forms, and pass your audit in 3 to 9 months. Built for Ontario and Alberta construction companies.',
+    url: '/',
+    type: 'website',
+    siteName: 'COR Pathways',
+    locale: 'en_CA',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'COR Pathways: COR 2020 Certification Software for Ontario & Alberta',
+    description:
+      'Track all 14 COR 2020 elements, manage 70+ safety forms, and pass your audit in 3 to 9 months.',
+  },
+};
 
 export default function Home() {
   return (
     <div className="bg-white">
+      <JsonLd
+        data={breadcrumbJsonLd([{ name: 'Home', path: '/' }])}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-navy to-blue-900 text-white py-24 md:py-32">
         <div className="container mx-auto px-6 max-w-4xl text-center">
