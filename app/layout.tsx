@@ -62,7 +62,7 @@ const professionalServiceJsonLd = {
   '@id': `${SITE_URL}/#organization`,
   name: 'COR Pathways',
   url: SITE_URL,
-  logo: `${SITE_URL}/icon`,
+  logo: `${SITE_URL}/cor-pathways-logo.png`,
   image: `${SITE_URL}/opengraph-image`,
   email: 'blake.safetyconsultant@gmail.com',
   telephone: '+1-780-832-5158',

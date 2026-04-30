@@ -13,11 +13,14 @@ export default function Navigation() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span aria-hidden="true" className="flex h-10 w-10 items-center justify-center rounded-lg bg-navy text-orange font-extrabold tracking-tight">
-              CP
-            </span>
-            <span className="text-2xl font-bold text-navy">COR Pathways</span>
+          <Link href="/" className="flex items-center" aria-label="COR Pathways home">
+            <img
+              src="/cor-pathways-logo.png"
+              alt="COR Pathways"
+              width={211}
+              height={60}
+              className="h-10 md:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

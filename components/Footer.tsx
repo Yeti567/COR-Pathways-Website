@@ -10,11 +10,14 @@ export default function Footer() {
           
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-md bg-orange text-navy font-extrabold text-sm">
-                CP
-              </span>
-              <span className="text-xl font-bold">COR Pathways</span>
+            <div className="mb-4 inline-flex items-center rounded-lg bg-white px-3 py-2">
+              <img
+                src="/cor-pathways-logo.png"
+                alt="COR Pathways"
+                width={180}
+                height={51}
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-gray-300 text-sm mb-4">
               The COR 2020 certification platform for construction companies in Ontario and Alberta.
