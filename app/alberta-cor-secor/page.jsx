@@ -239,7 +239,7 @@ function ContactForm() {
         Book My Free Consultation →
       </button>
       <div style={{ textAlign: 'center', marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-        <a href="tel:+17808325158" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>📞 Prefer to call? <span style={{ color: TEXT }}>tel. 780-832-5158</span></a>
+        <a href="tel:+17808325158" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>📞 Prefer to call? <span style={{ color: TEXT }}>780-832-5158</span></a>
         <a href="mailto:blake.safetyconsultant@gmail.com" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textDecoration: 'none' }}>📧 blake.safetyconsultant@gmail.com</a>
         <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: MUTED }}>🔒 Your information is never shared.</span>
       </div>
@@ -373,10 +373,10 @@ export default function AlbertaCORPage() {
         <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel>THE PROBLEM</SectionLabel>
           <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '16px', lineHeight: 1.1 }}>
-            COR and SE-COR Certification Is Not Hard —<br />Until It Is.
+            COR and SE-COR Certification Is Not Hard.<br />Until It Is.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: MUTED, marginBottom: '56px', maxWidth: '600px', lineHeight: 1.7 }}>
-            Here are the seven things that derail Alberta companies most often — and how CorPathway addresses each one.
+            Here are the seven things that derail Alberta companies most often,and how CorPathway addresses each one.
           </p>
           <div className="acor-grid-2">
             {PAIN_POINTS.map((p, i) => (
@@ -409,13 +409,13 @@ export default function AlbertaCORPage() {
             One App. Every Element.<br />Built Specifically for Alberta COR Certification.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: MUTED, marginBottom: '56px', maxWidth: '600px', lineHeight: 1.7 }}>
-            Most safety apps are built for large enterprises. CorPathway was built for Alberta contractors — small enough to actually use, powerful enough to pass a COR audit.
+            Most safety apps are built for large enterprises. CorPathway was built for Alberta contractors,small enough to actually use, powerful enough to pass a COR audit.
           </p>
           <div className="acor-grid-4" style={{ marginBottom: '28px' }}>
             {[
               { icon: '🎯', title: 'COR Audit Dashboard', href: '/platform/cor-audit', body: 'See your compliance score for all COR audit elements in real time. Know exactly what\'s complete, what\'s missing, and what needs attention before your audit day arrives. No surprises. No scrambling.' },
               { icon: '🏅', title: 'Certifications & Training Matrix', href: '/platform/certifications-training', body: 'Track every employee certification, course completion, and expiry date. Get automatic alerts before anything lapses. Generate a complete training record for your audit package with one click.' },
-              { icon: '📋', title: 'Forms & Inspections', href: '/platform/forms-inspections', body: 'Digital toolbox talks, site inspections, hazard assessments, incident reports, and corrective action logs — all tied to the correct COR audit element. Workers complete them from their phone in under 2 minutes.' },
+              { icon: '📋', title: 'Forms & Inspections', href: '/platform/forms-inspections', body: 'Digital toolbox talks, site inspections, hazard assessments, incident reports, and corrective action logs,all tied to the correct COR audit element. Workers complete them from their phone in under 2 minutes.' },
               { icon: '📁', title: 'Documents & Libraries', href: '/platform/documents-libraries', body: 'Six master document libraries that organize every policy, procedure, and record your Certifying Partner will look for. Version-controlled, searchable, and always up to date.' },
             ].map(f => (
               <Link key={f.title} href={f.href} style={{ textDecoration: 'none', display: 'block', background: NAVY, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '28px 24px', transition: 'border-color 0.2s' }}
@@ -431,7 +431,7 @@ export default function AlbertaCORPage() {
           {/* AI callout */}
           <div style={{ background: NAVY, border: `1px solid ${BORDER}`, borderLeft: `3px solid ${BLUE}`, borderRadius: '0 16px 16px 0', padding: '28px 32px', marginBottom: '36px' }}>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: '15px', color: TEXT, marginBottom: '8px' }}>🤖 AI-Powered Mock Audit Practice</p>
-            <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, lineHeight: 1.75 }}>Practice your COR audit interview before the real one. Our AI auditor asks the questions your Certifying Partner's auditor will ask — so you walk in prepared, confident, and ready to score 80%+.</p>
+            <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, lineHeight: 1.75 }}>Practice your COR audit interview before the real one. Our AI auditor asks the questions your Certifying Partner's auditor will ask,so you walk in prepared, confident, and ready to score 80%+.</p>
           </div>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
             <OrangeBtn href="/platform/cor-audit">Explore the Full Platform →</OrangeBtn>
@@ -445,10 +445,10 @@ export default function AlbertaCORPage() {
         <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel>CERTIFYING PARTNERS</SectionLabel>
           <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '16px', lineHeight: 1.1 }}>
-            All 10 Alberta Certifying Partners.<br />We Know Them All — And We'll Help You Choose the Right One.
+            All 10 Alberta Certifying Partners.<br />We Know Them All,And We'll Help You Choose the Right One.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: MUTED, marginBottom: '56px', maxWidth: '700px', lineHeight: 1.7 }}>
-            The Government of Alberta authorizes 10 Certifying Partners to administer the COR program. Each serves specific industries and operates differently. During your free consultation, we'll tell you exactly which partner fits your operation — and what to expect from their specific audit instrument.
+            The Government of Alberta authorizes 10 Certifying Partners to administer the COR program. Each serves specific industries and operates differently. During your free consultation, we'll tell you exactly which partner fits your operation,and what to expect from their specific audit instrument.
           </p>
           <div className="acor-partner-grid" style={{ marginBottom: '32px' }}>
             {CERTIFYING_PARTNERS.map(p => (
@@ -477,7 +477,7 @@ export default function AlbertaCORPage() {
           {/* Levy callout */}
           <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderLeft: `4px solid ${ORANGE}`, borderRadius: '0 16px 16px 0', padding: '28px 32px', display: 'flex', flexWrap: 'wrap', gap: '24px', alignItems: 'center', justifyContent: 'space-between' }}>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, lineHeight: 1.75, maxWidth: '680px' }}>
-              <strong style={{ color: TEXT }}>★ Levy-funded partners</strong> are supported by a levy on WCB premiums — meaning eligible companies may access their programs at low or no direct cost. Fee-for-service partners charge membership fees. Not sure which applies to you? We'll tell you in your free consultation.
+              <strong style={{ color: TEXT }}>★ Levy-funded partners</strong> are supported by a levy on WCB premiums,meaning eligible companies may access their programs at low or no direct cost. Fee-for-service partners charge membership fees. Not sure which applies to you? We'll tell you in your free consultation.
             </p>
             <OrangeBtn href="https://calendly.com/blake-safetyconsultant/30min" external>Book a Free Consultation →</OrangeBtn>
           </div>
@@ -489,7 +489,7 @@ export default function AlbertaCORPage() {
         <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel>THE PROCESS</SectionLabel>
           <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '48px', lineHeight: 1.1 }}>
-            From "Where Do I Start?" to Certified —<br />Here's the Exact Path.
+            From "Where Do I Start?" to Certified.<br />Here's the Exact Path.
           </h2>
           {/* Tabs */}
           <div role="tablist" style={{ display: 'flex', gap: '8px', borderBottom: `1px solid ${BORDER}`, marginBottom: '44px', flexWrap: 'wrap' }}>
@@ -525,27 +525,27 @@ export default function AlbertaCORPage() {
             One Flat Fee. No Surprises.<br />The WCB Refund Often Covers the Entire Cost.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: MUTED, marginBottom: '56px', maxWidth: '680px', lineHeight: 1.7 }}>
-            Alberta's WCB PIR program refunds up to 20% of your annual WCB premiums to COR holders. For most companies, that refund pays for consulting and the app — and then puts money back in your pocket every year you stay certified.
+            Alberta's WCB PIR program refunds up to 20% of your annual WCB premiums to COR holders. For most companies, that refund pays for consulting and the app,and then puts money back in your pocket every year you stay certified.
           </p>
           <div className="acor-grid-2" style={{ marginBottom: '32px' }}>
             {[
               {
-                tag: 'Small Employer · 1–10 Employees', title: 'SE-COR Program Management', priceNote: 'Flat monthly fee — contact for exact quote',
-                features: ['Complete SE-COR health & safety program build-out', "Tailored to your Certifying Partner's requirements", 'Remote monthly program management — we handle it', 'CorPathway app included (all 4 modules)', 'Annual self-assessment preparation and review', 'WCB insurance certificate submissions handled', 'WCB premium rate statement filings included', 'Document renewals at no extra charge', 'Ongoing consultation — call or email anytime'],
+                tag: 'Small Employer · 1–10 Employees', title: 'SE-COR Program Management', priceNote: 'Flat monthly fee,contact for exact quote',
+                features: ['Complete SE-COR health & safety program build-out', "Tailored to your Certifying Partner's requirements", 'Remote monthly program management,we handle it', 'CorPathway app included (all 4 modules)', 'Annual self-assessment preparation and review', 'WCB insurance certificate submissions handled', 'WCB premium rate statement filings included', 'Document renewals at no extra charge', 'Ongoing consultation,call or email anytime'],
                 note: 'Available for SE-COR programs · Alberta · BC · Saskatchewan', cta: 'Book a Free Consultation →', ctaHref: 'https://calendly.com/blake-safetyconsultant/30min', highlighted: false,
               },
               {
-                tag: 'Standard COR · 10+ Employees', badge: 'MOST POPULAR', title: 'COR Certification Consulting', priceNote: 'Project-based fee — contact for exact quote',
+                tag: 'Standard COR · 10+ Employees', badge: 'MOST POPULAR', title: 'COR Certification Consulting', priceNote: 'Project-based fee,contact for exact quote',
                 features: ['Full Certifying Partner selection consultation', 'Complete OHSMS build (written programs, policies, procedures)', 'Gap analysis of existing safety systems', 'Pre-audit documentation review', 'Mock audit with written feedback report', 'External audit coordination support', 'CorPathway app included for duration of engagement', 'Ongoing consultation through certification'],
                 cta: 'Book a Free Consultation →', ctaHref: 'https://calendly.com/blake-safetyconsultant/30min', highlighted: true,
               },
               {
-                tag: 'For Active COR Holders', title: 'COR Annual Maintenance', priceNote: 'Flat annual fee — contact for exact quote',
-                features: ['Annual maintenance audit preparation', 'Internal audit coordination support', 'Documentation updates and renewals', 'CorPathway app year-round monitoring', 'WCB PIR submission support', 'New client requirement management', 'Expiry alerts — never fall out of compliance'],
+                tag: 'For Active COR Holders', title: 'COR Annual Maintenance', priceNote: 'Flat annual fee,contact for exact quote',
+                features: ['Annual maintenance audit preparation', 'Internal audit coordination support', 'Documentation updates and renewals', 'CorPathway app year-round monitoring', 'WCB PIR submission support', 'New client requirement management', 'Expiry alerts,never fall out of compliance'],
                 cta: 'Protect My COR →', ctaHref: 'https://calendly.com/blake-safetyconsultant/30min', highlighted: false,
               },
               {
-                tag: 'Emergency — COR Has Lapsed', title: 'Lapsed or Expired COR Recovery', priceNote: 'Custom quote — contact immediately',
+                tag: 'Emergency,COR Has Lapsed', title: 'Lapsed or Expired COR Recovery', priceNote: 'Custom quote,contact immediately',
                 desc: "Your COR has expired or lapsed. You're losing bids right now. We've recovered expired CORs and helped companies regain certification as efficiently as the program allows.",
                 features: ['Immediate gap assessment', 'Program rebuild or update', 'Accelerated audit preparation', 'CorPathway app to collect evidence quickly', 'Direct Certifying Partner coordination'],
                 cta: 'Get Help Now →', ctaHref: '/contact', highlighted: false, urgent: true,
@@ -566,7 +566,7 @@ export default function AlbertaCORPage() {
             ))}
           </div>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textAlign: 'center', maxWidth: '700px', margin: '0 auto', lineHeight: 1.75 }}>
-            Pricing varies based on your company size, Certifying Partner, scope of work, and whether you're starting from scratch or maintaining an existing program. Contact us for a free, no-obligation assessment — we'll tell you exactly what you need and what it costs before you commit to anything.
+            Pricing varies based on your company size, Certifying Partner, scope of work, and whether you're starting from scratch or maintaining an existing program. Contact us for a free, no-obligation assessment,we'll tell you exactly what you need and what it costs before you commit to anything.
           </p>
         </div>
       </section>
@@ -580,8 +580,8 @@ export default function AlbertaCORPage() {
           <div className="acor-grid-3" style={{ marginBottom: '56px' }}>
             {[
               { icon: '🧑‍💼', title: 'Real Safety Professionals', body: "Not a software company that dabbles in consulting, and not a consulting firm that uses generic spreadsheets. CorPathway is built and operated by Alberta safety professionals with direct, field-level COR and SE-COR experience." },
-              { icon: '📱', title: 'App Built for the Field', body: "The CorPathway app was designed for contractors and tradespeople — not safety officers at desks. Mobile-first forms, quick-entry inspections, and automatic record-keeping so your crew can stay compliant without being buried in paperwork." },
-              { icon: '🤝', title: 'We Work With Your Certifying Partner', body: "We don't try to replace your Certifying Partner. We work alongside all 10 of them. We know their audit instruments, their expectations, and their timelines — and we prepare you to exceed their standards." },
+              { icon: '📱', title: 'App Built for the Field', body: "The CorPathway app was designed for contractors and tradespeople,not safety officers at desks. Mobile-first forms, quick-entry inspections, and automatic record-keeping so your crew can stay compliant without being buried in paperwork." },
+              { icon: '🤝', title: 'We Work With Your Certifying Partner', body: "We don't try to replace your Certifying Partner. We work alongside all 10 of them. We know their audit instruments, their expectations, and their timelines,and we prepare you to exceed their standards." },
             ].map(c => (
               <div key={c.title} style={{ background: NAVY, border: `1px solid ${BORDER}`, borderRadius: '16px', padding: '32px 28px' }}>
                 <div style={{ fontSize: '36px', marginBottom: '16px' }}>{c.icon}</div>
@@ -625,14 +625,14 @@ export default function AlbertaCORPage() {
               The Contracts You Want Require COR.<br /><span style={{ color: ORANGE }}>Let's Get You There.</span>
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: MUTED, marginBottom: '32px', lineHeight: 1.8 }}>
-              Whether you're starting from zero, recovering a lapsed certificate, or trying to maintain the certification you already have — CorPathway is the team and the tool built for exactly this situation.
+              Whether you're starting from zero, recovering a lapsed certificate, or trying to maintain the certification you already have,CorPathway is the team and the tool built for exactly this situation.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 600, fontSize: '15px', color: TEXT, marginBottom: '32px' }}>
               One free consultation. No jargon. No obligation. Just a clear path forward.
             </p>
             {/* Trust items */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              {[`✅ We build your complete ${`COR`} or SE-COR program`, '✅ We work with all 10 Alberta Certifying Partners', '✅ App included — every element tracked', '✅ WCB PIR refund support included', '✅ Alberta-based. 780-832-5158.'].map(t => (
+              {[`✅ We build your complete ${`COR`} or SE-COR program`, '✅ We work with all 10 Alberta Certifying Partners', '✅ App included,every element tracked', '✅ WCB PIR refund support included', '✅ Alberta-based. 780-832-5158.'].map(t => (
                 <p key={t} style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED }}>{t}</p>
               ))}
             </div>

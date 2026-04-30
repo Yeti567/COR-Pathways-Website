@@ -278,13 +278,13 @@ export default function ContactPage() {
       {/* ══ S2: CONTACT MAIN ══ */}
       <section id="contact-form" style={{ background: '#ffffff', padding: '96px 1.5rem' }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '64px', alignItems: 'flex-start' }}>
-          {/* Left — Form */}
+          {/* Left,Form */}
           <div>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#34D399', marginBottom: '20px' }}>Send Us a Message</p>
             <ContactForm />
           </div>
 
-          {/* Right — Contact Details */}
+          {/* Right,Contact Details */}
           <div>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#34D399', marginBottom: '20px' }}>Contact Information</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -293,7 +293,7 @@ export default function ContactPage() {
                 <span style={{ fontSize: '28px', display: 'block', marginBottom: '12px' }}>📞</span>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#34D399', marginBottom: '8px' }}>Call or Text</p>
                 <a href="tel:+17808325158" style={{ fontFamily: 'var(--font-fraunces)', fontSize: '28px', fontWeight: 700, color: '#ffffff', textDecoration: 'none', display: 'block', marginBottom: '8px' }}>Call now</a>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.5)', marginBottom: '8px' }}>tel. 780-832-5158</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.5)', marginBottom: '8px' }}>780-832-5158</p>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>Available Monday to Friday, 8am to 6pm Mountain Time</p>
               </div>
               {/* Email */}
@@ -380,16 +380,16 @@ export default function ContactPage() {
             Tell us where you are. We will tell you what fits.
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            {/* Card 1 — Ontario */}
+            {/* Card 1,Ontario */}
             <div style={{ background: 'rgba(52,211,153,0.06)', border: '1px solid rgba(52,211,153,0.3)', borderRadius: '16px', padding: '28px 24px', display: 'flex', flexDirection: 'column' }}>
               <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.15)', border: '1px solid rgba(52,211,153,0.3)', color: '#059669', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '16px', alignSelf: 'flex-start' }}>Ontario</span>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#0D1F3C', marginBottom: '12px', lineHeight: 1.3 }}>Need COR certification?</p>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#4B5563', lineHeight: 1.75, marginBottom: '20px', flex: 1 }}>
-                If you are an Ontario contractor who needs to get COR certified — especially before the January 1, 2027 City of Ottawa deadline — COR consulting is what you need.
+                If you are an Ontario contractor who needs to get COR certified,especially before the January 1, 2027 City of Ottawa deadline,COR consulting is what you need.
               </p>
               <Link href="/consulting" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 700, color: '#059669', textDecoration: 'none' }}>Learn about COR consulting →</Link>
             </div>
-            {/* Card 2 — Western Canada */}
+            {/* Card 2,Western Canada */}
             <div style={{ background: 'rgba(123,184,224,0.06)', border: '1px solid rgba(123,184,224,0.3)', borderRadius: '16px', padding: '28px 24px', display: 'flex', flexDirection: 'column' }}>
               <span style={{ display: 'inline-block', background: 'rgba(123,184,224,0.15)', border: '1px solid rgba(123,184,224,0.3)', color: '#4A90C4', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '16px', alignSelf: 'flex-start' }}>Alberta · BC · Saskatchewan</span>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#0D1F3C', marginBottom: '12px', lineHeight: 1.3 }}>Need your safety program managed?</p>
@@ -398,12 +398,12 @@ export default function ContactPage() {
               </p>
               <Link href="/consulting#western-canada" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 700, color: '#4A90C4', textDecoration: 'none' }}>Learn about H&amp;S management →</Link>
             </div>
-            {/* Card 3 — All Provinces */}
+            {/* Card 3,All Provinces */}
             <div style={{ background: '#0D1F3C', border: '1px solid rgba(74,144,196,0.2)', borderRadius: '16px', padding: '28px 24px', display: 'flex', flexDirection: 'column' }}>
               <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.15)', border: '1px solid rgba(52,211,153,0.3)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '16px', alignSelf: 'flex-start' }}>All Provinces</span>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#ffffff', marginBottom: '12px', lineHeight: 1.3 }}>Need ISNetworld, Avetta, or ComplyWorks?</p>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75, marginBottom: '20px', flex: 1 }}>
-                If you need a compliance account set up from scratch or managed ongoing — no matter where you are in Canada — compliance management is a standalone service.
+                If you need a compliance account set up from scratch or managed ongoing,no matter where you are in Canada,compliance management is a standalone service.
               </p>
               <Link href="/compliance" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 700, color: '#34D399', textDecoration: 'none' }}>Learn about compliance services →</Link>
             </div>
@@ -441,7 +441,7 @@ export default function ContactPage() {
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '24px' }}>
             <a href="https://calendly.com/blake-safetyconsultant/30min" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', background: '#34D399', color: '#0D1F3C', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 700, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Book a Free Consultation →</a>
-            <a href="tel:+17808325158" style={{ display: 'inline-block', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Call now — tel. 780-832-5158</a>
+            <a href="tel:+17808325158" style={{ display: 'inline-block', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Call now,780-832-5158</a>
             <a href="#contact-form" style={{ display: 'inline-block', background: 'transparent', color: '#ffffff', border: '1.5px solid rgba(255,255,255,0.35)', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, padding: '13px 28px', borderRadius: '8px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Send a Message</a>
           </div>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.03em' }}>

@@ -207,7 +207,7 @@ export default function FormsInspectionsPage() {
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(74,144,196,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(74,144,196,0.05) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* Left — visual */}
+          {/* Left,visual */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <SiteImage src="/images/Form Template Builder.webp" alt="Form template builder interface showing drag-and-drop fields, field types, and a form preview panel" height={300} />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -217,7 +217,7 @@ export default function FormsInspectionsPage() {
             </div>
           </div>
 
-          {/* Right — copy */}
+          {/* Right,copy */}
           <div>
             <SectionLabel>Form Builder</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.25, marginBottom: '24px' }}>
@@ -253,7 +253,7 @@ export default function FormsInspectionsPage() {
       <section style={{ background: '#F3F4F6', padding: SECTION_PAD }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* Left — copy */}
+          {/* Left,copy */}
           <div>
             <SectionLabel>Built for the Field</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.25, marginBottom: '24px' }}>
@@ -281,7 +281,7 @@ export default function FormsInspectionsPage() {
             </div>
           </div>
 
-          {/* Right — visual */}
+          {/* Right,visual */}
           <div>
             <SiteImage src="/images/Field worker filling out form on mobile phone.webp" alt="Construction worker in hard hat and safety vest completing a digital form on a smartphone on an active job site" height={380} />
           </div>
@@ -297,11 +297,11 @@ export default function FormsInspectionsPage() {
             Replace paper. Pass your audit.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '560px', marginBottom: '40px' }}>
-            Start your free trial and get access to every COR 2020 form — pre-built, organized by element, and ready for your team to use from day one.
+            Start your free trial and get access to every COR 2020 form,pre-built, organized by element, and ready for your team to use from day one.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
-            <OutlineBtn href="tel:+17808325158">Call tel. 780-832-5158</OutlineBtn>
+            <OutlineBtn href="tel:+17808325158">Call 780-832-5158</OutlineBtn>
           </div>
         </div>
       </section>

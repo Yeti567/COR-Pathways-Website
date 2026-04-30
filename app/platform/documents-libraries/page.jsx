@@ -176,7 +176,7 @@ export default function DocumentsLibrariesPage() {
             <span style={{ fontSize: '20px', flexShrink: 0, marginTop: '2px' }}>📌</span>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.7 }}>
               <strong style={{ color: '#ffffff', fontWeight: 600 }}>Note: </strong>
-              Ontario is the only province with formal document control requirements under COR. In Alberta, BC, and Saskatchewan, the libraries and document registry are still fully available and are strongly recommended for SE-COR program management — they simply are not a scored audit element in those provinces.
+              Ontario is the only province with formal document control requirements under COR. In Alberta, BC, and Saskatchewan, the libraries and document registry are still fully available and are strongly recommended for SE-COR program management,they simply are not a scored audit element in those provinces.
             </p>
           </div>
         </div>
@@ -187,14 +187,14 @@ export default function DocumentsLibrariesPage() {
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(74,144,196,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(74,144,196,0.05) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* Left — copy */}
+          {/* Left,copy */}
           <div>
             <SectionLabel>What Goes in the Registry</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.25, marginBottom: '24px' }}>
               Every type of safety document your company produces.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, marginBottom: '32px' }}>
-              The document registry handles every category of safety documentation — from your foundational health and safety manual down to individual safe job procedures. Everything is organized, versioned, and linked to the right audit element.
+              The document registry handles every category of safety documentation,from your foundational health and safety manual down to individual safe job procedures. Everything is organized, versioned, and linked to the right audit element.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
               {DOC_TYPES.map((doc) => (
@@ -209,7 +209,7 @@ export default function DocumentsLibrariesPage() {
             </div>
           </div>
 
-          {/* Right — visual */}
+          {/* Right,visual */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <SiteImage src="/images/Document registry.webp" alt="Document registry screen showing a folder structure with document names, version numbers, approval status, and last modified dates" height={300} />
             <div style={{ background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.2)', borderRadius: '10px', padding: '14px 18px', textAlign: 'center' }}>
@@ -223,33 +223,33 @@ export default function DocumentsLibrariesPage() {
       <section style={{ background: '#F3F4F6', padding: SECTION_PAD }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* Left — visual */}
+          {/* Left,visual */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <SiteImage src="/images/Equipment Maintenance Dashboard.webp" alt="Equipment maintenance dashboard showing upcoming maintenance schedule, equipment list, and deficiency report status indicators" height={300} />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <span style={{ display: 'inline-block', background: 'rgba(74,144,196,0.12)', border: '1px solid rgba(74,144,196,0.25)', color: '#7BB8E0', fontFamily: 'var(--font-dm-sans)', fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '6px 16px', borderRadius: '999px' }}>
-                Element 07 — Preventative Maintenance
+                Element 07,Preventative Maintenance
               </span>
             </div>
           </div>
 
-          {/* Right — copy */}
+          {/* Right,copy */}
           <div>
             <SectionLabel>Equipment &amp; Maintenance</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.25, marginBottom: '24px' }}>
               Your equipment maintenance program. Tracked and documented.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              Element 7 of the COR 2020 standard requires a documented preventative maintenance program. COR Pathways handles this through the equipment library and maintenance module — every piece of equipment has a maintenance schedule, inspection records, and deficiency reports attached to it.
+              Element 7 of the COR 2020 standard requires a documented preventative maintenance program. COR Pathways handles this through the equipment library and maintenance module,every piece of equipment has a maintenance schedule, inspection records, and deficiency reports attached to it.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '32px' }}>
-              When a piece of equipment is inspected and a deficiency is found, a corrective action is created automatically and tracked to resolution. Your maintenance program is not just documented — it is actively managed and audit-ready at all times.
+              When a piece of equipment is inspected and a deficiency is found, a corrective action is created automatically and tracked to resolution. Your maintenance program is not just documented,it is actively managed and audit-ready at all times.
             </p>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
                 'Equipment maintenance schedules with automated reminders',
                 'Deficiency reports with corrective action tracking',
-                'Full maintenance history per equipment item — exportable for audit',
+                'Full maintenance history per equipment item,exportable for audit',
               ].map((item) => (
                 <li key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.6 }}>
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" style={{ flexShrink: 0, marginTop: '2px' }}>
@@ -273,11 +273,11 @@ export default function DocumentsLibrariesPage() {
             Build your safety program on a solid foundation.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '560px', marginBottom: '40px' }}>
-            Start your free trial and get access to all six master libraries, the full document registry, and everything your COR audit needs — from day one.
+            Start your free trial and get access to all six master libraries, the full document registry, and everything your COR audit needs,from day one.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
-            <OutlineBtn href="tel:+17808325158">Call tel. 780-832-5158</OutlineBtn>
+            <OutlineBtn href="tel:+17808325158">Call 780-832-5158</OutlineBtn>
           </div>
         </div>
       </section>

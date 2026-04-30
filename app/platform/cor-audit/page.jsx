@@ -267,7 +267,7 @@ export default function CorAuditPage() {
               Practice your audit interview before the real thing.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              One of the most stressful parts of COR certification is the auditor interview. You know your safety program — but can you answer questions about it under pressure, on the spot, the way an IHSA auditor will ask them?
+              One of the most stressful parts of COR certification is the auditor interview. You know your safety program,but can you answer questions about it under pressure, on the spot, the way an IHSA auditor will ask them?
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '32px' }}>
               COR Pathways includes an AI-powered mock audit interview. It asks you the same types of questions a real auditor would ask, scores your answers, identifies gaps in your knowledge, and helps you prepare so there are no surprises on audit day.
@@ -298,11 +298,11 @@ export default function CorAuditPage() {
             Stop guessing. Start knowing.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '560px', marginBottom: '40px' }}>
-            Start your free trial and see your COR compliance score in real time — for every element, weighted correctly, updated automatically.
+            Start your free trial and see your COR compliance score in real time,for every element, weighted correctly, updated automatically.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
-            <OutlineBtn href="tel:+17808325158">Call tel. 780-832-5158</OutlineBtn>
+            <OutlineBtn href="tel:+17808325158">Call 780-832-5158</OutlineBtn>
           </div>
         </div>
       </section>

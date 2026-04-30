@@ -599,14 +599,14 @@ export default function GetCompliantPage() {
         <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel color={BLUE}>THE SOLUTION</SectionLabel>
           <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '56px', lineHeight: 1.1 }}>
-            We Don't Just Help — We Do It For You.<br />
+            We Don't Just Help,We Do It For You.<br />
             Fully Compliant on All Three Platforms in 48 Hours.
           </h2>
           <div className="gc-timeline" style={{ maxWidth: '800px' }}>
             <TimelineStep num={1} icon="icon_clock_check_48hour.svg" title="SAME-DAY ONBOARDING" body="You send us your basic company info, insurance docs, and OSHA logs. That's it. We do the rest. No homework, no platform tutorials, no guesswork." delay={0} />
-            <TimelineStep num={2} icon="icon_hard_hat_safety_programs.svg" title="CUSTOM SAFETY PROGRAMS WRITTEN FOR YOUR SCOPE" body="Our compliance specialists build or update your written safety programs to meet RAVS® standards for every hiring client in your account. Programs are tailored to your actual trades — no copy-paste templates that get rejected." delay={150} />
+            <TimelineStep num={2} icon="icon_hard_hat_safety_programs.svg" title="CUSTOM SAFETY PROGRAMS WRITTEN FOR YOUR SCOPE" body="Our compliance specialists build or update your written safety programs to meet RAVS® standards for every hiring client in your account. Programs are tailored to your actual trades,no copy-paste templates that get rejected." delay={150} />
             <TimelineStep num={3} icon="icon_document_upload_submission.svg" title="WE SUBMIT. THEY APPROVE. YOU WIN WORK." body="We upload directly to your ISNetworld, Avetta, and ComplyWorks accounts. We monitor reviews, respond to flags, and don't stop until you hit Green/Approved status." delay={300} />
-            <TimelineStep num={4} icon="icon_refresh_calendar_annual_maintenance.svg" title="ONGOING MAINTENANCE — NEVER FALL OUT OF COMPLIANCE AGAIN" body="Annual updates, new client requirements, document renewals — we handle it all on your behalf, all year long, so you never lose your approved status." last delay={450} />
+            <TimelineStep num={4} icon="icon_refresh_calendar_annual_maintenance.svg" title="ONGOING MAINTENANCE,NEVER FALL OUT OF COMPLIANCE AGAIN" body="Annual updates, new client requirements, document renewals,we handle it all on your behalf, all year long, so you never lose your approved status." last delay={450} />
           </div>
         </div>
       </section>
@@ -619,7 +619,7 @@ export default function GetCompliantPage() {
         <div style={{ position: 'relative', zIndex: 1, maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel color={BLUE}>PLATFORM DEEP DIVE</SectionLabel>
           <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '40px', lineHeight: 1.1 }}>
-            Understand What You're Dealing With —<br />Then Let Us Handle It.
+            Understand What You're Dealing With.<br />Then Let Us Handle It.
           </h2>
 
           {/* Tabs */}
@@ -662,7 +662,7 @@ export default function GetCompliantPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '64px' }}>
             <TestimonialCard initials="OM" quote="We'd been fighting with ISNetworld for three months trying to get our RAVS® approved. CorPathway had us green in less than 48 hours. I wish we'd found them day one." name="Operations Manager" company="Industrial Electrical Contractor, Alberta" delay={0} />
             <TestimonialCard initials="CO" quote="We needed Avetta AND ISNetworld to bid a major pipeline contract. CorPathway handled both simultaneously and had us fully approved before the bid deadline. We got the contract." name="Owner" company="Mechanical Services Company, Texas" delay={100} />
-            <TestimonialCard initials="SC" quote="ComplyWorks questionnaires were killing our admin team. Outsourcing to CorPathway was the best decision we made this year. Now it's just handled — every year, automatically." name="Safety Coordinator" company="Civil Construction Firm, Saskatchewan" delay={200} />
+            <TestimonialCard initials="SC" quote="ComplyWorks questionnaires were killing our admin team. Outsourcing to CorPathway was the best decision we made this year. Now it's just handled,every year, automatically." name="Safety Coordinator" company="Civil Construction Firm, Saskatchewan" delay={200} />
           </div>
 
           {/* Trust badges */}
@@ -685,7 +685,7 @@ export default function GetCompliantPage() {
         <div style={{ maxWidth: MAX_W, margin: '0 auto' }}>
           <SectionLabel color={ORANGE}>TRANSPARENT PRICING</SectionLabel>
           <h2 style={{ fontFamily: 'var(--font-dm-sans)', fontWeight: 700, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: TEXT, marginBottom: '16px', lineHeight: 1.1 }}>
-            One Platform or All Three —<br />Pick the Plan That Fits Your Business.
+            One Platform or All Three.<br />Pick the Plan That Fits Your Business.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: MUTED, marginBottom: '56px', maxWidth: '640px', lineHeight: 1.7 }}>
             No hidden fees. No surprise invoices. Just flat-rate compliance support that costs a fraction of what you'd lose missing a single contract.
@@ -706,7 +706,7 @@ export default function GetCompliantPage() {
               title="Dual Platform Setup"
               priceLabel="Starting at"
               priceUnit="/ two platforms"
-              features={['Full setup on TWO platforms of your choice', 'Everything in Single Platform, times two', 'Cross-platform document transfer (ISN → Avetta saves hours)', 'Coordinated timelines — both approved simultaneously', '30 days of post-approval support included']}
+              features={['Full setup on TWO platforms of your choice', 'Everything in Single Platform, times two', 'Cross-platform document transfer (ISN → Avetta saves hours)', 'Coordinated timelines,both approved simultaneously', '30 days of post-approval support included']}
               noFeatures={['Third platform not included']}
               highlighted
               delay={100}
@@ -727,13 +727,13 @@ export default function GetCompliantPage() {
               title="Annual Maintenance Plan"
               priceLabel="Starting at"
               priceUnit="/ year per platform"
-              features={['Annual questionnaire updates (all platforms)', 'Document renewals and re-uploads', 'New hiring client requirement management', 'Grade monitoring — alerts if your score drops', 'Unlimited revision support throughout the year', 'Priority turnaround (48-hour SLA on all requests)']}
+              features={['Annual questionnaire updates (all platforms)', 'Document renewals and re-uploads', 'New hiring client requirement management', 'Grade monitoring,alerts if your score drops', 'Unlimited revision support throughout the year', 'Priority turnaround (48-hour SLA on all requests)']}
               ctaLabel="Protect My Compliance →"
               delay={300}
             />
           </div>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: MUTED, textAlign: 'center', maxWidth: '680px', margin: '0 auto', lineHeight: 1.75 }}>
-            Pricing is based on company size, number of trades/services listed, and number of hiring client connections. Contact us for a free, no-obligation assessment. We'll tell you exactly what you need and exactly what it will cost — before you commit to anything.
+            Pricing is based on company size, number of trades/services listed, and number of hiring client connections. Contact us for a free, no-obligation assessment. We'll tell you exactly what you need and exactly what it will cost,before you commit to anything.
           </p>
         </div>
       </section>
@@ -758,7 +758,7 @@ export default function GetCompliantPage() {
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: MUTED, marginBottom: '56px', lineHeight: 1.7 }}>
             The companies winning the bids you want are already approved.<br />
-            Let CorPathway get you there — starting today.
+            Let CorPathway get you there,starting today.
           </p>
           <div style={{ maxWidth: '640px', margin: '0 auto', textAlign: 'left' }}>
             <ContactForm />

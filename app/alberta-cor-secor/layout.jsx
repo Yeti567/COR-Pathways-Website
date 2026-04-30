@@ -1,7 +1,6 @@
 export const metadata = {
   title: 'COR & SE-COR Certification Alberta',
   description: 'Get COR or SE-COR certified in Alberta with expert consulting and purpose-built software. We work with all 10 Alberta Certifying Partners. Free consultation.',
-  keywords: 'COR certification Alberta, SE-COR Alberta, SECOR certification Alberta, ACSA COR, Alberta safety certification, WCB PIR refund, COR consulting Alberta',
   alternates: { canonical: '/alberta-cor-secor' },
   openGraph: {
     title: 'COR & SE-COR Certification Alberta | COR Pathways',

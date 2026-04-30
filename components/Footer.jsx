@@ -91,7 +91,7 @@ export default function Footer() {
               </p>
               <a href="tel:+17808325158" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
                 <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: '#34D399', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Call now</span>
-                <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.75)', fontWeight: 500 }}>tel. 780-832-5158</span>
+                <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: 'rgba(255,255,255,0.75)', fontWeight: 500 }}>780-832-5158</span>
               </a>
             </div>
 
@@ -147,7 +147,7 @@ export default function Footer() {
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <span style={{ fontSize: '13px' }}>📞</span>
-              <a href="tel:+17808325158" className="footer-tel">tel. 780-832-5158</a>
+              <a href="tel:+17808325158" className="footer-tel">780-832-5158</a>
             </div>
           </div>
 

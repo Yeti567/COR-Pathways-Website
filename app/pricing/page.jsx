@@ -87,7 +87,7 @@ export default function PricingPage() {
             COR consulting, compliance management, and post-certification platform access: all with flat, predictable pricing and no hidden fees.
           </p>
           <div style={{ width: '100%', maxWidth: '800px', height: '320px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 32px 80px rgba(0,0,0,0.4)', position: 'relative' }}>
-            <Image src="/images/hero Section, page 5.webp" alt="Clean overhead shot of a desk with a calculator, contract documents, a hard hat, and a coffee mug — pricing and planning concept" fill style={{ objectFit: 'cover' }} priority />
+            <Image src="/images/hero Section, page 5.webp" alt="Clean overhead shot of a desk with a calculator, contract documents, a hard hat, and a coffee mug,pricing and planning concept" fill style={{ objectFit: 'cover' }} priority />
           </div>
         </div>
       </section>
@@ -107,7 +107,7 @@ export default function PricingPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '28px', marginBottom: '28px' }}>
 
-            {/* Card 1 — Starter $2,500 */}
+            {/* Card 1,Starter $2,500 */}
             <div style={{ background: '#F9FAFB', borderRadius: '16px', padding: '2rem', border: '1px solid rgba(52,211,153,0.25)', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}>
               <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.3)', color: '#059669', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '16px' }}>Up to 30 Employees</span>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px', marginBottom: '4px' }}>
@@ -150,7 +150,7 @@ export default function PricingPage() {
               <FilledBtn href="/contact" fullWidth>Book a Free Consultation</FilledBtn>
             </div>
 
-            {/* Card 2 — Growth $5,000 */}
+            {/* Card 2,Growth $5,000 */}
             <div style={{ background: '#F9FAFB', borderRadius: '16px', padding: '2rem', border: '1px solid rgba(52,211,153,0.25)', boxShadow: '0 4px 20px rgba(0,0,0,0.06)', position: 'relative' }}>
               <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
                 <span style={{ display: 'inline-block', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '10px', fontWeight: 700, padding: '3px 10px', borderRadius: '999px', letterSpacing: '0.06em', textTransform: 'uppercase' }}>Most Popular</span>
@@ -184,7 +184,7 @@ export default function PricingPage() {
                   'Multi-department and multi-supervisor setup',
                   'Multiple team training sessions by department or trade',
                   'Priority support throughout the engagement',
-                  'COR Pathways platform — full access, included free',
+                  'COR Pathways platform,full access, included free',
                 ].map((item) => <CheckItem key={item}>{item}</CheckItem>)}
               </ul>
               <FilledBtn href="/contact" fullWidth>Book a Free Consultation</FilledBtn>
@@ -360,7 +360,7 @@ export default function PricingPage() {
               <OutlineBtn href="/contact" dark>Get Started</OutlineBtn>
             </div>
 
-            {/* Professional — featured */}
+            {/* Professional,featured */}
             <div style={{ background: '#ffffff', borderRadius: '16px', padding: '2rem', border: '2px solid #34D399', boxShadow: '0 8px 32px rgba(52,211,153,0.15)', position: 'relative' }}>
               <div style={{ position: 'absolute', top: '-14px', left: '50%', transform: 'translateX(-50%)' }}>
                 <span style={{ display: 'inline-block', background: '#059669', color: '#ffffff', fontFamily: 'var(--font-dm-sans)', fontSize: '10px', fontWeight: 700, padding: '4px 14px', borderRadius: '999px', letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>Most Popular</span>
@@ -477,7 +477,7 @@ export default function PricingPage() {
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '24px' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
-            <OutlineBtn href="tel:+17808325158">Call tel. 780-832-5158</OutlineBtn>
+            <OutlineBtn href="tel:+17808325158">Call 780-832-5158</OutlineBtn>
           </div>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.03em' }}>
             Free consultation · No commitment · All provinces

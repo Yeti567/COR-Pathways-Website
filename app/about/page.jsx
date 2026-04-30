@@ -44,7 +44,7 @@ export default function AboutPage() {
             COR Pathways was built by a safety professional with nearly 20 years of hands-on experience across construction, oil and gas, and general industry, because we knew there had to be a better way to get contractors certified and keep them compliant.
           </p>
           <div style={{ width: '100%', maxWidth: '900px', height: '380px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 32px 80px rgba(0,0,0,0.4)', position: 'relative' }}>
-            <Image src="/images/Western Canada Construction Site.webp" alt="Wide shot of a Canadian construction site at golden hour — crane, heavy equipment, workers in high-vis vests, dramatic sky — conveys scale and professionalism" fill style={{ objectFit: 'cover' }} priority />
+            <Image src="/images/Western Canada Construction Site.webp" alt="Wide shot of a Canadian construction site at golden hour,crane, heavy equipment, workers in high-vis vests, dramatic sky,conveys scale and professionalism" fill style={{ objectFit: 'cover' }} priority />
           </div>
         </div>
       </section>
@@ -159,7 +159,7 @@ export default function AboutPage() {
           </div>
           <div>
             <div style={{ width: '100%', height: '320px', borderRadius: '14px', overflow: 'hidden', position: 'relative', border: '1px solid rgba(74,144,196,0.2)', marginBottom: '20px' }}>
-              <Image src="/images/Job Site Safety Inspection.webp" alt="Safety professional in hard hat and vest conducting a job site inspection — reviewing a clipboard or tablet, heavy equipment in background, natural light" fill style={{ objectFit: 'cover' }} />
+              <Image src="/images/Job Site Safety Inspection.webp" alt="Safety professional in hard hat and vest conducting a job site inspection,reviewing a clipboard or tablet, heavy equipment in background, natural light" fill style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.25)', borderRadius: '10px', padding: '18px 20px' }}>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', fontWeight: 600, color: '#34D399', lineHeight: 1.6 }}>

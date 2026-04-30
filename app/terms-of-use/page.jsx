@@ -91,7 +91,7 @@ export default function TermsOfUsePage() {
             Intellectual Property
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.8, marginBottom: '16px' }}>
-            All content on the COR Pathways website and platform — including text, graphics, logos, software, and documentation — is the property of COR Pathways and is protected by Canadian copyright law.
+            All content on the COR Pathways website and platform,including text, graphics, logos, software, and documentation,is the property of COR Pathways and is protected by Canadian copyright law.
           </p>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.8, marginBottom: '48px' }}>
             Nothing in these Terms grants you any right to use our trademarks, trade names, or branding without our prior written consent.

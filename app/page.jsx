@@ -73,7 +73,7 @@ export default function HomePage() {
 
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', width: '100%', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* LEFT — copy */}
+          {/* LEFT,copy */}
           <div>
             {/* Badge */}
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.25)', padding: '6px 14px', borderRadius: '999px', marginBottom: '28px' }}>
@@ -97,7 +97,7 @@ export default function HomePage() {
             {/* Buttons */}
             <div className="hero-btn-row" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '32px' }}>
               <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
-              <OutlineBtn href="tel:+17808325158">Call tel. 780-832-5158</OutlineBtn>
+              <OutlineBtn href="tel:+17808325158">Call 780-832-5158</OutlineBtn>
             </div>
 
             {/* Trust signals */}
@@ -111,7 +111,7 @@ export default function HomePage() {
             </ul>
           </div>
 
-          {/* RIGHT — cards */}
+          {/* RIGHT,cards */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {/* Top card */}
             <div style={{ background: '#163258', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' }}>
@@ -121,7 +121,7 @@ export default function HomePage() {
                   <Image src="/images/Certification management.webp" alt="COR Pathways certification management dashboard" fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div style={{ marginTop: '16px' }}>
-                  <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7BB8E0', marginBottom: '6px' }}>Ontario — COR Certification</p>
+                  <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7BB8E0', marginBottom: '6px' }}>Ontario,COR Certification</p>
                   <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '18px', fontWeight: 700, color: '#ffffff', marginBottom: '8px', lineHeight: 1.3 }}>All 14 COR Elements. One Platform.</p>
                   <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.55)', lineHeight: 1.6, marginBottom: '12px' }}>Track every element, every document, and every certification: all in one place, updated in real time.</p>
                   <span style={{ display: 'inline-block', background: 'rgba(52,211,153,0.12)', border: '1px solid rgba(52,211,153,0.3)', color: '#34D399', fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, padding: '4px 12px', borderRadius: '999px' }}>Deadline: Jan 1, 2027</span>
@@ -129,7 +129,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Bottom row — 3 province cards */}
+            {/* Bottom row,3 province cards */}
             <div className="hero-province-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
               {[{ province: 'Alberta' }, { province: 'BC' }, { province: 'Saskatchewan' }].map((p) => (
                 <div key={p.province} style={{ background: '#163258', borderRadius: '12px', padding: '14px', border: '1px solid rgba(74,144,196,0.2)', textAlign: 'center' }}>
@@ -178,18 +178,18 @@ export default function HomePage() {
               </h2>
             </div>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#4B5563', lineHeight: 1.75, paddingTop: '8px' }}>
-              We help construction companies get certified, stay compliant, and manage their safety programs — whether you're chasing COR in Ontario or running SE-COR programs across Western Canada: one team, two service areas, four provinces.
+              We help construction companies get certified, stay compliant, and manage their safety programs,whether you're chasing COR in Ontario or running SE-COR programs across Western Canada: one team, two service areas, four provinces.
             </p>
           </div>
 
           {/* Three cards */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-            {/* Card 1 — COR Consulting */}
+            {/* Card 1,COR Consulting */}
             <div style={{ background: '#ECFDF5', border: '1px solid rgba(52,211,153,0.3)', borderRadius: '16px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <span style={{ fontSize: '28px' }}>🏆</span>
               <div>
                 <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#0D1F3C', marginBottom: '10px', lineHeight: 1.3 }}>COR Certification Consulting</p>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '16px' }}>We guide Ontario construction companies through the full COR 2020 certification process — building your safety program, preparing your documentation, and getting you audit-ready. The January 2027 Ottawa deadline is approaching. Do not wait.</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '16px' }}>We guide Ontario construction companies through the full COR 2020 certification process,building your safety program, preparing your documentation, and getting you audit-ready. The January 2027 Ottawa deadline is approaching. Do not wait.</p>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto' }}>
                 <ProvincePill>Ontario</ProvincePill>
@@ -197,12 +197,12 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Card 2 — H&S Management */}
+            {/* Card 2,H&S Management */}
             <div style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '16px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <span style={{ fontSize: '28px' }}>🛡️</span>
               <div>
                 <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#0D1F3C', marginBottom: '10px', lineHeight: 1.3 }}>Health &amp; Safety Program Management</p>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '16px' }}>For smaller companies in Alberta, BC, and Saskatchewan on SE-COR safety programs, we build and manage your entire health and safety program — remotely, affordably, and properly. You run your business. We handle your safety compliance.</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '16px' }}>For smaller companies in Alberta, BC, and Saskatchewan on SE-COR safety programs, we build and manage your entire health and safety program,remotely, affordably, and properly. You run your business. We handle your safety compliance.</p>
                 <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', color: '#9CA3AF', marginBottom: '12px' }}>Available for SE-COR programs only</p>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '8px' }}>
@@ -211,12 +211,12 @@ export default function HomePage() {
               <Link href="/consulting#western-canada" style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 600, color: '#4A90C4', textDecoration: 'none', marginTop: 'auto' }}>Learn about H&amp;S management →</Link>
             </div>
 
-            {/* Card 3 — Compliance */}
+            {/* Card 3,Compliance */}
             <div style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '16px', padding: '2rem', display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <span style={{ fontSize: '28px' }}>✅</span>
               <div>
                 <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#0D1F3C', marginBottom: '10px', lineHeight: 1.3 }}>Contractor Compliance Management</p>
-                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '16px' }}>We set up and manage your ISNetworld, Avetta, and ComplyWorks accounts from scratch — handling every requirement, document submission, and renewal so you stay green and keep working.</p>
+                <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: '#374151', lineHeight: 1.7, marginBottom: '16px' }}>We set up and manage your ISNetworld, Avetta, and ComplyWorks accounts from scratch,handling every requirement, document submission, and renewal so you stay green and keep working.</p>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '8px' }}>
                 {['ISNetworld', 'Avetta', 'ComplyWorks'].map((b) => (
@@ -234,7 +234,7 @@ export default function HomePage() {
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(74,144,196,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(74,144,196,0.06) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
         <div style={{ position: 'relative', maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* Left — copy */}
+          {/* Left,copy */}
           <div>
             <SectionLabel>The Platform</SectionLabel>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 700, color: '#ffffff', lineHeight: 1.2, marginBottom: '16px' }}>
@@ -250,7 +250,7 @@ export default function HomePage() {
               {[
                 { n: '1', title: 'Track All 14 COR Elements', body: 'See your compliance score for every element in real time. Know exactly what is complete, what is missing, and what needs attention before your audit.' },
                 { n: '2', title: 'Certifications & Training Matrix', body: 'Track every employee certification, get expiry alerts before they lapse, and maintain a complete training record for your audit package.' },
-                { n: '3', title: 'Forms, Inspections & Hazard Assessments', body: 'Digital forms for every COR requirement — toolbox talks, inspections, incident reports, hazard assessments: all linked to the right audit element automatically.' },
+                { n: '3', title: 'Forms, Inspections & Hazard Assessments', body: 'Digital forms for every COR requirement,toolbox talks, inspections, incident reports, hazard assessments: all linked to the right audit element automatically.' },
                 { n: '4', title: 'AI-Powered Mock Audit Practice', body: 'Practice your audit interview with our AI auditor before the real thing. Build confidence and identify gaps before IHSA walks through your door.' },
               ].map((f) => (
                 <li key={f.n} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
@@ -265,14 +265,14 @@ export default function HomePage() {
             <FilledBtn href="/platform">Explore the full platform →</FilledBtn>
           </div>
 
-          {/* Right — platform card */}
+          {/* Right,platform card */}
           <div style={{ background: '#163258', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)', boxShadow: '0 24px 64px rgba(0,0,0,0.4)' }}>
             <div style={{ height: '3px', background: 'linear-gradient(90deg, #34D399, #4A90C4)' }} />
             <div style={{ padding: '1.5rem' }}>
               <div style={{ width: '100%', height: '220px', borderRadius: '8px', overflow: 'hidden', position: 'relative' }}>
                 <Image src="/images/Safety Audit Review Panel.webp" alt="COR audit readiness dashboard" fill style={{ objectFit: 'cover' }} />
               </div>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7BB8E0', margin: '16px 0 12px' }}>COR Audit Readiness — Sample Company</p>
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '10px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7BB8E0', margin: '16px 0 12px' }}>COR Audit Readiness,Sample Company</p>
 
               {/* Progress bars */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -305,7 +305,7 @@ export default function HomePage() {
       <section style={{ background: '#ffffff', padding: '96px 1.5rem' }}>
         <div style={{ maxWidth: MAX_W, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px', alignItems: 'center' }}>
 
-          {/* Left — visual grid */}
+          {/* Left,visual grid */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {/* Top full-width card */}
             <div style={{ background: '#0D1F3C', borderRadius: '14px', overflow: 'hidden', border: '1px solid rgba(74,144,196,0.2)' }}>
@@ -322,9 +322,9 @@ export default function HomePage() {
             {/* 2x2 grid */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
               {[
-                { icon: '📋', title: 'We build your safety program', body: 'Policies, procedures, hazard assessments — all set up properly from day one.' },
+                { icon: '📋', title: 'We build your safety program', body: 'Policies, procedures, hazard assessments,all set up properly from day one.' },
                 { icon: '👁️', title: 'We monitor your compliance', body: 'See every location\'s safety status from one dashboard, remotely.' },
-                { icon: '🔄', title: 'We handle renewals', body: 'Insurance submissions, WCB statements, document updates — all done for you.' },
+                { icon: '🔄', title: 'We handle renewals', body: 'Insurance submissions, WCB statements, document updates,all done for you.' },
                 { icon: '💬', title: 'Flat monthly fee', body: 'No surprise charges. One price covers everything.' },
               ].map((c) => (
                 <div key={c.title} style={{ background: '#F9FAFB', borderRadius: '12px', padding: '16px', border: '1px solid rgba(0,0,0,0.06)' }}>
@@ -336,7 +336,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Right — copy */}
+          {/* Right,copy */}
           <div>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#34D399', marginBottom: '12px' }}>Alberta · BC · Saskatchewan</p>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 700, color: '#0D1F3C', lineHeight: 1.2, marginBottom: '24px' }}>
@@ -344,7 +344,7 @@ export default function HomePage() {
               <span style={{ color: '#7BB8E0', fontStyle: 'italic' }}>managed for you.</span>
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '20px' }}>
-              Running a small construction company in Western Canada means wearing every hat — project manager, estimator, HR, and now safety officer. We take the safety hat off your head entirely.
+              Running a small construction company in Western Canada means wearing every hat,project manager, estimator, HR, and now safety officer. We take the safety hat off your head entirely.
             </p>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '16px', color: '#374151', lineHeight: 1.75, marginBottom: '32px' }}>
               COR Pathways builds your complete SE-COR safety program from scratch, then manages it every month: remotely, affordably, and properly. You focus on your work. We keep you compliant.
@@ -418,7 +418,7 @@ export default function HomePage() {
           <div style={{ background: '#0D1F3C', borderRadius: '16px', padding: '2.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '32px', alignItems: 'center', marginBottom: '32px' }}>
             <div>
               <p style={{ fontFamily: 'var(--font-fraunces)', fontSize: '20px', fontWeight: 700, color: '#ffffff', marginBottom: '12px' }}>Ongoing Account Management</p>
-              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7 }}>After setup, we manage your account every month. Insurance renewals submitted. WCB statements filed. Documents updated at no extra charge. You send us the paperwork when we ask — we handle everything else.</p>
+              <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7 }}>After setup, we manage your account every month. Insurance renewals submitted. WCB statements filed. Documents updated at no extra charge. You send us the paperwork when we ask,we handle everything else.</p>
             </div>
             <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[{ price: '$200/month', label: '1 account' }, { price: '$300/month', label: 'up to 3 accounts' }].map((p) => (
@@ -478,7 +478,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', fontWeight: 600, color: '#ffffff' }}>{t.name}</p>
-                    <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>{t.role} — {t.location}</p>
+                    <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '12px', color: 'rgba(255,255,255,0.45)' }}>{t.role},{t.location}</p>
                   </div>
                 </div>
               </div>
@@ -497,11 +497,11 @@ export default function HomePage() {
             Ready to get certified?
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '520px', marginBottom: '40px' }}>
-            Book a free consultation and find out exactly what it takes to get your company COR certified or compliant — with no obligation and no jargon.
+            Book a free consultation and find out exactly what it takes to get your company COR certified or compliant,with no obligation and no jargon.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
             <FilledBtn href="/contact">Book a Free Consultation</FilledBtn>
-            <OutlineBtn href="tel:+17808325158">Call tel. 780-832-5158</OutlineBtn>
+            <OutlineBtn href="tel:+17808325158">Call 780-832-5158</OutlineBtn>
           </div>
         </div>
       </section>

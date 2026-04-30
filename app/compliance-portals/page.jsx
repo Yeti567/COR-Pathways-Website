@@ -357,7 +357,7 @@ export default function CompliancePortalsPage() {
             ))}
           </div>
           </div>
-          {/* Hero right column image — regional */}
+          {/* Hero right column image,regional */}
           <div className="cp-hero-img" style={{ position: 'relative', width: '420px', height: '480px', borderRadius: '16px', overflow: 'hidden', flexShrink: 0 }}>
             <Image
               src={isCA ? '/images/Canadian Hero Regional Visual ISN Landing.webp' : '/images/USA Hero Regional Visual ISN Landing.webp'}
@@ -452,7 +452,7 @@ export default function CompliancePortalsPage() {
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '14px', color: GOLD, fontWeight: 600, marginBottom: '20px' }}>$1,500 full setup · then $200/mo management</p>
               <GoldBtn href={CALENDLY} external>Get Started with ISNetworld →</GoldBtn>
             </div>
-            {/* ISNetworld visual — image on CA, status card on US */}
+            {/* ISNetworld visual,image on CA, status card on US */}
             <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '16px', overflow: 'hidden' }}>
               <div style={{ position: 'relative', width: '100%', height: '200px' }}>
                 <Image src="/images/ISNetWorld compliance.webp" alt="ISNetworld compliance dashboard" fill loading="lazy" style={{ objectFit: 'cover' }} />
@@ -472,7 +472,7 @@ export default function CompliancePortalsPage() {
             </div>
           </div>
 
-          {/* Avetta — flipped layout */}
+          {/* Avetta,flipped layout */}
           <div className="cp-grid-2" style={{ marginBottom: isCA ? '80px' : '0', direction: 'rtl' }}>
             <div style={{ direction: 'ltr' }}>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: `${GOLD}14`, border: `1px solid ${BORDER}`, borderRadius: '8px', padding: '6px 14px', marginBottom: '20px' }}>
@@ -521,7 +521,7 @@ export default function CompliancePortalsPage() {
             </div>
           </div>
 
-          {/* ComplyWorks — CA only */}
+          {/* ComplyWorks,CA only */}
           {isCA && (
             <div className="cp-grid-2">
               <div>

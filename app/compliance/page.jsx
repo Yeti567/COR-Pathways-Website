@@ -257,7 +257,7 @@ export default function CompliancePage() {
             Avetta: End-to-end compliance setup and management.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, marginBottom: '56px', maxWidth: '820px' }}>
-            Avetta is used by large enterprise clients across construction, oil and gas, utilities, and manufacturing to manage their contractor supply chains. If your client uses Avetta, your account needs to be complete and current — or you are not on their approved list.
+            Avetta is used by large enterprise clients across construction, oil and gas, utilities, and manufacturing to manage their contractor supply chains. If your client uses Avetta, your account needs to be complete and current,or you are not on their approved list.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '56px', alignItems: 'flex-start' }}>
             <div>
@@ -265,7 +265,7 @@ export default function CompliancePage() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 {[
                   'Full Avetta profile creation and company setup',
-                  'All profile sections completed — no gaps',
+                  'All profile sections completed,no gaps',
                   'Safety program documentation upload',
                   'Insurance certificate and WCB submission',
                   'Safety performance data entry',
@@ -289,7 +289,7 @@ export default function CompliancePage() {
             />
           </div>
           <div style={{ marginTop: '56px', width: '100%', height: '280px', borderRadius: '14px', overflow: 'hidden', position: 'relative', border: '1px solid rgba(74,144,196,0.15)' }}>
-            <Image src="/images/Contractor Reviewing Compliance.webp" alt="Construction contractor in hard hat reviewing a tablet showing contractor prequalification status — green approved indicators visible" fill style={{ objectFit: 'cover' }} />
+            <Image src="/images/Contractor Reviewing Compliance.webp" alt="Construction contractor in hard hat reviewing a tablet showing contractor prequalification status,green approved indicators visible" fill style={{ objectFit: 'cover' }} />
           </div>
         </div>
       </section>
@@ -304,7 +304,7 @@ export default function CompliancePage() {
             ComplyWorks: Full compliance setup at the lowest price.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, marginBottom: '56px', maxWidth: '820px' }}>
-            ComplyWorks is a contractor management platform used across western Canada and beyond. If your clients require ComplyWorks compliance, COR Pathways gets your account fully set up and approved — completely — for a flat $400 setup fee.
+            ComplyWorks is a contractor management platform used across western Canada and beyond. If your clients require ComplyWorks compliance, COR Pathways gets your account fully set up and approved,completely,for a flat $400 setup fee.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '56px', alignItems: 'flex-start' }}>
             <div>
@@ -320,7 +320,7 @@ export default function CompliancePage() {
                 ].map((item) => <CheckItem key={item}>{item}</CheckItem>)}
               </ul>
               <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '13px', color: '#9CA3AF', fontStyle: 'italic', lineHeight: 1.6 }}>
-                ComplyWorks has a simpler profile structure than ISNetworld or Avetta — which is reflected in the lower setup price. The commitment is the same: we do not stop until you are approved.
+                ComplyWorks has a simpler profile structure than ISNetworld or Avetta,which is reflected in the lower setup price. The commitment is the same: we do not stop until you are approved.
               </p>
             </div>
             <div style={{ background: '#0D1F3C', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(52,211,153,0.2)', boxShadow: '0 8px 32px rgba(0,0,0,0.15)' }}>
@@ -347,7 +347,7 @@ export default function CompliancePage() {
             </div>
           </div>
           <div style={{ marginTop: '56px', width: '100%', height: '280px', borderRadius: '14px', overflow: 'hidden', position: 'relative', border: '1px solid rgba(74,144,196,0.15)' }}>
-            <Image src="/images/Safety Manager at Compliance Desk.webp" alt="Safety manager at a desk reviewing compliance documents on a computer — organized desk, professional office or site trailer setting" fill style={{ objectFit: 'cover' }} />
+            <Image src="/images/Safety Manager at Compliance Desk.webp" alt="Safety manager at a desk reviewing compliance documents on a computer,organized desk, professional office or site trailer setting" fill style={{ objectFit: 'cover' }} />
           </div>
         </div>
       </section>
@@ -422,7 +422,7 @@ export default function CompliancePage() {
               Here is all we need from you.
             </h2>
             <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '17px', color: '#4B5563', lineHeight: 1.75, maxWidth: '660px', margin: '0 auto' }}>
-              We handle the complexity. Your role is simple — connect us with the right people and send us documents when we ask for them.
+              We handle the complexity. Your role is simple,connect us with the right people and send us documents when we ask for them.
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px' }}>
@@ -435,7 +435,7 @@ export default function CompliancePage() {
               {
                 icon: '📄',
                 title: 'Insurance Documents',
-                body: 'Connect us with your insurance broker or forward us your certificate of insurance when it renews. We take it from there — submission, verification, and follow-up handled completely.',
+                body: 'Connect us with your insurance broker or forward us your certificate of insurance when it renews. We take it from there,submission, verification, and follow-up handled completely.',
               },
               {
                 icon: '📊',
@@ -479,7 +479,7 @@ export default function CompliancePage() {
             Stop losing contracts over compliance.
           </h2>
           <p style={{ fontFamily: 'var(--font-dm-sans)', fontSize: '18px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, maxWidth: '520px', marginBottom: '40px' }}>
-            Get in touch today and we will tell you exactly what it takes to get your ISNetworld, Avetta, or ComplyWorks account fully approved — and keep it that way.
+            Get in touch today and we will tell you exactly what it takes to get your ISNetworld, Avetta, or ComplyWorks account fully approved,and keep it that way.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '24px' }}>
             <FilledBtn href="/contact">Get Started Today</FilledBtn>
